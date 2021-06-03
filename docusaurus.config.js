@@ -5,7 +5,7 @@ module.exports = {
   title: 'Lido for Solana',
   tagline: 'Awesome liquid staking on Solana, the high-performance, permissionless blockchain',
   url: 'https://solido.chorusone.github.io',
-  baseUrl: '/',
+  baseUrl: '/solido',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
