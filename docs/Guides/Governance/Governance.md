@@ -7,6 +7,7 @@ keywords:
  - lido
  - solido
  - solana
+sidebar_position: 1
 ---
 
 # Governance Overview
