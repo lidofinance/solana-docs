@@ -1,3 +1,15 @@
+---
+title: localtestnet
+description: Notes for running a local testnet for Solido
+keywords:
+ - development
+ - developers
+ - lido
+ - solido
+ - solana
+ - testnet
+sidebar_position: 2
+---
 
 # Local TestNet
 
