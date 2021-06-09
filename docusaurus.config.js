@@ -39,7 +39,11 @@ module.exports = {
           position: 'left',
           label: 'Documentation',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          href: 'https://medium.com/chorus-one/introducing-lido-for-solana-8aa02db8503',
+          label: 'Blog',
+          position: 'right',
+        },
         {
           href: 'https://github.com/chorusone/solido',
           label: 'GitHub',
@@ -66,6 +70,10 @@ module.exports = {
               label: 'Twitter',
               href: 'https://twitter.com/chorusone',
             },
+            {
+              label: 'Medium',
+              href: 'https://medium.com/chorus-one',
+            },
           ],
         },
         {
@@ -73,7 +81,7 @@ module.exports = {
           items: [
             {
               label: 'Blog',
-              to: '/blog',
+              href: 'https://medium.com/chorus-one/introducing-lido-for-solana-8aa02db8503',
             },
             {
               label: 'GitHub',
