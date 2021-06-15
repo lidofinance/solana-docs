@@ -7,7 +7,7 @@ keywords:
  - solido
  - solana
  - cli
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Using the Solido CLI for Maintenance
