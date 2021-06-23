@@ -8,7 +8,7 @@ keywords:
  - lido
  - solido
  - solana
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Governance Responsibilities

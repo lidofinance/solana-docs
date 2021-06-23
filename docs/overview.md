@@ -26,5 +26,5 @@ Lido for Solana not only makes it very easy to stake but also provides further u
 
 ![How Solido works](./howsolidoworks.png)
 
-The Lido program collects the deposited SOL and releases the newly minted stSOL to the user. Beneath the layer, the Lido Program leverages the Stake Pool Program Library to distribute this SOL uniformly across validators participating in the Lido Program. When these delegations accrue rewards on the allotted stake, the total SOL under stake pool management increases and this increases the value of stSOL tokens. The Lido DAO governs the Lido Program and the underlying Stake Pool program — and also controls the list of validators that are part of this program.
+The Lido program collects the deposited SOL and releases the newly minted stSOL to the user. Beneath the layer, the Lido Program will  distribute this SOL uniformly across those validators that are participating. When these delegations accrue rewards on the allotted stake, the total SOL under management increases and this increases the value of stSOL tokens. The Lido DAO governs the Lido Program — and also controls the list of validators that are part of this program.
 

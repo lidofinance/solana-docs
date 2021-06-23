@@ -8,7 +8,7 @@ keywords:
  - solido
  - solana
  - cli
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 # Using the Solido CLI for Governance
