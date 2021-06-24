@@ -385,3 +385,132 @@ Generated structs => RemoveMaintainerMeta and  RemoveMaintainerInfo
 
 No additonal constants.
 
+
+## Functions
+
+For each of the instructions (and their associated account structs) the module contains the functions required to generate the appropriate instructions.
+
+Each of the functions return a result object of the appropriate instruction or a ```ProgramError```:
+
+```rust
+-> Result<Instruction, ProgramError>
+```
+### initialise
+
+Constructs, verifies the accounts and returns the ```Lido::Initialize``` instruction.
+
+```rust
+pub fn initialize(
+    program_id: &Pubkey,
+    fee_distribution: FeeDistribution,
+    max_validators: u32,
+    max_maintainers: u32,
+    accounts: &InitializeAccountsMeta,
+) -> Result<Instruction, ProgramError> {
+```
+
+### deposit
+
+Constructs, verifies the accounts and returns the ```Lido::Deposit``` instruction.
+
+```rust
+pub fn deposit(
+    program_id: &Pubkey,
+    accounts: &DepositAccountsMeta,
+    amount: Lamports,
+) -> Result<Instruction, ProgramError> {
+```
+
+### stake_deposit
+
+Constructs, verifies the accounts and returns the ```Lido::StakeDeposit``` instruction.
+
+```rust
+pub fn stake_deposit(
+    program_id: &Pubkey,
+    accounts: &StakeDepositAccountsMeta,
+    amount: Lamports,
+) -> Result<Instruction, ProgramError> {
+```
+
+### change_fee_distribution
+
+Constructs, verifies the accounts and returns the ```Lido::ChangeFeeSpec``` instruction.
+
+```rust
+pub fn change_fee_distribution(
+    program_id: &Pubkey,
+    new_fee_distribution: FeeDistribution,
+    accounts: &ChangeFeeSpecMeta,
+) -> Result<Instruction, ProgramError> {
+```
+
+### add_validator
+
+Constructs, verifies the accounts and returns the ```Lido::AddValidator``` instruction.
+
+```rust
+pub fn add_validator(
+    program_id: &Pubkey,
+    accounts: &AddValidatorMeta,
+) -> Result<Instruction, ProgramError> {
+```
+
+### remove_validator
+
+Constructs, verifies the accounts and returns the ```Lido::RemoveValidator``` instruction.
+
+```rust
+pub fn remove_validator(
+    program_id: &Pubkey,
+    accounts: &RemoveValidatorMeta,
+) -> Result<Instruction, ProgramError> {
+```
+
+### distribute_fees
+
+Constructs, verifies the accounts and returns the ```Lido::DistributeFees``` instruction.
+
+```rust
+pub fn distribute_fees(
+    program_id: &Pubkey,
+    accounts: &DistributeFeesMeta,
+) -> Result<Instruction, ProgramError> {
+```
+
+### claim_validator_fees
+
+Constructs, verifies the accounts and returns the ```Lido::ClaimValidatorFees``` instruction.
+
+```rust
+pub fn claim_validator_fees(
+    program_id: &Pubkey,
+    accounts: &ClaimValidatorFeeMeta,
+) -> Result<Instruction, ProgramError> {
+```
+
+### add_maintainer
+
+Constructs, verifies the accounts and returns the ```Lido::AddMaintainer``` instruction.
+
+```rust
+pub fn add_maintainer(
+    program_id: &Pubkey,
+    accounts: &AddMaintainerMeta,
+) -> Result<Instruction, ProgramError> {
+```
+
+### remove_maintainer
+
+Constructs, verifies the accounts and returns the ```Lido::RemoveMaintainer``` instruction.
+
+```rust
+pub fn remove_maintainer(
+    program_id: &Pubkey,
+    accounts: &RemoveMaintainerMeta,
+) -> Result<Instruction, ProgramError> {
+```
+
+
+
+

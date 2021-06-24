@@ -57,6 +57,7 @@ The solido specification documents will go into detail for each of these modules
 ## Terminology
 
 - **Lamport**:  The minimum unit of denomination in Solana, which an equivalent value of 0.000000001 SOL. A helper struct,[Lamports](./token.md#Lamports) , is used in Solido to ensure safety when dealing with balances.
+- **StLamport**:  The minimum unit of denomination in Solido pool tokens, stSOL, which an equivalent value of 0.000000001 stSOL. A helper struct,[StLamports](./token.md#StLamports) , is used in Solido to ensure safety when dealing with balances.
 
 
 
