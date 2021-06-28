@@ -29,8 +29,8 @@ module.exports = {
       title: 'Lido for Solana',
       logo: {
         alt: 'Lido for Solana Logo',
-        src: 'img/lido-droplet-round.svg',
-        srcDark: 'img/lido-droplet-round.svg',
+        src: 'img/stSOL.svg',
+        srcDark: 'img/stSOL.svg',
       },
       items: [
         {
