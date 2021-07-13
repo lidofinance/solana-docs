@@ -60,8 +60,6 @@ The address for the demo account is
 
 Its transaction history can be viewed on the blockexplorer [here](https://explorer.solana.com/address/CHoeCfX43Hh8ivXR8wiChcNcpDgVmNm5uLhMgGA37ioY?cluster=testnet).
 
-- SOlflare address https://explorer.solana.com/address/FUNekVULJa8imxF9P6sAdigknw4Np9Hn76q4GG4afiy8?cluster=testnet
-
 ![Account](./images/common/account_info.png)
 
 <img src="./images/sollet/connect_dialog.png" alt="connect_dialog" width="500"/>
