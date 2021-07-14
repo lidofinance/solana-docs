@@ -16,7 +16,7 @@ In this step-by-step guide, we will learn how to stake your Solana via the Lido 
 
 
 ------------
-## Step 1: Create or Restore Sollet Wallet
+## Step 1: Create or Restore Phantom Wallet
 Navigate to https://phantom.app/ to create/restore your solana wallet. 
 ### Creating the wallet
 If you do not have a wallet you yet, you should create a new wallet and note down the seed phrase and store it in a safe place. Follow the onscreen instructions and make sure to fund your wallet with some SOL tokens before interacting with Lido
@@ -25,7 +25,7 @@ If you do not have a wallet you yet, you should create a new wallet and note dow
 ![Create](./images/phantom/create_wallet2.png)
 
 ### Restoring the wallet
-If you already have a wallet, you can restore it on sollet using the associated seed phrase. Follow the online instructions to restore your SOL account. 
+If you already have a wallet, you can restore it on Phantom using the associated seed phrase. Follow the online instructions to restore your SOL account. 
 
 ![Restore](./images/phantom/restore.png)
 ![Restore](./images/phantom/restore2.png)
