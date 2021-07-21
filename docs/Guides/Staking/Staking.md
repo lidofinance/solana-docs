@@ -56,13 +56,13 @@ If Alice deposits ```1 SOL``` now she will get ```0.9 stSOL``` in return. As rew
 
 
 $$
-\frac{1800}{2000}=0.86\textnormal{ stSOL }\textbf{per}\textnormal{ SOL}
+\frac{1800}{2100}=0.86\textnormal{ stSOL }\textbf{per}\textnormal{ SOL}
 $$
 
 Now if Alice goes and enquires about the value of her ```0.9 stSOL```, she finds it to be
 
 $$
-0.9*\frac{1800}{2000}=1.05\textnormal{ SOL}
+0.9*\frac{2100}{1800}=1.05\textnormal{ SOL}
 $$
 
 Effectively, her SOL balance potentially went up by 5% from ```1 SOL``` to ```1.05 SOL```. This approach is called the **share-pool approach.** Even though the numbers here are hypothetical they represent the concept of rewards accurately.
