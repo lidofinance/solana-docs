@@ -139,6 +139,7 @@ Zooming into the widget we can observe the new SOL balance and the updated stSOL
 
 ## Withdrawing Solana
 Withdrawals are not enabled yet. They will be live within the coming months. If you click on the **Unstake** tab you will see an error message pop up.
+
 ![Unstake](./images/common/unstake.png)
 
 ## Resources

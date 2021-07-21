@@ -129,6 +129,7 @@ You can now go back to the Lido widget and look at your updated stSOL balance. J
 
 ## Withdrawing Solana
 Withdrawals are not enabled yet. They will be live within the coming months. If you click on the **Unstake** tab you will see an error message pop up.
+
 ![Unstake](./images/common/unstake.png)
 
 ## Resources
