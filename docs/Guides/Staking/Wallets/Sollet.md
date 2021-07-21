@@ -55,7 +55,7 @@ If you have set a password to open the wallet, you might get prompted to unlock 
 
 Before you interact with the widget further it is important to explore the widget and understand its functionality.
 
-## Step 2: Explore the interface
+## Step 3: Explore the interface
 At the top you can see your account’s information — your current stSOL balance and the number of SOL tokens available for staking. For new account holders, the staked amount (stSOL) will be 0 in the beginning. You can also see the returns you will get by staking with Lido under Lido APR. Below that you can enter the number of SOL you want to stake.
 
 <img src="./images/common/interface.png" alt="Interface" width="1000"/>
@@ -92,7 +92,7 @@ You can see the FAQ section right below the Lido statistics. It is prudent to fa
 
 <img src="./images/common/faqs.png" alt="FAQs" width="1000"/>
 
-## Step 3: Stake your SOL
+## Step 4: Stake your SOL
 <p align="center">
     <img src="./images/common/stake.png" alt="stake" width="550"/>
 </p>
@@ -113,7 +113,7 @@ After verifying the information you can approve now.
 
 <img src="./images/sollet/sollet_approve2.png" alt="Approve Transaction" width="1000"/>
 
-## Step 4: View the transaction on Blockexplorer
+## Step 5: View the transaction on Blockexplorer
 Once you hit approve on your wallet, you can come back to the lido widget and click on **View on Solana Blockexplorer.**
 
 <p align="center">
