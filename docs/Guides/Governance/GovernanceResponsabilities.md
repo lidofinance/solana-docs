@@ -6,7 +6,6 @@ keywords:
  - responsabilities
  - multi-sig
  - lido
- - solido
  - solana
 sidebar_position: 2
 ---
