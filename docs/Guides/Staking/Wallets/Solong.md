@@ -19,7 +19,7 @@ import restore3 from './images/solong/restore3.png';
 import wallets from './images/solong/wallet_list.png';
 import approve from './images/solong/approve_connection.png';
 import approvetx from './images/solong/approve.png';
-import updated from '/images/solong/updated.png';
+import updated from './images/solong/updated.png';
 import viewtx from './images/common/view_tx.png';
 import unstake from './images/common/unstake.png';
 
