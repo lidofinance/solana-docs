@@ -163,7 +163,7 @@ To stake your SOL with lido enter the amount you wanter to stake. Once you submi
 You get additional information about the transaction details while approving the transaction. Go ahead and approve the transaction.
 
 <p align="center">
-    <img src={approvetx} alt="Approve Connection" width="400"/>
+    <img src={approvetx} alt="Approve Transaction" width="400"/>
 </p>
 
 After verifying the information you can approve now.
