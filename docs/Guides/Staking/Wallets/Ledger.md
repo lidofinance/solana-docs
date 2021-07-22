@@ -11,6 +11,10 @@ sidebar_label: Ledger
 sidebar_position: 6
 ---
 
+import viewtx from './images/common/view_tx.png';
+import updated from './images/ledger/updated.png';
+import unstake from './images/common/unstake.png';
+
 # How to Stake Solana on Lido
 A quick guide on staking your Solana on the Lido widget
 
@@ -114,7 +118,10 @@ After verifying the information you can approve now.
 ## Step 4: View the transaction on Blockexplorer
 Once you hit approve on your wallet, you can come back to the lido widget and click on **View on Solana Blockexplorer.**
 
-![View Transaction](./images/common/view_tx.png)
+<p align="center">
+    <img src={viewtx} alt="View Tx" width="500"/>
+</p>
+
 
 This is useful as it tells you the current status of your transaction. In the block explorer, if you look at the ```Confirmations``` field you can slowly see it increasing from 0 to 32. Once it reaches the MAX number of confirmations your transaction gets added to the blockchain
 
@@ -130,12 +137,18 @@ Zooming into the widget we can observe the new SOL balance and the updated stSOL
 
 > Note 2: This rent is a one-time fee that won’t reccur on the next staking transaction.
 
-![Updated](./images/ledger/updated.png)
+
+<p align="center">
+    <img src={updated} alt="Updated Balance" width="450"/>
+</p>
+
 
 ## Withdrawing Solana
 Withdrawals are not enabled yet. They will be live within the coming months. If you click on the **Unstake** tab you will see an error message pop up.
 
-![Unstake](./images/common/unstake.png)
+<p align="center">
+    <img src={unstake} alt="Unstake" width="450"/>
+</p>
 
 ## Resources
 [Introducing Lido for Solana](https://medium.com/chorus-one/introducing-lido-for-solana-8aa02db8503) - Explaining the SOL liquid staking solution by Chorus One

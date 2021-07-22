@@ -12,6 +12,13 @@ sidebar_label: Sollet
 sidebar_position: 2
 ---
 
+import wallets from './images/sollet/wallet_list_sollet.png';
+import connect from './images/sollet/connect_dialog.png';
+import staking from './images/common/staking.png';
+import update from './images/common/update.png';
+import viewtx from './images/common/view_tx.png';
+import unstake from './images/common/unstake.png';
+
 # How to Stake Solana on Lido
 A quick guide on staking your Solana on the Lido widget
 
@@ -55,7 +62,9 @@ Once your wallet is setup visit https://solana.lido.fi to stake your SOL tokens.
 
 Pressing the connect wallet button, on the top right hand corner of the screen, pops up the wallet screen.
 
-![Wallet List Sollet](./images/sollet/wallet_list_sollet.png)
+<p align="center">
+    <img src={wallets} alt="Wallets" width="350"/>
+</p>
 
 Selecting your wallet and pressing the connect button takes you to another window with the wallet’s browser extension. On this window you will have to **approve the connection**. Make sure to verify the details listed on the approval screen by Sollet.
 
@@ -82,7 +91,10 @@ Its transaction history can be viewed on the blockexplorer [here](https://explor
 
 ![Account Info](./images/common/account_info.png)
 
-![Connect Dialog](./images/sollet/connect_dialog.png)
+
+<p align="center">
+    <img src={connect} alt="Connect Dialog" width="350"/>
+</p>
 
 ### Transaction Parameters
 When you enter the amount of SOL you want to stake, the values below the submit button change automatically. These values give you specific information about the transaction you are about to perform. It tells you the
@@ -110,7 +122,9 @@ To stake your SOL with lido enter the amount you wanter to stake. Once you submi
 
 >Note **This transaction will only go through if you go back to your wallet and approve it.**
 
-![Staking](./images/common/staking.png)
+<p align="center">
+    <img src={staking} alt="Staking" width="450"/>
+</p>
 
 You get additional information about the transaction details while approving the transaction. Go ahead and approve the transaction.
 
@@ -123,7 +137,10 @@ After verifying the information you can approve now.
 ## Step 5: View the transaction on Blockexplorer
 Once you hit approve on your wallet, you can come back to the lido widget and click on **View on Solana Blockexplorer.**
 
-![View Transactions](./images/common/view_tx.png)
+<p align="center">
+    <img src={viewtx} alt="View Tx" width="500"/>
+</p>
+
 
 This is useful as it tells you the [current status](https://explorer.solana.com/tx/3nwJJRgQgujJUamvmDAq4KiFmn9CAgXEMc2eHUu7NBX9bWzYAbgA2UZS3LUhUXYmeu8NBEkuyjWdpSz6AgCNJ4oS?cluster=testnet) of your transaction.
 
@@ -138,7 +155,9 @@ If you look at the Confirmations field you can slowly see it increasing from 0 t
 
 You can now go back to the Lido widget and look at your updated stSOL balance. Just below the stSOL balance, you will also be able to see the amount of SOL you can get back for it a.k.a the exchange rate.
 
-![Update](./images/common/update.png)
+<p align="center">
+    <img src={update} alt="Update" width="450"/>
+</p>
 
 ![Updated](./images/common/updated.png)
 
@@ -149,7 +168,10 @@ You can now go back to the Lido widget and look at your updated stSOL balance. J
 ## Withdrawing Solana
 Withdrawals are not enabled yet. They will be live within the coming months. If you click on the **Unstake** tab you will see an error message pop up.
 
-![Unstake](./images/common/unstake.png)
+<p align="center">
+    <img src={unstake} alt="Unstake" width="450"/>
+</p>
+
 
 ## Resources
 [Introducing Lido for Solana](https://medium.com/chorus-one/introducing-lido-for-solana-8aa02db8503) - Explaining the SOL liquid staking solution by Chorus One
