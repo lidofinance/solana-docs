@@ -11,6 +11,13 @@ sidebar_label: Phantom
 sidebar_position: 3
 ---
 
+import loggedin from './images/phantom/logged_in.png';
+import wallets from './images/phantom/connect.png';
+import connect from './images/phantom/connect_dialog.png';
+import updated from './images/phantom/updated.png';
+import viewtx from './images/common/view_tx.png';
+import unstake from './images/common/unstake.png';
+
 # How to Stake Solana on Lido
 A quick guide on staking your Solana on the Lido widget
 
@@ -49,7 +56,9 @@ If you already have a wallet, you can restore it on Phantom using the associated
 ### Logged In
 Once you have funded your Phantom wallet with Solana, you can click on the Phantom extension to see your account details.
 
-![Logged In](./images/phantom/logged_in.png)
+<p align="center">
+    <img src={loggedin} alt="logged_in" width="300"/>
+</p>
 
 ## Step 2: Connect Lido to Phantom
 
@@ -59,7 +68,9 @@ Once your wallet is setup visit https://solana.lido.fi to stake your SOL tokens.
 
 Pressing the connect wallet button, on the top right hand corner of the screen, pops up the wallet screen.
 
-![Connect](./images/phantom/connect.png)
+<p align="center">
+    <img src={wallets} alt="Wallets" width="350"/>
+</p>
 
 Selecting your wallet and pressing the connect button takes you to another window with the wallet’s browser extension. On this window you will have to **approve the connection**. Make sure to verify the details listed on the approval screen by Phantom.
 
@@ -87,7 +98,9 @@ Its transaction history can be viewed on the blockexplorer [here](https://explor
 
 ![Account Info](./images/phantom/account_info.png)
 
-![Connect Dialog](./images/phantom/connect_dialog.png)
+<p align="center">
+    <img src={connect} alt="Connect Dialog" width="350"/>
+</p>
 
 ### Transaction Parameters
 When you enter the amount of SOL you want to stake, the values below the submit button change automatically. These values give you specific information about the transaction you are about to perform. It tells you the
@@ -128,7 +141,10 @@ After verifying the information you can approve now.
 ## Step 5: View the transaction on Blockexplorer
 Once you hit approve on your wallet, you can come back to the lido widget and click on **View on Solana Blockexplorer.**
 
-![View Transaction](./images/common/view_tx.png)
+<p align="center">
+    <img src={viewtx} alt="View Tx" width="500"/>
+</p>
+
 
 This is useful as it tells you the [current status](https://explorer.solana.com/tx/3jDcSYVRVUEyNfTVZ6T6WaddAKq24wyp5PapndbrzUQj2xbk3LAuSaTp4B2UAfseobQsTNaBsWaW5hzEqPwkyQKB?cluster=testnet) of your transaction.
 
@@ -154,12 +170,18 @@ Zooming into the widget we can observe the new SOL balance and the updated stSOL
 
 > Note 2: This rent is a one-time fee that won’t reccur on the next staking transaction.
 
-![Updated](./images/phantom/updated.png)
+<p align="center">
+    <img src={updated} alt="Updated Balance" width="450"/>
+</p>
+
 
 ## Withdrawing Solana
 Withdrawals are not enabled yet. They will be live within the coming months. If you click on the **Unstake** tab you will see an error message pop up.
 
-![Unstake](./images/common/unstake.png)
+<p align="center">
+    <img src={unstake} alt="Unstake" width="450"/>
+</p>
+
 
 ## Resources
 [Introducing Lido for Solana](https://medium.com/chorus-one/introducing-lido-for-solana-8aa02db8503) - Explaining the SOL liquid staking solution by Chorus One

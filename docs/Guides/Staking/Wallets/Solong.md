@@ -10,7 +10,18 @@ keywords:
 sidebar_label: Solong
 sidebar_position: 5
 ---
-
+import create1 from './images/solong/create1.png';
+import create2 from './images/solong/create2.png';
+import create3 from './images/solong/create3.png';
+import restore1 from './images/solong/restore1.png';
+import restore2 from './images/solong/restore2.png';
+import restore3 from './images/solong/restore3.png';
+import wallets from './images/solong/wallet_list.png';
+import approve from './images/solong/approve_connection.png';
+import approvetx from './images/solong/approve.png';
+import updated from '/images/solong/updated.png';
+import viewtx from './images/common/view_tx.png';
+import unstake from './images/common/unstake.png';
 
 # How to Stake Solana on Lido
 A quick guide on staking your Solana on the Lido widget
@@ -45,18 +56,32 @@ store these in a safe place. Follow the onscreen instructions and make sure to f
 
 > Note: Solong asks you to enter a password before creating or restoring a wallet.
 
-![Create 3](./images/solong/create3.png)
-![Create 1](./images/solong/create1.png)
-![Create 2](./images/solong/create2.png)
-
+<p align="center">
+    <img src={create3} alt="Create Wallet" width="400" height="600"/>
+</p>
+<p align="center">
+    <img src={create1} alt="Create Wallet" width="400" height="600"/>
+</p>
+<p align="center">
+    <img src={create2} alt="Create Wallet" width="400" height="600"/>
+</p>
 
 
 ### Restoring the wallet
 If you already have a wallet, you can restore it through the Solong extension using the mnemonic. Follow the online instructions to restore your SOL account.
-![Create 3](./images/solong/create3.png)
-![Restore 1](./images/solong/restore1.png)
-![Restore 2](./images/solong/restore2.png)
-![Restore 3](./images/solong/restore3.png)
+
+<p align="center">
+    <img src={create3} alt="Create Wallet" width="400" height="600"/>
+</p>
+<p align="center">
+    <img src={restore1} alt="Restore Wallet" width="400" height="600"/>
+</p>
+<p align="center">
+    <img src={restore2} alt="Restore Wallet" width="400" height="600"/>
+</p>
+<p align="center">
+    <img src={restore3} alt="Restore Wallet" width="400" height="600"/>
+</p>
 
 ### Logged In
 Once you have funded your Solong wallet with Solana tokens, you can log in to the extension to see your account details.
@@ -71,11 +96,16 @@ Once your wallet is setup visit https://solana.lido.fi to stake your SOL tokens.
 
 Pressing the connect wallet button, on the top right hand corner of the screen, pops up the wallet screen.
 
-![Wallet List](./images/solong/wallet_list.png)
+<p align="center">
+    <img src={wallets} alt="Wallets" width="400"/>
+</p>
 
 Selecting your wallet and pressing the connect button takes you to another window with the wallet’s browser extension. On this window you will have to **approve the connection**. Make sure to verify the details listed on the approval screen by Solong.
 
-![Approve Connection](./images/solong/approve_connection.png)
+<p align="center">
+    <img src={approve} alt="Approve Connection" width="400"/>
+</p>
+
 
 If you have set a password to open the wallet, you might get prompted to unlock your wallet. You will, then, have to allow Lido to connect to your wallet and fetch its balance. Once connected you would be able to see your balance on the Lido widget.
 
@@ -132,14 +162,18 @@ To stake your SOL with lido enter the amount you wanter to stake. Once you submi
 
 You get additional information about the transaction details while approving the transaction. Go ahead and approve the transaction.
 
-![Approve](./images/solong/approve.png)
+<p align="center">
+    <img src={approvetx} alt="Approve Connection" width="400"/>
+</p>
 
 After verifying the information you can approve now.
 
 ## Step 5: View the transaction on Blockexplorer
 Once you hit approve on your wallet, you can come back to the lido widget and click on **View on Solana Blockexplorer.**
 
-![View Transactions](./images/common/view_tx.png)
+<p align="center">
+    <img src={viewtx} alt="View Tx" width="500"/>
+</p>
 
 This is useful as it tells you the [current status](https://explorer.solana.com/tx/czfRH3ZZbvuU6BEBizVV2CmSgg4JQ4bR1zwz4T4H9xu8fvMPWiREmDgMDm4bgCHkjSq56Jy1FXiTe1kydoojsyc?cluster=testnet) of your transaction.
 
@@ -159,7 +193,10 @@ You can now go back to the Lido widget and look at your updated stSOL balance. J
 
 ![Update](./images/solong/update.png)
 
-![Updated](./images/solong/updated.png)
+<p align="center">
+    <img src={updated} alt="Updated Balance" width="400"/>
+</p>
+
 
 > Note 1: We had 2 SOL in the beginning and we staked 1 SOL. We should be left with 1 SOL but we had to pay an additional 0.0021 SOL as the rent for the new stSOL account that got created for us.
 
@@ -168,7 +205,9 @@ You can now go back to the Lido widget and look at your updated stSOL balance. J
 ## Withdrawing Solana
 Withdrawals are not enabled yet. They will be live within the coming months. If you click on the **Unstake** tab you will see an error message pop up.
 
-![Unstake](./images/common/unstake.png)
+<p align="center">
+    <img src={unstake} alt="Unstake" width="450"/>
+</p>
 
 ## Resources
 [Introducing Lido for Solana](https://medium.com/chorus-one/introducing-lido-for-solana-8aa02db8503) - Explaining the SOL liquid staking solution by Chorus One
