@@ -5,7 +5,6 @@ keywords:
  - maintenance
  - maintainers
  - lido
- - solido
  - solana
 sidebar_position: 1
 ---

@@ -5,7 +5,6 @@ keywords:
  - staking
  - end-user
  - lido
- - solido
  - solana
 sidebar_position: 1
 ---

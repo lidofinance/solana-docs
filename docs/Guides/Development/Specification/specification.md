@@ -7,7 +7,6 @@ keywords:
  - lido
  - specification
  - intent
- - solido
  - solana
 sidebar_position: 1
 ---

@@ -6,14 +6,13 @@ keywords:
  - maintainers
  - responsibilities
  - lido
- - solido
  - solana
 sidebar_position: 2
 ---
 
 # Maintenance Responsibilities
 
-The responsibilities of maintainers in regards to LIDO for Solana can be summarized in the following table:
+The responsibilities of maintainers in regards to Lido for Solana can be summarized in the following table:
 
 | Responsibility | Associated CLI Operation |
 | --- | --- |

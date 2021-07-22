@@ -5,7 +5,6 @@ keywords:
  - development
  - developers
  - lido
- - solido
  - solana
 sidebar_position: 1
 ---
@@ -22,7 +21,7 @@ The [building the docker image](./BuildingDockerImage.md) document gives detaile
 
 ### Building locally
 
-In order to build Solido locally, one will need a number of prerequisites:
+In order to build Lido for Solana locally, one will need a number of prerequisites:
 
 - [Rust toolchain](https://www.rust-lang.org/learn/get-started)
 - [Solana toolchain](https://docs.solana.com/cli/install-solana-cli-tools)
@@ -51,5 +50,5 @@ cargo test-bpf
 
 ## Specification
 
-The [Specification](./Specification/specification.md) document is a deeper dive into the code of Solido to tour the intent and implementation of the on-chain program and the cli.
+The [Specification](./Specification/specification.md) document is a deeper dive into the code of Lido for Solana to tour the intent and implementation of the on-chain program and the cli.
 

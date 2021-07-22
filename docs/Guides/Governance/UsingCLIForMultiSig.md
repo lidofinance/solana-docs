@@ -5,17 +5,16 @@ keywords:
  - governance
  - multi-sig
  - lido
- - solido
  - solana
  - cli
 sidebar_position: 4
 ---
 
-# Using the Solido CLI for Governance
+# Using the Lido for Solana CLI for Governance
 
 ## MultiSig Governance
 
-All mutlisig functionality relating to Solido can be accessed through the multisig subcommand:
+All mutlisig functionality relating to Lido for Solana can be accessed through the multisig subcommand:
 
 ```bash
 solido multisig --multisig-program-id $multisig-program-address ...
@@ -117,15 +116,15 @@ solido multisig --multisig-program-id $multisig-program-address propose-change-m
 
 ### Adding a maintainer
 
-To add a maintainer for Solido one can use the following:
+To add a maintainer for Lido for Solana one can use the following:
 
 
 ```bash
 solido add-maintainer --solido-program-id $solido-program-id --solido-address $solido-address --maintainer-address $maintainer-address
 ```
 - where:
-  - **solido-program-id** -> This is the address of the Solido program
-  - **solido-address** -> This is the address of the account that stores the data for the Solido instance
+  - **solido-program-id** -> This is the address of the Lido for Solana program
+  - **solido-address** -> This is the address of the account that stores the data for the Lido for Solana instance
   - **maintainer-address** -> This is the address of the maintainer to be added
   - **multisig-address** -> This is the address of the multisig account
   - **multisig-program-id** -> This is the address of the multisig program
@@ -134,15 +133,15 @@ solido add-maintainer --solido-program-id $solido-program-id --solido-address $s
 
 ### Removing a maintainer
 
-To remove a maintainer for Solido one can use the following:
+To remove a maintainer for Lido for Solana one can use the following:
 
 
 ```bash
 solido remove-maintainer --solido-program-id $solido-program-id --solido-address $solido-address --maintainer-address $maintainer-address
 ```
 - where:
-  - **solido-program-id** -> This is the address of the Solido program
-  - **solido-address** -> This is the address of the account that stores the data for the Solido instance
+  - **solido-program-id** -> This is the address of the Lido for Solana program
+  - **solido-address** -> This is the address of the account that stores the data for the Lido for Solana instance
   - **maintainer-address** -> This is the address of the maintainer to be added
   - **multisig-address** -> This is the address of the multisig account
   - **multisig-program-id** -> This is the address of the multisig program
@@ -151,16 +150,16 @@ solido remove-maintainer --solido-program-id $solido-program-id --solido-address
 
 ### Adding a validator
 
-To add a validator for Solido one can use the following:
+To add a validator for Lido for Solana one can use the following:
 
 
 ```bash
 solido add-validator --solido-program-id $solido-program-id --solido-address $solido-address --stake-pool-program-id  $stake-pool-program-id  --validator-vote $validator-vote-account --validator-rewards-address  $validator-rewards-address
 ```
 - where:
-  - **solido-program-id** -> This is the address of the Solido program
-  - **solido-address** -> This is the address of the account that stores the data for the Solido instance
-  - **stake-pool-program-id** -> This is the address of the stake pool program deployed with Solido
+  - **solido-program-id** -> This is the address of the Lido for Solana program
+  - **solido-address** -> This is the address of the account that stores the data for the Lido for Solana instance
+  - **stake-pool-program-id** -> This is the address of the stake pool program deployed with Lido for Solana
   - **validator-vote** -> This is the address of the vote account for the validator being added
   - **validator-rewards-address** -> This is the address that stSol rewards will be sent to
 - return:
@@ -175,28 +174,28 @@ In order to create the stake account that a validator will use, the solido cli p
 solido create-validator-stake-account --solido-program-id $solido-program-id --solido-address $solido-address --stake-pool-program-id  $stake-pool-program-id  --validator-vote $validator-vote-account
 ```
 - where:
-  - **solido-program-id** -> This is the address of the Solido program
-  - **solido-address** -> This is the address of the account that stores the data for the Solido instance
-  - **stake-pool-program-id** -> This is the address of the stake pool program deployed with Solido
+  - **solido-program-id** -> This is the address of the Lido for Solana program
+  - **solido-address** -> This is the address of the account that stores the data for the Lido for Solana instance
+  - **stake-pool-program-id** -> This is the address of the stake pool program deployed with Lido for Solana
   - **validator-vote** -> This is the address of the vote account for the validator being added
 - return:
   - **transaction-address**: The address of the transaction
 
 
-### Creating the Solido instance.
+### Creating the Lido for Solana instance.
 
-In order to create the Solido instance it is necessary to supply commands to the following:
+In order to create the Lido for Solana instance it is necessary to supply commands to the following:
 
 ```bash
 solido create-solido --solido-program-id $solido-program-id --stake-pool-program-id  $stake-pool-program-id --fee-numerator $fee-numerator --fee-denominator $fee-denominator --max-validators $max-validators --max-maintainers $max-maintainers --insurance-fee $insurance-fee --treasury-fee $treasury-fee --validation-fee $validation-fee --manager-fee $manager-fee --insurance-account-owner $insurance-account-owner --treasury-account-owner $treasury-account-ownder --manager-fee-account-owner $manager-fee-account-owner --manager $manager
 ```
 - where:
-  - **solido-program-id** -> This is the address of the Solido program
-  - **stake-pool-program-id** -> This is the address of the stake pool program deployed with Solido
+  - **solido-program-id** -> This is the address of the Lido for Solana program
+  - **stake-pool-program-id** -> This is the address of the stake pool program deployed with Lido for Solana
   - **fee-numerator** -> The numerator of the fee fraction
   - **fee-denominator** -> The denominator of the fee fraction
-  - **max-validators** -> The maximum number of validators that the Solido instance will support
-  - **max-maintainers** -> The maximum number of maintainers that the Solido instance will support
+  - **max-validators** -> The maximum number of validators that the Lido for Solana instance will support
+  - **max-maintainers** -> The maximum number of maintainers that the Lido for Solana instance will support
   - **insurance-fee** -> The share of the fee for insurance
   - **treasury-fee** -> The share of the fee for treasury
   - **validation-fee** -> The share of the fee for validation
@@ -204,7 +203,7 @@ solido create-solido --solido-program-id $solido-program-id --stake-pool-program
   - **insurance-account-owner** -> The account who will own the stSOL SPL token account that receives the treasury fees
   - **treasury-account-owner** -> The account who will own the stSOL SPL token account that receives the treasury fees
   - **manager-fee-account-owner** -> The account who will own the stSOL SPL token account that receives the manager fees
-  - **manager(optional)** -> If defined, the Solido instance is created with a manager, otherwise the default fee payer is used
+  - **manager(optional)** -> If defined, the Lido for Solana instance is created with a manager, otherwise the default fee payer is used
 - return:
   - **transaction-address**: The address of the transaction
 

@@ -5,7 +5,6 @@ keywords:
  - validation
  - validators
  - lido
- - solido
  - solana
 ---
 
