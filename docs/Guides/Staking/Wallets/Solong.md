@@ -30,7 +30,7 @@ store these in a safe place. Follow the onscreen instructions and make sure to f
 
 > Note: Solong asks you to enter a password before creating or restoring a wallet.
 
-<img src="./images/solong/create3.png" alt="create wallet" width="400" height="600"/><br>
+<img src="./images/solong/create3.png" alt="create wallet" width="400" height="600"/>
 <img src="./images/solong/create1.png" alt="create wallet" width="400" height="600"/>
 <img src="./images/solong/create2.png" alt="create wallet" width="400" height="600"/>
 
