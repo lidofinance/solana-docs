@@ -169,11 +169,12 @@ You can now go back to the Lido widget and look at your updated stSOL balance. J
 Withdrawals are not enabled yet. They will be live within the coming months. If you click on the **Unstake** tab you will see an error message pop up.
 
 <p align="center">
-<img src="./images/common/unstake.png" alt="Unstake" width="450"/>
+    <img src="./images/common/unstake.png" alt="Unstake" width="450"/>
 </p>
 
 ## Resources
 [Introducing Lido for Solana](https://medium.com/chorus-one/introducing-lido-for-solana-8aa02db8503) - Explaining the SOL liquid staking solution by Chorus One
+
 
 
 
