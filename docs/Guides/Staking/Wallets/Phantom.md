@@ -38,7 +38,7 @@ If you already have a wallet, you can restore it on Phantom using the associated
 Once you have funded your Phantom wallet with Solana, you can click on the Phantom extension to see your account details.
 
 <p align="center">
-    <img src="./images/phantom/logged_in.png" alt="logged_in" width="300">
+    <img src="./images/phantom/logged_in.png" alt="logged_in" width="300"/>
 </p>
 
 ## Step 2: Connect Lido to Phantom

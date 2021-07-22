@@ -125,6 +125,7 @@ After verifying the information you can approve now.
 <img src="./images/solflare/approve2.png" alt="Approve Transaction" width="1000"/>
 
 ## Step 5: View the transaction on Blockexplorer
+
 Once you hit approve on your wallet, you can come back to the lido widget and click on **View on Solana Blockexplorer.**
 
 <p align="center">

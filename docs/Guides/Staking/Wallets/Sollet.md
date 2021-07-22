@@ -101,7 +101,7 @@ To stake your SOL with lido enter the amount you wanter to stake. Once you submi
 
 >Note **This transaction will only go through if you go back to your wallet and approve it.**
 
-<p align="center>
+<p align="center">
     <img src="./images/common/staking.png" alt="staking" width="450"/>
 </p>
 

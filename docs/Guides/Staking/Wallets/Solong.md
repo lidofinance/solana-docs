@@ -47,7 +47,7 @@ If you already have a wallet, you can restore it through the Solong extension us
 Once you have funded your Solong wallet with Solana tokens, you can log in to the extension to see your account details.
 
 <p align="center">
-    <img src="./images/solong/logged_in.png" alt="logged_in" width="400">
+    <img src="./images/solong/logged_in.png" alt="logged_in" width="400"/>
 </p>
 
 ## Step 2: Connect Lido to Solong
