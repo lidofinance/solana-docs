@@ -19,9 +19,11 @@ In this step-by-step guide, we will learn how to stake your Solana via the Lido 
 
 ------------
 ## Step 1: Using Solana App on Ledger
-To setup your ledger please head over to [Solana documentation site](https://docs.solana.com/wallet-guide/ledger-live) and follow the instructions written in the sections. Additional instructions can also be found on the [Ledger site](https://support.ledger.com/hc/en-us/articles/360016265659-Solana-SOL-)
+To setup your ledger please head over to [Solana documentation site](https://docs.solana.com/wallet-guide/ledger-live) and follow the instructions written in the following sections. 
 1. Getting Started
 2. Install the Solana App on your Nano
+
+Additional instructions can also be found on the [Ledger site](https://support.ledger.com/hc/en-us/articles/360016265659-Solana-SOL-)
 
 ### Setting up
 Make sure to note down the seed phrase for your address and store it in a safe place. Additionally, fund your Solana address with some SOL tokens before interacting with Lido
