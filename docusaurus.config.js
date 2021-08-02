@@ -6,7 +6,7 @@ module.exports = {
   tagline: 'Awesome liquid staking on Solana, the high-performance, permissionless blockchain',
   url: 'https://chorusone.github.io',
   baseUrl: '/solido/',
-  onBrokenLinks: 'ignore',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'chorusone',
@@ -34,12 +34,6 @@ module.exports = {
       },
       items: [
         {
-          type: 'doc',
-          docId: 'overview',
-          position: 'left',
-          label: 'Documentation',
-        },
-        {
           href: 'https://medium.com/chorus-one/introducing-lido-for-solana-8aa02db8503',
           label: 'Blog',
           position: 'right',
@@ -51,62 +45,16 @@ module.exports = {
         },
       ],
     },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Documentation',
-              to: '/docs/overview'
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/chorusone',
-            },
-            {
-              label: 'Medium',
-              href: 'https://medium.com/chorus-one',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              href: 'https://medium.com/chorus-one/introducing-lido-for-solana-8aa02db8503',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/chorusone/solido',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} ChorusOne.`,
-    },
   },
   presets: [
     [
       '@docusaurus/preset-classic',
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [math],
           rehypePlugins: [katex],
-        },
-        blog: {
-          showReadingTime: true,
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
