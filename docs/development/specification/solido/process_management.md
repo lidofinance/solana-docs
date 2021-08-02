@@ -69,7 +69,7 @@ This function is **not** gated so anyone can call it successfully.
 
 ### process_distribute_fees
 
-This function calculates the correct [Fee Distribution](../../../Governance/FeeManagement.md) and mints the appropriate stSOL tokens to the treasury and developer accounts.  Once minting is complete, the function sets the validator fees attributable to the validators in the Solido state ready for the [process_claim_validator_fee](./process_management.md#process_claim_validator_fee) to be called at a subsequent point in time.
+This function calculates the correct [Fee Distribution](../../../governance/fee-management.md) and mints the appropriate stSOL tokens to the treasury and developer accounts.  Once minting is complete, the function sets the validator fees attributable to the validators in the Solido state ready for the [process_claim_validator_fee](./process_management.md#process_claim_validator_fee) to be called at a subsequent point in time.
 
 ```rust
 pub fn process_distribute_fees(program_id: &Pubkey, accounts_raw: &[AccountInfo]) -> ProgramResult {

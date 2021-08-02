@@ -17,7 +17,7 @@ The project can be built in either of two ways: in the supplied container or loc
 
 ### Building the container image
 
-The [building the docker image](./BuildingDockerImage.md) document gives detailed instructions on how to build and run the container supplied in the repo for testing and developing.
+The [building the docker image](./building-docker-image.md) document gives detailed instructions on how to build and run the container supplied in the repo for testing and developing.
 
 ### Building locally
 
@@ -50,5 +50,5 @@ cargo test-bpf
 
 ## Specification
 
-The [Specification](./Specification/specification.md) document is a deeper dive into the code of Lido for Solana to tour the intent and implementation of the on-chain program and the cli.
+The [Specification](specification/specification.md) document is a deeper dive into the code of Lido for Solana to tour the intent and implementation of the on-chain program and the cli.
 
