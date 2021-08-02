@@ -98,7 +98,7 @@ You can go to the top-right corner of the screen and click on your connected acc
 The address for the demo account is
 > `GMXFs1SpNhwVW7m9sHTZks5oEEtAVqmySX2zkJ5ffUT`
 
-Its transaction history can be viewed on the blockexplorer [here](.https://explorer.solana.com/address/GMXFs1SpNhwVW7m9sHTZks5oEEtAVqmySX2zkJ5ffUT?cluster=testnet).
+Its transaction history can be viewed on the blockexplorer [here](https://explorer.solana.com/address/GMXFs1SpNhwVW7m9sHTZks5oEEtAVqmySX2zkJ5ffUT?cluster=testnet).
 
 ![Transaction Parameters](./images/solflare/account_info.png)
 
@@ -152,7 +152,7 @@ Once you hit approve on your wallet, you can come back to the lido widget and cl
 </p>
 
 
-This is useful as it tells you the [current status](.https://explorer.solana.com/tx/3sLpWNJrhY7nUWKuLJx6nTGjxaJNUGTYVsFT8Uh9UNa5nQ2rRMZZcnb66ELEMSME5cmUycP4V4CUoBSvhAjLiwdw?cluster=testnet) of your transaction.
+This is useful as it tells you the [current status](https://explorer.solana.com/tx/3sLpWNJrhY7nUWKuLJx6nTGjxaJNUGTYVsFT8Uh9UNa5nQ2rRMZZcnb66ELEMSME5cmUycP4V4CUoBSvhAjLiwdw?cluster=testnet) of your transaction.
 
 > Link for the above transaction - https://explorer.solana.com/tx/3sLpWNJrhY7nUWKuLJx6nTGjxaJNUGTYVsFT8Uh9UNa5nQ2rRMZZcnb66ELEMSME5cmUycP4V4CUoBSvhAjLiwdw?cluster=testnet
 
@@ -184,7 +184,7 @@ Withdrawals are not enabled yet. They will be live within the coming months. If 
 
 
 ## Resources
-[Introducing Lido for Solana](.https://medium.com/chorus-one/introducing-lido-for-solana-8aa02db8503) - Explaining the SOL liquid staking solution by Chorus One
+[Introducing Lido for Solana](https://medium.com/chorus-one/introducing-lido-for-solana-8aa02db8503) - Explaining the SOL liquid staking solution by Chorus One
 
 
 
