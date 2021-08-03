@@ -62,7 +62,7 @@ precedence, then the config file, then the environment variable, and if that is
 not set either, the default value is used, if possible.
 
 For sample configuration files with the right addresses set up, see
-[the deployments page](deployments.md).
+[the deployments page](deployments).
 
 ## Using a hardware wallet
 
