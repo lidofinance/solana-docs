@@ -61,25 +61,8 @@ When an option is provided in multiple places, the command-line takes
 precedence, then the config file, then the environment variable, and if that is
 not set either, the default value is used, if possible.
 
-## Sample config files
-
-The files below contain the addresses of the official deployments.
-
-### Testnet
-
-```json
-{
-  "cluster": "https://api.testnet.solana.com",
-  "multisig_program_id": "BY7D3NJMevi3JiT49xmAKditKL69a8TuyiCc9YuSvy4W",
-  "multisig_address": "7Yh1UgKE1KQoLYohynqdo84aNBwQ3GwU4XrCNY153PQ5",
-  "solido_program_id": "7k3rzqoNQxgTLTooAvXriGBKYsd16bV3JMvatvXcBfNo",
-  "solido_address": "7yoacaUf7yu5wqxpcHaXtwCaMciR7kFqps8FwnX4cjeK"
-}
-```
-
-### Mainnet-beta
-
-Lido for Solana is not yet available on mainnet-beta.
+For sample configuration files with the right addresses set up, see
+[the deployments page](deployments.md).
 
 ## Using a hardware wallet
 
