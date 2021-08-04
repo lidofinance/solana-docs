@@ -71,6 +71,9 @@ or it can be a URI that starts with `usb://` to use a hardware wallet. Some
 examples:
 
  * `usb://ledger` to connect to a Ledger and use its default key.
- * `usb://ledger?key=0` to select the key by index.
- * `usb://ledger/6S21QCmpAadEhHj3pY2RMbPMGwgYNvS4Pd7zUXoRDMdK` to select the key
-   by public key.
+ * `usb://ledger?key=0` to select the key by derivation path.
+
+See [the Solana documentation on hardware wallets][solana-hww] for more
+information.
+
+[solana-hww]: https://docs.solana.com/wallet-guide/hardware-wallets
