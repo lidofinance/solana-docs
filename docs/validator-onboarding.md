@@ -255,12 +255,12 @@ approve the transactions:
 $ solido --config testnet.json multisig approve \
   --transaction-address BaVYNfiC8DkteXfJy58YcC5pz2qfYDBcNsAuEt7PBZ6h
 
-TODO: Add sample output.
+(no output)
 
 $ solido --config testnet.json multisig approve \
   --transaction-address Cq8MtYCYwep7s475yEaLWQbJr8wgnuSnW2Y5doaw6wf4
 
-TODO: Add sample output.
+(no output)
 ```
 
 If the transaction is approved by a majority, you can also go ahead and execute
@@ -270,18 +270,39 @@ it:
 $ solido --config testnet.json multisig execute-transaction \
   --transaction-address BaVYNfiC8DkteXfJy58YcC5pz2qfYDBcNsAuEt7PBZ6h
 
-TODO: Add sample output.
+(no output)
 
 $ solido --config testnet.json multisig execute-transaction \
   --transaction-address Cq8MtYCYwep7s475yEaLWQbJr8wgnuSnW2Y5doaw6wf4
 
-TODO: Add sample output.
+(no output)
 ```
 
 :::note
 The multisig’s program derived address (PDA) needs to have sufficient
 funds to execute transactions. Chorus One should have funded it during setup.
 :::
+
+You can confirm that the transaction was executed:
+
+```console
+$ solido --config testnet.json multisig show-transaction \
+  --transaction-address Cq8MtYCYwep7s475yEaLWQbJr8wgnuSnW2Y5doaw6wf4
+
+Multisig: 7Yh1UgKE1KQoLYohynqdo84aNBwQ3GwU4XrCNY153PQ5
+Did execute: true
+
+Signers:
+  [x] ENH1xvwjinUWkwEgw1hKduyAg7CrJMiKvr9nAS7wLHrp
+  [x] DBd1yUhptC7yRq79sM4cAH1Zhe5rdTpJizxXJQGxRTyn
+  [x] J4RLjzbJUrm4vRk5ZpPpk6CHzrmAiZGDByuyJ8f9jXR7
+  [x] 6S21QCmpAadEhHj3pY2RMbPMGwgYNvS4Pd7zUXoRDMdK
+  [ ] CeuSTdUx4XnPET4K4o3Zxx3zjh1yrR4f8fyWycGjs7wj
+  [ ] 6DzkRQ3CJXMdnwm9aS2ww7KNeKxw3YLANzpUeTFoRCtC
+  [ ] F4VFp4tFTyrQWo9YVjCbPE5eQP27ice2zyGDp2tN2Rkm
+
+(remaining output omitted)
+```
 
 ## Operating the maintenance daemon
 
