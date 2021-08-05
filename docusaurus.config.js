@@ -8,7 +8,7 @@ module.exports = {
   baseUrl: '/solido/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/stSOL.svg',
   organizationName: 'chorusone',
   projectName: 'solido',
   i18n: {
