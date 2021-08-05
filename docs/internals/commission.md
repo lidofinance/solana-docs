@@ -1,21 +1,8 @@
 # Commission
 
 This page explains how Lido for Solana (“Solido”) handles validation rewards.
-Before we dive into this, let’s briefly recap how staking works on Solana.
-
- * Validators create a _vote account_. A vote account has an _identity address_
-   of an account that contains the metadata for the validator, such as its
-   description.
- * Multiple vote accounts can refer to the same validator identity, but a
-   `solana-validator` process can only validate on behalf of one vote account at
-   a time.
- * Delegators delegate to a vote account, not to a validator identity!
- * A vote account also has a _commission_ percentage, that determines the
-   portion of validation rewards that goes to the vote account. The remainder
-   goes to delegators.
- * A vote account has a _withdraw authority_ who can withdraw the validation
-   rewards from the vote account. Usually the withdraw authority is the vote
-   account itself, but it can be a different address.
+If you haven’t done so yet, now is a good time to review [how vote accounts
+work on Solana](solana-staking#vote-accounts).
 
 ## Challenge
 
