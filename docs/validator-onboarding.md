@@ -274,12 +274,14 @@ it:
 $ solido --config testnet.json multisig execute-transaction \
   --transaction-address BaVYNfiC8DkteXfJy58YcC5pz2qfYDBcNsAuEt7PBZ6h
 
-(no output)
+Transaction executed.
+Solana transaction id of execution: 3qawwqtnb684gV9AgqoTqdx8pgZfGQ2dvmMxtfsYWXJgszDMKLP5BBbB4nZfmFwGK5dmFSoFGfSU5M7XSdmXavej
 
 $ solido --config testnet.json multisig execute-transaction \
   --transaction-address Cq8MtYCYwep7s475yEaLWQbJr8wgnuSnW2Y5doaw6wf4
 
-(no output)
+Transaction executed.
+Solana transaction id of execution: 5N9vgWmBec6BFmgnJqFe7zvB5TrS22vDcmPxSw2PoZj7WWHa4LDw4j14qfxywDXYTsUAeUUQCqSbGSh5tp2WqEJn
 ```
 
 :::note
