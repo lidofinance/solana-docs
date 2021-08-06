@@ -207,3 +207,42 @@ to the fixed exchange rate, withdrawing _x_ SOL in epoch _k_ and depositing the
 same amount again in epoch _k_, is equivalent for the user to just holding the
 stSOL. There might be other interesting behaviors though, this needs more
 analysis.
+
+## Comparison to Lido for Ethereum
+
+We also investigate some of [the concerns that were investigated for Lido for
+Ethereum][lido-eth], to benefit from the analysis done there. This is not an
+apples-to-apples comparison because Solana and Ethereum are very different, but
+it is good to still go over the scenarios, to see if and how they affect Solido.
+
+[lido-eth]: https://ethresear.ch/t/handling-withdrawals-in-lidos-eth-liquid-staking-protocol/8873
+
+**[N/A] Discrete withdrawal amounts.**
+On Ethereum 2, withdrawal amounts are less flexible than on Solana. On Solana,
+we can split off a stake account for almost any amount of SOL, but limited by
+the constraints mentioned before.
+
+**[N/A] Oracle reports on network state.**
+Solido does not involve any oracles, everything happens on-chain.
+
+**[N/A] Network turbulence.**
+Ethereum 2 can lose finality. This is not a problem on Solana; in the worst case
+the network halts.
+
+**[N/A] Ongoing slashings.**
+Slashing does not exist on Solana.
+
+**[Non-issue] Ongoing rewards.**
+Rewards on Solana are paid once per epoch. Solido discretizes time such that
+only epochs matter. Users who deposit in epoch _k_, benefit (from the new
+exchange rate) in epoch _k_ + 1. Users who withdraw in epoch _k_, can access
+their funds at the earliest in epoch _k_ + 1 (and possibly later, if cooldown
+takes longer, this depends on the state of the entire network). Users who
+withdraw in epoch _k_, do not benefit from the rewards incurred over epoch _k_.
+To benefit from rewards, users need to stake with Solido for at least one epoch
+boundary.
+
+**[Non-issue] Unbonding period.**
+Stake on Solana is subject to a cooldown period. We move this problem to the
+user, by making withdrawals return an active stake account, so we don’t need to
+keep track of the cooldown.
