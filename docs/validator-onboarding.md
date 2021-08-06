@@ -255,12 +255,16 @@ approve the transactions:
 $ solido --config testnet.json multisig approve \
   --transaction-address BaVYNfiC8DkteXfJy58YcC5pz2qfYDBcNsAuEt7PBZ6h
 
-(no output)
+Transaction approved.
+Solana transaction id of approval: 2NKbP8LHYEy1DvZyq7gH2pHEDJk9E2f6Btv6sEeihzVpEi3qmBqbvs5SUKn3MaJCy6kEYQtyvCxSbkJea2LWawbj
+Multisig transaction now has 2 out of 4 required approvals.
 
 $ solido --config testnet.json multisig approve \
   --transaction-address Cq8MtYCYwep7s475yEaLWQbJr8wgnuSnW2Y5doaw6wf4
 
-(no output)
+Transaction approved.
+Solana transaction id of approval: 2RvvNVmqQnd4Fhf6jmac8xDiDADCXU1jVgaBvbrytiFPs2pvNq6LXgrGeeQbXCQqCbACaD5zqK8uCbsECrFiUwKD
+Multisig transaction now has 2 out of 4 required approvals.
 ```
 
 If the transaction is approved by a majority, you can also go ahead and execute
