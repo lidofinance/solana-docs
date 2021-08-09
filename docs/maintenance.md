@@ -30,8 +30,9 @@ container image that includes a prebuilt version.
 The maintenance daemon is part of the `solido` utility and can be started with
 the `run-maintainer` subcommand. Like all `solido` commands, it can be
 configured either on the command line, with a json config file, or through
-environment variables. See `solido --help` and `solido run-maintainer --help`
-for details. Beware that:
+environment variables. See also [the section on `solido` configuration][config]
+See `solido --help` and `solido run-maintainer --help` for the options specific
+to `run-maintainer`. Beware that:
 
  * The public Solana RPC endpoints are rate-limited, and require trusting the
    server. If possible, point `--cluster` at the RPC endpoint of your own
@@ -60,6 +61,8 @@ the daemon. The following metrics are useful for monitoring:
    error. If the rate of this metric gets close to the poll rate, that means
    most iterations are failing, and investigation is needed. Occasional errors
    are expected, especially when using a public RPC endpoint.
+
+[config]: the-solido-utility#configuration
 
 ## Claiming validation fees
 
