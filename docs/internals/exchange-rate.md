@@ -5,7 +5,7 @@ stSOL and back. This conversion involves an exchange rate. This page describes
 how Solido sets that exchange rate, and the rationale behind that.
 
 To programmatically access the exchange rate, see the [price
-oracle](price-oracle) page.
+oracle](../development/price-oracle) page.
 
 ## Definition
 
