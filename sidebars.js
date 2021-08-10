@@ -56,6 +56,11 @@ module.exports = {
           id: 'internals/withdrawals',
           label: 'Withdrawals',
         },
+        {
+          type: 'doc',
+          id: 'internals/exchange-rate',
+          label: 'Exchange rate',
+        },
       ],
     },
     {
