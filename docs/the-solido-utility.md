@@ -20,7 +20,8 @@ interact with it. This command-line client is called `solido`. It is used for:
 You can either build `solido` from [source][source] with Cargo, or use the
 [`chorusone/solido-maintainer`][dockerhub] container image that includes a
 prebuilt version. The utility is developed and tested on Linux, and it should
-run on Mac as well.
+run on Mac as well. When building from source, make sure to clone the repository
+with `--recurse-submodules`.
 
 [source]: https://github.com/ChorusOne/solido
 [dockerhub]: https://hub.docker.com/r/chorusone/solido-maintainer
