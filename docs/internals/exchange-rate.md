@@ -31,10 +31,10 @@ reserve.
 The amount of stSOL in existence consists of:
 
  * Minted stSOL, as recorded in the SPL token mint account.
- * Unclaimed validation fees. These fees are not yet minted, but the amount is
-   recorded in the Solido instance. The stSOL gets minted when validators claim
-   their fee, and that also resets the credit recorded in the Solido instance
-   back to zero.
+ * Unclaimed validation fees.
+   For [technical reasons](commission#validation-fee-credit), validation fees
+   are not paid directly. Instead, the the amount is recorded in the Solido
+   instance, and the fees are minted when the validator claims them.
 
 When the Solido instance is first created, the SOL balance _X_ and stSOL amount
 _Y_ are both zero, so the exchange rate is not well-defined. For this case, we

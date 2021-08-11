@@ -64,21 +64,11 @@ the daemon. The following metrics are useful for monitoring:
 ## Claiming validation fees
 
 When the maintenance bot inspects a vote account and finds rewards in there,
-it withdraws them into the Solido reserve, and distributes fees. For technical
-reasons, the treasury and developer fee are paid directly, but validation fees
-are only recorded in the Solido instance, and they need to be claimed
-separately. To make the maintenance bot automatically claim validation fees,
-provide `run-maintainer` with `--validator-vote-account`. This will mint the
-credited amount of stSOL into the validator’s fee account, which was provided
-when the validator was added.
+it withdraws them into the Solido reserve, and distributes fees. For [technical
+reasons](internals/commission#validation-fee-credit), the treasury and developer
+fee are paid directly, but validation fees are only recorded in the Solido
+instance, and they need to be claimed separately. To make the maintenance bot
+automatically claim validation fees, provide `run-maintainer` with
+`--validator-vote-account`. This will mint the credited amount of stSOL into the
+validator’s fee account, which was provided when the validator was added.
 
-> #### Background
->
-> The reason for the separate claiming step, is that Solana transactions have a
-> fairly low upper bound on the number of accounts they can reference. With many
-> validators, we couldn’t possibly pay all of them in a single transaction; the
-> “push-based” approach no longer works. To work around this, we instead store
-> the stSOL credit of each validator in the Solido instance (which is only one
-> account), and we have an instruction to pay out this credit for a single
-> validator. With this “pull-based” approach, the number of validators is no
-> longer limited by the Solana account limit.

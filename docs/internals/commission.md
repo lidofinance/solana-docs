@@ -49,3 +49,26 @@ An additional advantage of Solido distributing validation fees, is that it can
 distribute them in the form of stSOL. This means that validators automatically
 get compounding rewards, and it aligns the interests of validators with those of
 stSOL holders.
+
+## Validation fee credit
+
+When Solido observes a reward in a vote account, it splits it into a fee part,
+and a part that goes to stSOL appreciation. The fee part is further split into
+the treasury fee, the developer fee, and the validation fee. The treasury and
+developer fee get paid directly into their stSOL accounts, but for technical
+reasons, the validation fee involves a separate step. Solido stores the
+amount in the validator list in the Solido instance, and when a validator claims
+it, Solido mints the stSOL into the validator’s fee account, and resets the
+unclaimed amount stored in the Solido instance back to zero.
+
+The reason for the separate claiming step, is that Solana transactions have a
+fairly low upper bound on the number of accounts they can reference. With many
+validators, we couldn’t possibly pay all of them in a single transaction; the
+“push-based” approach no longer works. To work around this, we instead store the
+stSOL credit of each validator in the Solido instance (which is only one
+account), and we have an instruction to pay out this credit for a single
+validator. With this “pull-based” approach, the number of validators is no
+longer limited by the Solana account limit.
+
+The maintenance bot [can automatically perform this claiming
+step](../maintenance#claiming-validation-fees) for a single validator at a time.
