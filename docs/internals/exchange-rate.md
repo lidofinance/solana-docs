@@ -55,13 +55,13 @@ Deposits do not affect the exchange rate, whereas donations do. If the change in
 _X_ is positive, then a donation benefits stSOL holders by making the SOL value
 of stSOL go up.
 
-Depositing with Solido is a deposit in the above sense: we adjust the SOL
+Depositing with Solido is a **deposit** in the above sense: we adjust the SOL
 balance by a given amount, and then we need to mint a corresponding amount of
 stSOL to keep the exchange rate fixed. (Withdrawing from Solido works in the
-same way, but the change in _X_ is negative.) A donation happens when new funds
-appear in one of Solido’s accounts, without going through the deposit or
+same way, but the change in _X_ is negative.) A **donation** happens when new
+funds appear in one of Solido’s accounts, without going through the deposit or
 withdrawal instruction. In practice this happens when the Solana runtime pays
-validation rewards, but in theory any user can transfer funds to one of Lido’s
+validation rewards, but in theory any user can transfer funds to one of Solido’s
 accounts at any time.
 
 Naively, we can define the `deposit` and `donate` functions as follows (in
@@ -78,7 +78,7 @@ donate :: Sol -> Solido -> Solido
 donate amount (x, y) = (x + amount, y)
 ```
 
-Afew properties follow from this definition:
+A few properties follow from this definition:
 
 **`deposit` commutes with itself.**
 ```
