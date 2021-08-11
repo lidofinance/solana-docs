@@ -7,7 +7,7 @@ module.exports = {
   url: 'https://chorusone.github.io',
   baseUrl: '/solido/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
   favicon: 'img/stSOL.svg',
   organizationName: 'chorusone',
   projectName: 'solido',

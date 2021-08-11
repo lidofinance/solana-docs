@@ -20,12 +20,13 @@ After approval from the LNOSG, the steps to onboard a validator to Solido are:
     LNOSG; the multisig owners merely ratify and execute the decision, they do
     not make an independent decision about which validators to admit.
  4. Once the validator is part of the Solido validator set, the Solido
-    [maintenance daemon](maintenance) will automatically rebalance the stake and
-    delegate to the new validator. In version 1, only new deposits can be staked
-    with new validators; we plan to add active rebalancing in a later version.
+    [maintenance daemon](maintenance.md) will automatically rebalance the stake
+    and delegate to the new validator. In version 1, only new deposits can be
+    staked with new validators; we plan to add active rebalancing in a later
+    version.
  5. Validators are expected to operate an instance of the [maintenance
-    daemon](maintenance). In particular, the daemon ensures that validators can
-    withdraw their validation fees.
+    daemon](maintenance.md). In particular, the daemon ensures that validators
+    can withdraw their validation fees.
 
 The remainder of this page goes over the above steps in detail.
 
@@ -37,7 +38,7 @@ The remainder of this page goes over the above steps in detail.
 *This step needs to be executed by the validator.*
 
 Solido requires validators to use a dedicated vote account for use with Solido.
-See [the commission page](internals/commission) for the rationale behind this.
+See [the commission page](internals/commission.md) for the rationale behind this.
 
 We will assume that you are familiar with [setting up a Solana vote
 account][solana-vote], and that you have created a vote account keypair and
@@ -46,7 +47,7 @@ identity keypair. For simplicity, we’ll asume they are in files in
 
 We need to create an vote account with 100% commission, and the withdraw
 authority set to Solido, so first we need to know the withdraw authority.
-Assuming [`solido` is configured](the-solido-utility#configuration),
+Assuming [`solido` is configured](the-solido-utility.md#configuration),
 `show-solido` will print the withdraw authority:
 
 ```console
@@ -145,7 +146,7 @@ To be sure, we can confirm that the vote account is set up correctly with
 adds a vote account will fail anyway if the vote account is not set up
 correctly.
 
-Ensure [`solido` is configured](the-solido-utility#configuration), then create
+Ensure [`solido` is configured](the-solido-utility.md#configuration), then create
 the multisig transaction:
 
 ```console
@@ -246,9 +247,9 @@ To approve the addition of a new validator, we need:
    validator.
  * The two multisig transactions that add the vote account and maintainer.
 
-Ensure [`solido` is configured](the-solido-utility#configuration), and confirm
-that the transactions are adding the right vote account and maintainer, using
-`solido multisig show-transaction`, as shown in the previous section. Then
+Ensure [`solido` is configured](the-solido-utility.md#configuration), and
+confirm that the transactions are adding the right vote account and maintainer,
+using `solido multisig show-transaction`, as shown in the previous section. Then
 approve the transactions:
 
 ```console
@@ -330,7 +331,7 @@ the maintenance bot. This serves a few purposes:
 
  * The bot exposes metrics about Solido, so you can follow how Solido is doing.
 
-Please see [the maintenance page](maintenance) for how to run the maintenance
+Please see [the maintenance page](maintenance.md) for how to run the maintenance
 bot, and how to configure it to claim your fees. Uptime of the maintenance bot
 is not critical. As long as *somebody* at least briefly runs the bot once
 every epoch, Solido will work fine. Because we expect all validators to run an

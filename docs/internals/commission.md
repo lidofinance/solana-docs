@@ -2,7 +2,7 @@
 
 This page explains how Lido for Solana (“Solido”) handles validation rewards.
 If you haven’t done so yet, now is a good time to review [how vote accounts
-work on Solana](solana-staking#vote-accounts).
+work on Solana](solana-staking.md#vote-accounts).
 
 ## Challenge
 
@@ -71,4 +71,5 @@ validator. With this “pull-based” approach, the number of validators is no
 longer limited by the Solana account limit.
 
 The maintenance bot [can automatically perform this claiming
-step](../maintenance#claiming-validation-fees) for a single validator at a time.
+step](../maintenance.md#claiming-validation-fees) for a single validator at a
+time.

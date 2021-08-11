@@ -2,15 +2,15 @@
 
 This page describes how withdrawals in Lido for Solana work, and why we went
 with this approach. If you haven’t done so yet, now is a good time to review
-[how stake accounts work on Solana](solana-staking#stake-accounts).
+[how stake accounts work on Solana](solana-staking.md#stake-accounts).
 
 ## Background: Solido staking
 
 For Solido, we require validators to set up a new vote account, with 100%
 commission, and the withdraw authority set to a Solido-controlled address. (See
-also [the commission page](commission).) This means that all validation rewards
-are controlled by the Solido program. Solido then computes fee amounts and
-distributes those to validators. This is a bit different from a typical
+also [the commission page](commission.md).) This means that all validation
+rewards are controlled by the Solido program. Solido then computes fee amounts
+and distributes those to validators. This is a bit different from a typical
 non-pooled validator setup, where validators set themselves as withdraw
 authority, and fee distribution happens automatically due to the
 commission/delegator split. Because for Solido all validation rewards are paid

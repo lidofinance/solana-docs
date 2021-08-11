@@ -5,7 +5,7 @@ stSOL and back. This conversion involves an exchange rate. This page describes
 how Solido sets that exchange rate, and the rationale behind that.
 
 To programmatically access the exchange rate, see the [price
-oracle](../development/price-oracle) page.
+oracle](../development/price-oracle.md) page.
 
 ## Definition
 
@@ -32,7 +32,7 @@ The amount of stSOL in existence consists of:
 
  * Minted stSOL, as recorded in the SPL token mint account.
  * Unclaimed validation fees.
-   For [technical reasons](commission#validation-fee-credit), validation fees
+   For [technical reasons](commission.md#validation-fee-credit), validation fees
    are not paid directly. Instead, the the amount is recorded in the Solido
    instance, and the fees are minted when the validator claims them.
 
@@ -177,7 +177,7 @@ discrete ticks, one per epoch.
 ## Exchange rate update
 
 Solido stores the exchange rate that is used throughout the epoch in the Solido
-instance. Once per epoch, the [maintenance deamon](maintenance) calls the
+instance. Once per epoch, the [maintenance deamon](../maintenance.md) calls the
 `UpdateExchangeRate` instruction, which updates the variables to the latest
 values according to the [definition](#definition) above. The on-chain program
 disallows collecting validation rewards (which also distributes fees) if the

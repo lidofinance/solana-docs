@@ -62,16 +62,15 @@ the daemon. The following metrics are useful for monitoring:
    most iterations are failing, and investigation is needed. Occasional errors
    are expected, especially when using a public RPC endpoint.
 
-[config]: the-solido-utility#configuration
+[config]: the-solido-utility.md#configuration
 
 ## Claiming validation fees
 
 When the maintenance bot inspects a vote account and finds rewards in there,
 it withdraws them into the Solido reserve, and distributes fees. For [technical
-reasons](internals/commission#validation-fee-credit), the treasury and developer
-fee are paid directly, but validation fees are only recorded in the Solido
-instance, and they need to be claimed separately. To make the maintenance bot
-automatically claim validation fees, provide `run-maintainer` with
+reasons](internals/commission.md#validation-fee-credit), the treasury and
+developer fee are paid directly, but validation fees are only recorded in the
+Solido instance, and they need to be claimed separately. To make the maintenance
+bot automatically claim validation fees, provide `run-maintainer` with
 `--validator-vote-account`. This will mint the credited amount of stSOL into the
 validator’s fee account, which was provided when the validator was added.
-
