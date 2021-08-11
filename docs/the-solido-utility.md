@@ -78,3 +78,12 @@ See [the Solana documentation on hardware wallets][solana-hww] for more
 information.
 
 [solana-hww]: https://docs.solana.com/wallet-guide/hardware-wallets
+
+**When using a Ledger hardware wallet, you need to turn on the _blind signing_
+setting in the Solana app on the device.** By default, Ledger tries to parse all
+transactions that it signs, so it can show a summary of the transaction on
+its display. However, Ledger does not have a parser for Solido transactions or
+multisig transactions, so by default it refuses to sign those. By enabling
+_blind signing_, you allow the Ledger to sign transactions that it cannot show a
+summary for. The Ledger still requires human confirmation to sign, even when
+blind signing is enabled.
