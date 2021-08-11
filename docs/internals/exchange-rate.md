@@ -108,11 +108,12 @@ follows:
  4. `deposit` the fee part, and distribute the resulting stSOL to fee
     recipients.
 
-Because Solana has a fairly low upper bound on the number of accounts that a
-transaction can reference, but Solido aims to support many validators, it is not
-feasible to inspect all validator vote accounts in a single transaction. We need
-to visit validators one by one. This means that for validation rewards _v_₁,
-_v_₂, ..., and a fee percentage _fee_, we get a sequence of donations and
+
+Solido aims to support many validators, but because Solana has a fairly low
+upper bound on the number of accounts that a transaction can reference, it is
+not feasible to inspect all validator vote accounts in a single transaction. We
+need to visit validators one by one. This means that for validation rewards
+_v_₁, _v_₂, ..., and a fee percentage _fee_, we get a sequence of donations and
 deposits:
 
 ```haskell
