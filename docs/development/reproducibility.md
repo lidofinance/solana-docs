@@ -10,7 +10,7 @@ programs in a Docker container, and copies them out of the container into the
 `build` directory. That directory will then contain:
 
  * `lido.so`: the Solido program that runs on-chain.
- * `multisig.so`: the multisig governance program that runs on-chain.
+ * `serum_multisig.so`: the multisig governance program that runs on-chain.
  * `solido`: the command-line management client that runs locally.
 
 [buildimage]: https://github.com/ChorusOne/solido/blob/main/buildimage.sh
