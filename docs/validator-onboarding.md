@@ -3,28 +3,35 @@
 This page is aimed at validators who want to join Lido for Solana, and at
 multisig owners who enforce the process.
 
+:::note Note for validators
+If you have already been admitted by the LNOSG, please continue to [Setting up a
+vote account](#setting-up-a-vote-account) below. If you are part of Lido for
+Solana already, please continue to [Operating the maintenance
+daemon](#operating-the-maintenance-daemon) below.
+:::
+
 ## Validator admission
 
 The set of validators who participate in Lido for Solana (“Solido”) is managed
-by the [Lido Node Operator Subgovernance Group (LNOSG)][lnosg], which is part of
-the Lido DAO. The [Lido Node Operators Notion page][notion] contains further
-information about the current operators, and how to apply.
+by the [**Lido Node Operator Subgovernance Group (LNOSG)**][lnosg], which is
+part of the Lido DAO. The [Lido Node Operators Notion page][notion] contains
+further information about the current operators, and how to apply.
 
 After approval from the LNOSG, the steps to onboard a validator to Solido are:
 
- 1. The validator sets up a new vote account for use with Solido.
- 2. A multisig owner creates a multisig transaction to propose adding the vote
-    account to the validator set.
- 3. The other multisig owners approve this transaction and execute it. At this
-    point, admission of the validator should already have been approved by the
-    LNOSG; the multisig owners merely ratify and execute the decision, they do
-    not make an independent decision about which validators to admit.
+ 1. **The validator** sets up a new vote account for use with Solido.
+ 2. **A multisig owner** creates a multisig transaction to propose adding the
+    vote account to the validator set.
+ 3. **The other multisig owners** approve this transaction and execute it. At
+    this point, admission of the validator should already have been approved by
+    the LNOSG; the multisig owners merely ratify and execute the decision, they
+    do not make an independent decision about which validators to admit.
  4. Once the validator is part of the Solido validator set, the Solido
     [maintenance daemon](maintenance.md) will automatically rebalance the stake
     and delegate to the new validator. In version 1, only new deposits can be
     staked with new validators; we plan to add active rebalancing in a later
     version.
- 5. Validators are expected to operate an instance of the [maintenance
+ 5. **Validators** are expected to operate an instance of the [maintenance
     daemon](maintenance.md). In particular, the daemon ensures that validators
     can withdraw their validation fees.
 
