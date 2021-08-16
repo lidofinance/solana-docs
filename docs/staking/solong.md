@@ -8,7 +8,7 @@ keywords:
  - solana
  - solong
 sidebar_label: Solong
-sidebar_position: 5
+sidebar_position: 6
 ---
 import create1 from './images/solong/create1.png';
 import create2 from './images/solong/create2.png';
@@ -34,11 +34,13 @@ A quick guide on staking your Solana on the Lido widget
 ## Lido for Solana staking guide
 
 In this step-by-step guide, we will learn how to stake your Solana via the Lido staking widget. This guide shows the testnet for demonstration purposes. However, the process remains the same for mainnet. You can use one of the following wallets to connect to Lido. The facility to use the hardware wallet Ledger is also provided. This guarantees an extra layer of security for the user.
-1. Sollet
-2. Phantom
-3. Solflare
-4. Solong
-5. Ledger
+1. Phantom
+2. Solflare
+3. Ledger
+4. Sollet
+5. Solong
+
+
 
 ---
 
