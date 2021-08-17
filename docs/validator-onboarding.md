@@ -55,29 +55,33 @@ identity keypair. For simplicity, we’ll asume they are in files in
 We need to create an vote account with 100% commission, and the withdraw
 authority set to Solido, so first we need to know the withdraw authority.
 Assuming [`solido` is configured](the-solido-utility.md#configuration),
-`show-solido` will print the withdraw authority:
+`show-authorities` will print the withdraw authority:
 
 ```console
-$ solido --config testnet.json show-solido
+$ solido --config mainnet.json show-authorities
 
-(some output omitted)
-
-Authorities (public key, bump seed):
-Stake authority:            9sPuZ5YRmnhpS1Yzq6mAnX2Y4EEpVhzcgrj3KpRVzEa5, 254
-Mint authority:             2mgtfXRJr9DHXALR3U8caa6NdfAFtf4JRd5dJbsxJ4JT, 253
-Rewards withdraw authority: 4t57fC1TwHGo5d6X4fpH9hkEvvDLaMDXj13vfkSZvvrQ, 255
-Reserve:                    BfT1Sn54zwUk46WtJRhizcu6izUvw9eTanndawX5MdR, 249
-
-(some more output omitted)
+Stake authority:            W1ZQRwUfSkDKy2oefRBUWph82Vr2zg9txWMA8RQazN5
+Mint authority:             8kRRsKezwXS21beVDcAoTmih1XbyFnEAMXXiGXz6J3Jz
+Rewards withdraw authority: GgrQiJ8s2pfHsfMbEFtNcejnzLegzZ16c9XtJ2X2FpuF
+Reserve account:            3Kwv3pEAuoe4WevPB4rgMBTZndGDb53XT7qwQKnvHPfX
 ```
 
-For the testnet deployment shown above, the withdraw authority is
-`4t57fC1TwHGo5d6X4fpH9hkEvvDLaMDXj13vfkSZvvrQ`. Create a new vote account with
-that authority and 100% commission, and confirm:
+For the mainnet-beta deployment shown above, the withdraw authority is
+`GgrQiJ8s2pfHsfMbEFtNcejnzLegzZ16c9XtJ2X2FpuF`.
+
+:::info
+Because the authority addresses are derived from the program and instance
+addresses, `show-authorities` can compute them even when the program has not yet
+been deployed, as long as the address where it will be deployed is known. For
+existing instances, `show-solido` will also show the authorities, and more
+information about the instance.
+:::
+
+Create a new vote account with that authority and 100% commission, and confirm:
 
 ```console
 $ solana create-vote-account \
-  --authorized-withdrawer 4t57fC1TwHGo5d6X4fpH9hkEvvDLaMDXj13vfkSZvvrQ \
+  --authorized-withdrawer GgrQiJ8s2pfHsfMbEFtNcejnzLegzZ16c9XtJ2X2FpuF \
   --commission 100 \
   ~/.config/solana/vote.json \
   ~/.config/solana/id.json
@@ -89,7 +93,7 @@ $ solana vote-account EAsHKTdxL9GELqQatEFFe3mbSBcbxyEiA8yoPihGhoM6
 Account Balance: 0.02685864 SOL
 Validator Identity: 9RyFMqXbbUUFEhvA1svJffP7RGAw1fE3YcCtazaom8Me
 Vote Authority: {214: "9RyFMqXbbUUFEhvA1svJffP7RGAw1fE3YcCtazaom8Me"}
-Withdraw Authority: 4t57fC1TwHGo5d6X4fpH9hkEvvDLaMDXj13vfkSZvvrQ
+Withdraw Authority: GgrQiJ8s2pfHsfMbEFtNcejnzLegzZ16c9XtJ2X2FpuF
 Credits: 0
 Commission: 100%
 Root Slot: ~
@@ -101,7 +105,12 @@ address, which we need for the next step.
 
 In addition to the vote account, we need an SPL token account that can hold
 stSOL, to receive validation fees. For this we need to know the stSOL mint
-address, for which we use `show-solido` again:
+address. For an existing instance, we can use `show-solido` to confirm, but for
+mainnet-beta prior to initialization, `show-solido` cannot show anything yet.
+Instead, we created the SPL token mint ahead of time, and we will initialize the
+instance with this mint address. **The mint address for mainnet-beta is [listed
+on the deployments page](deployments#mainnet-beta)**. For an existing instance,
+`show-solido` displays the mint address:
 
 ```console
 $ solido --config testnet.json show-solido  
@@ -132,14 +141,16 @@ create a new account for this purpose, and to make sure it never contains a lot
 of funds; 1.0&nbsp;SOL should be plenty to run the daemon for many months. In
 this example, we’ll use account `F5HwubK4v7VKazPXzRhdvHqA3MmJR5yXDoC8mXeMpdDw`.
 
-Please share the vote account, stSOL account, and maintainer account with one of
-the multisig members.
+Please share the vote account, stSOL account, and maintainer account with the
+multisig members [by filling out this form][validator-addr-form].
 
-[solana-vote]: https://docs.solana.com/running-validator/vote-accounts
+[solana-vote]:         https://docs.solana.com/running-validator/vote-accounts
+[validator-addr-form]: https://forms.gle/sf5syRvkjTGyqNPMA
 
 ## Adding the vote account
 
-*This step needs to be executed by one of the multisig owners.*
+*This step needs to be executed by one of the multisig owners. For the initial
+launch, Chorus One will be the multisig owner to do this.*
 
 The validator should have provided a vote account, stSOL SPL token account, and
 maintainer account. In this example, we have
