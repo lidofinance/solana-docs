@@ -78,9 +78,21 @@ authority of the Solido program, and as the manager of the Solido instance.
 
 Aside from approving parameter changes to onboard validators, the multisig
 members also verify that the deployed Solido program can be
-[reproduced](development/reproducibility.md), to ensure that the on-chain
-program was built from the publicly available source code, and contains no back
-doors.
+[reproduced][reproduce], to ensure that the on-chain program was built from the
+publicly available source code, and contains no back doors.
 
 [serum-multisig]: https://github.com/project-serum/multisig
+[reproduce]:      https://blog.lido.fi/lido-dao-treasury-fund/
 
+## Multisig origin
+
+The 4-out-of-7 multisig was established as follows:
+
+ * Chorus One reached out to all participants, and verified their identities
+   on Telegram and GitHub.
+ * Participants shared their public keys on GitHub.
+ * Chorus one deployed the Serum Multisig program, and created an instance that
+   has the 7 public keys as owners. The upgrade authority of the multisig
+   program was set to the multisig instance itself.
+ * Participants verified that they could [reproduce][reproduce] the program, and
+   that the list of public keys matched the keys shared earlier on GitHub.
