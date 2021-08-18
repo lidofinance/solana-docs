@@ -14,6 +14,21 @@ module.exports = {
     },
     {
       type: 'doc',
+      id: 'governance',
+      label: 'Governance',
+    },
+    {
+      type: 'doc',
+      id: 'administration',
+      label: 'Administration',
+    },
+    {
+      type: 'doc',
+      id: 'fees',
+      label: 'Fees',
+    },
+    {
+      type: 'doc',
       id: 'the-solido-utility',
       label: 'The Solido utility',
     },
