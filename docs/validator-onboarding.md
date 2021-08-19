@@ -1,13 +1,10 @@
 # Validator onboarding
 
-This page is aimed at validators who want to join Lido for Solana, and at
-multisig owners who enforce the process.
+This page is aimed at validators who want to join Lido for Solana.
 
 :::note Note for validators
 If you have already been admitted by the LNOSG, please continue to [Setting up a
-vote account](#setting-up-a-vote-account) below. If you are part of Lido for
-Solana already, please continue to [Operating the maintenance
-daemon](#operating-the-maintenance-daemon) below.
+vote account](#setting-up-a-vote-account) below.
 :::
 
 ## Validator admission
@@ -19,7 +16,8 @@ further information about the current operators, and how to apply.
 
 After approval from the LNOSG, the steps to onboard a validator to Solido are:
 
- 1. **The validator** sets up a new vote account for use with Solido.
+ 1. **The validator** sets up a new identity account and vote account for use
+    with Solido.
  2. **A multisig owner** creates a multisig transaction to propose adding the
     vote account to the validator set.
  3. **The other multisig owners** approve this transaction and execute it. At
@@ -31,11 +29,11 @@ After approval from the LNOSG, the steps to onboard a validator to Solido are:
     and delegate to the new validator. In version 1, only new deposits can be
     staked with new validators; we plan to add active rebalancing in a later
     version.
- 5. **Validators** are expected to operate an instance of the [maintenance
-    daemon](maintenance.md). In particular, the daemon ensures that validators
-    can withdraw their validation fees.
+ 5. [**Some validators**](maintenance.md#maintainer-operator) are expected to
+    operate an instance of the [maintenance daemon](maintenance.md).
 
-The remainder of this page goes over the above steps in detail.
+The remainder of this page goes over step 1 in detail. For steps 2 and 3,
+see [the multisig guide](multisig-guide.md) instead.
 
 [lnosg]:  https://research.lido.fi/t/validator-admission-process/20
 [notion]: https://enchanted-direction-844.notion.site/Lido-Node-Operators-19ca4a3e7553421486cd3e8be314bb03
