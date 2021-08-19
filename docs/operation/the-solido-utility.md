@@ -11,7 +11,7 @@ is used for:
    transactions.
  * Creating multisig transactions for administration operations (adding
    validators, changing the fees).
- * Running [the maintenance daemon](maintenance.md).
+ * Running [the maintenance daemon](operation/maintenance.md).
  * Inspecting a Solido instance, to show the current status.
  * Making deposits and withdrawals. These are indended for testing, end
    users are expected to use the webinterface instead.

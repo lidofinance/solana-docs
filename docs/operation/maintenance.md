@@ -80,7 +80,7 @@ the daemon. The following metrics are useful for monitoring:
    most iterations are failing, and investigation is needed. Occasional errors
    are expected, especially when using a public RPC endpoint.
 
-[config]: the-solido-utility.md#configuration
+[config]: operation/the-solido-utility.md#configuration
 
 ## Claiming validation fees
 

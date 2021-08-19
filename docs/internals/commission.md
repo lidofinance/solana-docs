@@ -70,6 +70,5 @@ account), and we have an instruction to pay out this credit for a single
 validator. With this “pull-based” approach, the number of validators is no
 longer limited by the Solana account limit.
 
-The maintenance bot [can automatically perform this claiming
-step](../maintenance.md#claiming-validation-fees) for a single validator at a
-time.
+The maintenance bot [will perform this claiming
+step](../operation/maintenance.md#claiming-validation-fees) for all validators.
