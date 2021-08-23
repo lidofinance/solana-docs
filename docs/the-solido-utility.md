@@ -1,15 +1,16 @@
 # The Solido utility
 
 Lido for Solana consists of an on-chain program, a web-based frontend for users
-to interact with it, and a command-line client for governance and maintenance to
-interact with it. This command-line client is called `solido`. It is used for:
+to interact with it, and a command-line client for administration and
+maintenance interact with it. This command-line client is called `solido`. It
+is used for:
 
  * Creating a new Solido instance. This is only done once on mainnet, but we do
    it often on a local validator for testing.
  * Creating a new multisig instance, and approving and executing multisig
    transactions.
- * Creating multisig transactions for governance operations (adding validators,
-   changing the fees).
+ * Creating multisig transactions for administration operations (adding
+   validators, changing the fees).
  * Running [the maintenance daemon](maintenance.md).
  * Inspecting a Solido instance, to show the current status.
  * Making deposits and withdrawals. These are indended for testing, end
