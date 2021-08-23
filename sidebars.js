@@ -68,5 +68,10 @@ module.exports = {
       id: 'deployments',
       label: 'Deployments',
     },
+    {
+      type: 'doc',
+      id: 'security',
+      label: 'Security',
+    },
   ],
 };
