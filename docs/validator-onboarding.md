@@ -105,8 +105,8 @@ In this case, `EAsHKTdxL9GELqQatEFFe3mbSBcbxyEiA8yoPihGhoM6` is the vote account
 address, which we need for the final step.
 
 [solana-vote]: https://docs.solana.com/running-validator/vote-accounts
-[config]:      operation/the-solido-utility.md#configuration
-[solido]:      operation/the-solido-utility.md
+[config]:      operation/the-solido-utility#configuration
+[solido]:      operation/the-solido-utility
 
 ## Configuring the validator identity
 

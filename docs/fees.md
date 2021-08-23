@@ -19,4 +19,4 @@ percentages are stored on-chain, and you can inspect the current values with
 [`solido show-solido`][solido].
 
 [dao-treasury]: https://blog.lido.fi/lido-dao-treasury-fund/
-[solido]:       operation/the-solido-utility.md
+[solido]:       operation/the-solido-utility
