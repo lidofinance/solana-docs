@@ -46,8 +46,8 @@ to [open an issue][new-issue] if you are interested.
 
 ## Prometheus
 
-The [maintenance daemon](../maintenance) exposes details about the Solido
-instance at a Prometheus `/metrics` endpoint. These metrics include Solido’s
-current exchange rate. You will need to run an instance of the maintenance
-daemon yourself to access these metrics; the endpoint is not intended to be
-exposed to the public internet.
+The [maintenance daemon](../operation/maintenance) exposes details about the
+Solido instance at a Prometheus `/metrics` endpoint. These metrics include
+Solido’s current exchange rate. You will need to run an instance of the
+maintenance daemon yourself to access these metrics; the endpoint is not
+intended to be exposed to the public internet.

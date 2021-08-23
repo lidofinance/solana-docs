@@ -17,6 +17,24 @@ to disturb this balance. We plan to move the stake distribution logic into the
 on-chain program in a future version, to eliminate the need for trusted
 maintainers.
 
+## Maintainer operators
+
+Most of the Solido maintenance tasks can be executed by anybody, but there still
+needs to be *somebody* who submits the transaction. The maintenance bot
+automates this. The bot will also execute maintenance tasks that are restricted
+to the set of trusted maintainers. For v1 the set of trusted maintainers who run
+the bot consists of validators who are also part of the multisig:
+
+ * Chorus One
+ * Figment
+ * P2P
+ * Staking Facilities
+
+Uptime of the maintenance bot is not critical. As long as *somebody* at least
+briefly runs the bot once every epoch, Solido will work fine. Because multiple
+parties run an instance, it is okay if an instance is inactive for a bit (e.g.
+to reboot the host).
+
 ## Obtaining the maintenance daemon
 
 The maintenance daemon is part of the `solido` utility. You can either build
@@ -62,15 +80,12 @@ the daemon. The following metrics are useful for monitoring:
    most iterations are failing, and investigation is needed. Occasional errors
    are expected, especially when using a public RPC endpoint.
 
-[config]: the-solido-utility.md#configuration
+[config]: operation/the-solido-utility.md#configuration
 
 ## Claiming validation fees
 
-When the maintenance bot inspects a vote account and finds rewards in there,
-it withdraws them into the Solido reserve, and distributes fees. For [technical
-reasons](internals/commission.md#validation-fee-credit), the treasury and
-developer fee are paid directly, but validation fees are only recorded in the
-Solido instance, and they need to be claimed separately. To make the maintenance
-bot automatically claim validation fees, provide `run-maintainer` with
-`--validator-vote-account`. This will mint the credited amount of stSOL into the
-validator’s fee account, which was provided when the validator was added.
+For [technical reasons](internals/commission.md#validation-fee-credit), Solido
+holds on to any validation fees until the validator withdraws them into the
+validator’s stSOL account; they are not paid into the account automatically by
+the on-chain program. To alleviate this, the maintenance bot will withdraw the
+rewards automatically for all validators, into their stSOL accounts.

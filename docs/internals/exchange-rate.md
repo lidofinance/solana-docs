@@ -177,13 +177,13 @@ discrete ticks, one per epoch.
 ## Exchange rate update
 
 Solido stores the exchange rate that is used throughout the epoch in the Solido
-instance. Once per epoch, the [maintenance deamon](../maintenance.md) calls the
-`UpdateExchangeRate` instruction, which updates the variables to the latest
-values according to the [definition](#definition) above. The on-chain program
-disallows collecting validation rewards (which also distributes fees) if the
-exchange rate is outdated, but withdrawals and deposits are never blocked. This
-means that users who deposit in epoch $$k$$, might still get the exchange rate
-for epoch $$k - 1$$, if they manage to execute their deposit before
+instance. Once per epoch, the [maintenance deamon](../operation/maintenance.md)
+calls the `UpdateExchangeRate` instruction, which updates the variables to the
+latest values according to the [definition](#definition) above. The on-chain
+program disallows collecting validation rewards (which also distributes fees) if
+the exchange rate is outdated, but withdrawals and deposits are never blocked.
+This means that users who deposit in epoch $$k$$, might still get the exchange
+rate for epoch $$k - 1$$, if they manage to execute their deposit before
 `UpdateExchangeRate` executes. This is not a problem: users could have deposited
 in epoch $$k - 1$$ anyway. For Solido, `UpdateExchangeRate` effectively
 *defines* the start of the new epoch.

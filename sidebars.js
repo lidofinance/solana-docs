@@ -29,18 +29,29 @@ module.exports = {
     },
     {
       type: 'doc',
-      id: 'the-solido-utility',
-      label: 'The Solido utility',
-    },
-    {
-      type: 'doc',
-      id: 'maintenance',
-      label: 'Maintenance',
-    },
-    {
-      type: 'doc',
       id: 'validator-onboarding',
       label: 'Validator onboarding',
+    },
+    {
+      type: 'category',
+      label: 'Operation',
+      items: [
+        {
+          type: 'doc',
+          id: 'operation/the-solido-utility',
+          label: 'The Solido utility',
+        },
+        {
+          type: 'doc',
+          id: 'operation/maintenance',
+          label: 'Maintenance',
+        },
+        {
+          type: 'doc',
+          id: 'operation/multisig-guide',
+          label: 'Multisig guide',
+        },
+      ],
     },
     {
       type: 'category',

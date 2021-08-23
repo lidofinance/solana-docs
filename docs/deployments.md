@@ -1,11 +1,14 @@
 # Deployments
 
 This page lists official addresses at which Lido for Solana is deployed, in the
-form of [a `solido` config file](the-solido-utility#configuration).
+form of [a `solido` config file][config].
 
 Aside from the config keys, we list a few additional addresses that do not need
 to be part of the config file, and that can be obtained through [`solido
-show-solido`](the-solido-utility.md), but which are useful to know anyway.
+show-solido`][solido], but which are useful to know anyway.
+
+[config]: operation/the-solido-utility.md#configuration
+[solido]: operation/the-solido-utility.md
 
 ## Testnet
 

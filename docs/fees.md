@@ -16,6 +16,7 @@ All fees are distributed in the form of stSOL. The fee percentages [are set by
 the Lido DAO](governance.md), and can be changed by [the administration
 multisig](administration.md) when called for by the Lido DAO. The fee
 percentages are stored on-chain, and you can inspect the current values with
-[`solido show-solido`](the-solido-utility.md).
+[`solido show-solido`][solido].
 
 [dao-treasury]: https://blog.lido.fi/lido-dao-treasury-fund/
+[solido]:       operation/the-solido-utility
