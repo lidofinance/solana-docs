@@ -12,6 +12,10 @@ show-solido`][solido], but which are useful to know anyway.
 
 ## Testnet
 
+Version:
+
+ * [v0.4.0](https://github.com/ChorusOne/solido/releases/tag/v0.4.0)
+
 Configuration:
 
 ```json
