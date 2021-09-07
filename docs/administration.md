@@ -64,7 +64,7 @@ something done, not with a majority of LDO holders.
 For Lido for Solana, we use the [Serum Multisig program][serum-multisig], and we
 require approval from 4 out of 7 members. The members are:
 
- * [Bonafida](https://bonfida.org/)
+ * [ChainLayer](https://chainlayer.io/)
  * [Chorus One](https://chorus.one)
  * [Figment](https://figment.io/)
  * [P2P](https://p2p.org/)
@@ -75,6 +75,10 @@ require approval from 4 out of 7 members. The members are:
 The addresses of the multisig members are listed on the [deployments
 page](deployments.md). The multisig instance is used both as the upgrade
 authority of the Solido program, and as the manager of the Solido instance.
+
+For initial testing on testnet, [Bonafida](http://bonfida.org/) participated as
+one of the seven multisig members. For the mainnet deployment, ChainLayer has
+taken their place.
 
 Aside from approving parameter changes to onboard validators, the multisig
 members also verify that the deployed Solido program can be

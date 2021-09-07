@@ -149,7 +149,7 @@ address. For an existing instance, we can use `show-solido` to confirm, but for
 mainnet-beta prior to initialization, `show-solido` cannot show anything yet.
 Instead, we created the SPL token mint ahead of time, and we will initialize the
 instance with this mint address. **The mint address for mainnet-beta is [listed
-on the deployments page](deployments#mainnet-beta)**. For an existing instance,
+on the deployments page](deployments.md#mainnet-beta)**. For an existing instance,
 `show-solido` displays the mint address:
 
 ```console
