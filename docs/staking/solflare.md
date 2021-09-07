@@ -176,11 +176,19 @@ You can now go back to the Lido widget and look at your updated stSOL balance. J
 > Note 2: This rent is a one-time fee that won’t reccur on the next staking transaction.
 
 ## Withdrawing Solana
-Withdrawals are not enabled yet. They will be live within the coming months. If you click on the **Unstake** tab you will see an error message pop up.
+To withdraw click on the **Unstake** tab and enter the amount of stSOL that you would like to unstake in the field provided below.
 
-<p align="center">
-    <img src={unstake} alt="Unstake" width="450"/>
-</p>
+![unstake-amount](./images/common/unstake-amount.png)
+
+Then click unstake and head over to your wallet to approve the transaction.
+
+![unstake-transaction](./images/common/unstake-transaction.png)
+
+The Solana blockchain waits for 32 confirmations (called MAX Confirmations) before making a transaction 'final'. Once the transaction gets the `MAX Confirmations` the Lido program splits off a stake account with the redeemed SOL amount and transfers it to you. 
+
+![unstake-successful](./images/common/unstake-successful.png)
+
+You then unstake those SOL and will receive liquid SOL after the deactivation period which lasts for approximately 2 epochs. For users that desire instant liquidity, the preferred option is to exchange stSOL on the open market, e.g. on the supported AMM pools on Saber and Raydium.
 
 
 ## Resources
