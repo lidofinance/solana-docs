@@ -59,6 +59,9 @@ following addresses:
 
 ```json
 {
+  "cluster": "https://api.mainnet-beta.solana.com",
+  "multisig_program_id": "AAHT26ecV3FEeFmL2gDZW6FfEqjPkghHbAkNZGqwT8Ww",
+  "multisig_address": "7vBJ8KQ7B28Kk3mdEGjFZB7pVj2a12u1qQDhn7MCfqMu",
   "solido_program_id": "CrX7kMhLC3cSsXJdT7JDgqrRVWGnUpX3gfEfxxU2NVLi",
   "solido_address": "49Yi1TKkNyYjPAFdR9LBvoHcUjuPX4Df5T5yv39w2XTn"
 }
