@@ -61,7 +61,7 @@ following addresses:
 {
   "cluster": "https://api.mainnet-beta.solana.com",
   "multisig_program_id": "AAHT26ecV3FEeFmL2gDZW6FfEqjPkghHbAkNZGqwT8Ww",
-  "multisig_address": "7vBJ8KQ7B28Kk3mdEGjFZB7pVj2a12u1qQDhn7MCfqMu",
+  "multisig_address": "3cXyJbjoAUNLpQsFrFJTTTp8GD3uPeabYbsCVobkQpD1",
   "solido_program_id": "CrX7kMhLC3cSsXJdT7JDgqrRVWGnUpX3gfEfxxU2NVLi",
   "solido_address": "49Yi1TKkNyYjPAFdR9LBvoHcUjuPX4Df5T5yv39w2XTn"
 }
@@ -71,6 +71,7 @@ Related addresses:
 
 ```json
 {
+  "multisig_pda": "GQ3QPrB1RHPRr4Reen772WrMZkHcFM4DL5q44x1BBTFm",
   "st_sol_mint": "7dHbWXmci3dT8UFYWYZweBLXgycu7Y3iL6trKn1Y7ARj",
   "withdraw_authority": "GgrQiJ8s2pfHsfMbEFtNcejnzLegzZ16c9XtJ2X2FpuF",
   "reserve": "3Kwv3pEAuoe4WevPB4rgMBTZndGDb53XT7qwQKnvHPfX"
