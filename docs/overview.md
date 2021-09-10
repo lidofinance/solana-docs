@@ -1,6 +1,6 @@
 ---
 id: overview
-title: overview
+title: Overview
 description: Overview of LIDO for Solana
 keywords:
  - lido
