@@ -22,7 +22,7 @@ Lido for Solana gives you:
 - **Decentralized security** — Assets spread across the industry’s leading validators chosen by the Lido DAO
 
 ## How Lido for Solana works
-Lido for Solana not only makes it very easy to stake but also provides further utility through stSOL. Let’s look at the process in slight detail. A SOL token holder connects their wallet to an interface that supports Lido (one will e.g. be hosted at https://stake.lido.fi) and deposits their tokens into the Lido program. They immediately receive stSOL tokens that represent a share of the total pool. Every user’s tokens are first held in a pool controlled by the Lido program
+Lido for Solana not only makes it very easy to stake but also provides further utility through stSOL. Let’s look at the process in slight detail. A SOL token holder connects their wallet to an interface that supports Lido (hosted at https://solana.lido.fi) and deposits their tokens into the Lido program. They immediately receive stSOL tokens that represent a share of the total pool. Every user’s tokens are first held in a pool controlled by the Lido program
 
 ![How Lido for Solana works](./howlidoforsolanaworks.png)
 
