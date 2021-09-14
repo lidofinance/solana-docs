@@ -12,9 +12,7 @@ show-solido`][solido], but which are useful to know anyway.
 
 ## Mainnet-beta
 
-Version:
-
- * [1.0.1](https://github.com/ChorusOne/solido/releases/tag/v1.0.1)
+Version: [v1.0.1](https://github.com/ChorusOne/solido/releases/tag/v1.0.1).
 
 Configuration:
 
@@ -53,11 +51,21 @@ Multisig owners:
 }
 ```
 
+Maintainers:
+
+```json
+{
+  "AR7FaVeVvUQwnLtojZNUc42H987KiHqfc4AN1qEwPUJw": "Chorus One",
+  "2rqLzNZCBWykEs8bFMbmgqCz4eosaEfU3aRL4RJWdZgQ": "Figment",
+  "DqCZaFR6cTMvFMuz43HS77Zcz1quR93n11kT1yY6aVf4": "Staking Facilities",
+  "p2pokvNcNc1SFCMoUrp1UBQ6SBET7H5EdLqahz4g55k":  "P2P"
+}
+
+```
+
 ## Testnet
 
-Version:
-
- * [v0.4.0](https://github.com/ChorusOne/solido/releases/tag/v0.4.0)
+Version: [v0.4.0](https://github.com/ChorusOne/solido/releases/tag/v0.4.0).
 
 Configuration:
 
