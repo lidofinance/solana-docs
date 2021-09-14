@@ -12,8 +12,11 @@ show-solido`][solido], but which are useful to know anyway.
 
 ## Mainnet-beta
 
-Lido for Solana is not yet available on mainnet-beta, but we did reserve the
-following addresses:
+Version:
+
+ * [1.0.1](https://github.com/ChorusOne/solido/releases/tag/v1.0.1)
+
+Configuration:
 
 ```json
 {
