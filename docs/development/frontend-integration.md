@@ -398,7 +398,7 @@ Before we make a deposit from a user's wallet, we need to make sure such a recip
 
 ### Fetch all accounts for the stSOL mint of the staker
 
-- If at-least one such account exists, select the first one and proceed to next Step
+- If at least one such account exists, select the first one and proceed to the next step
 - If no such account exists, continue with this section.
 
 ### If no account exists
