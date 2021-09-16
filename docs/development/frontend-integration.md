@@ -1,6 +1,6 @@
 # Integrating with Lido
 
-**Sample integration on Devnet** - [http://solana-dev.testnet.lido.fi/](https://solana-dev.testnet.lido.fi)
+**Live integration on Mainnet** - [http://solana.lido.fi/](https://solana.lido.fi)
 
 In this document, we walkthrough the steps to integrate a web application with the Lido deposit function.
 
@@ -44,16 +44,19 @@ Use `getAccountInfo(LIDO_ADDRESS)` [function](https://solana-labs.github.io/sola
 const accountInfo = await connection.getAccountInfo(LIDO_ADDRESS);
 ```
 
-The data structure storing the Lido [state(v0.4.0)](https://github.com/ChorusOne/solido/blob/v0.4.0/program/src/state.rs#L178) has the form 
+The data structure storing the Lido [state(v1.0.0)](https://github.com/ChorusOne/solido/blob/v1.0.0/program/src/state.rs#L188) has the form 
 
 ```rust
 pub struct Lido {
+    /// Version number for the Lido
     pub lido_version: u8,
 
     /// Manager of the Lido program, able to execute administrative functions
+    #[serde(serialize_with = "serialize_b58")]
     pub manager: Pubkey,
 
     /// The SPL Token mint address for stSOL.
+    #[serde(serialize_with = "serialize_b58")]
     pub st_sol_mint: Pubkey,
 
     /// Exchange rate to use when depositing.
@@ -95,6 +98,12 @@ Create a borsh schema to deserialize the data.
 
 ```ts
 class Lido {
+  constructor(data) {
+    Object.assign(this, data);
+  }
+}
+
+class SeedRange {
   constructor(data) {
     Object.assign(this, data);
   }
@@ -228,16 +237,27 @@ const schema = new Map([
     },
   ],
   [
+    SeedRange,
+    {
+      kind: 'struct',
+      fields: [
+        ['begin', 'u64'],
+        ['end', 'u64'],
+      ],
+    },
+  ],
+  [
     Validator,
     {
       kind: 'struct',
       fields: [
         ['fee_credit', 'u64'],
         ['fee_address', 'u256'],
-        ['stake_accounts_seed_begin', 'u64'],
-        ['stake_accounts_seed_end', 'u64'],
+        ['stake_seeds', SeedRange],
+        ['unstake_seeds', SeedRange],
         ['stake_accounts_balance', 'u64'],
-        ['weight', 'u32'],
+        ['unstake_accounts_balance', 'u64'],
+        ['active', 'u8'],
       ],
     },
   ],
@@ -374,70 +394,52 @@ const [mintAuthority] = await PublicKey.findProgramAddress(bufferArray, PROGRAM_
 
 The Deposit instruction requires a recipient address - that will receive stSOL as liquid representation of the deposited SOL. 
 
-Before we make a deposit from a user's wallet, we need to make sure such a recipient account exists - for the depositer to receive stSOL. 
+Before we make a deposit from a user's wallet, we need to make sure such a recipient account exists - for the depositor to receive stSOL. 
 
 ### Fetch all accounts for the stSOL mint of the staker
 
-- If atleast one such account exists, select the first one and proceed to Step 4
-- If no such account exists, continue at Step 3.2
+- If at least one such account exists, select the first one and proceed to the next step
+- If no such account exists, continue with this section.
 
 ### If no account exists
 
-- Create a new KeyPair
-- Calculate rent exempt amount using `getMinimumBalanceForRentExemption(AccountLayout.span)`
-- Add the createAccount instruction with program Id as the `TOKEN_PROGRAM_ID` and pass the rent exempt amount
-- Add instruction to initialize the account using `Token.createInitAccountInstruction` and set the owner as the staker public key
+- Fetch the associated token account for the payer account
+- Add the instruction to create the new associated token account
+- Return the associated token account's public key
 
 ```ts
-import { AccountLayout, Token, TOKEN_PROGRAM_ID } from '@solana/spl-token';
+import { AccountLayout, Token, ASSOCIATED_TOKEN_PROGRAM_ID, TOKEN_PROGRAM_ID } from '@solana/spl-token';
 
 const { value: accounts } = await connection.getTokenAccountsByOwner(payer, {
-  mint: ST_SOL_MINT,
+  mint: stSolMint,
 });
 
 const recipient = accounts[0];
 
-// Select the first account if already exist
-// Return early with recipient as the publick key of the account
-// & signer as null
 if (recipient) {
-  return { recipient: recipient.pubkey, signer: null };
+  return recipient.pubkey;
 }
 
-// Create a new public/private key pair
-const newAccount = Keypair.generate();
-
-// Calculate the lamports required for rent exemption
-const accountRentExempt = await connection.getMinimumBalanceForRentExemption(
-  AccountLayout.span,
+// Creating the associated token account if not already exist
+const associatedStSolAccount = await Token.getAssociatedTokenAddress(
+  ASSOCIATED_TOKEN_PROGRAM_ID,
+  TOKEN_PROGRAM_ID,
+  stSolMint,
+  payer,
 );
 
-// Add the instruction to create the new account 
-// with the rent exemption amount
 transaction.add(
-  SystemProgram.createAccount({
-    fromPubkey: payer,
-    newAccountPubkey: newAccount.publicKey,
-    lamports: accountRentExempt,
-    programId: TOKEN_PROGRAM_ID,
-    space: AccountLayout.span,
-  }),
-);
-
-// Add the instruction to initalize the account
-// using the ST_SOL_MINT token program
-transaction.add(
-  Token.createInitAccountInstruction(
+  Token.createAssociatedTokenAccountInstruction(
+    ASSOCIATED_TOKEN_PROGRAM_ID,
     TOKEN_PROGRAM_ID,
-    ST_SOL_MINT,
-    newAccount.publicKey,
+    stSolMint,
+    associatedStSolAccount,
+    payer,
     payer,
   ),
 );
 
-// Set the signer as the new account's key pair 
-// to partially sign the tx using the new account
-return { recipient: newAccount.publicKey, signer: newAccount };
+return associatedStSolAccount;
 ```
 
 ## Step 4 : Create Deposit Instruction
@@ -465,7 +467,7 @@ return { recipient: newAccount.publicKey, signer: newAccount };
   );
   ```
 
-- Set all [keys](https://github.com/ChorusOne/solido/blob/c1258b48a8f06921ed261bf7d00191da1ae4c705/program/src/instruction.rs#L248) for the deposit instruction using the program data we fetch earlier
+- Set all [keys](https://github.com/ChorusOne/solido/blob/v1.0.0/program/src/instruction.rs#L167) for the deposit instruction using the program data we fetch earlier
 
   ```ts
   const keys = [
@@ -520,22 +522,17 @@ const { blockhash } = await connection.getRecentBlockhash();
 transaction.recentBlockhash = blockhash;
 
 // Add all the above instructions
-const { recipient, signer } = await ensureTokenAccount(
+const recipient = await ensureTokenAccount(
   connection,
   transaction,
   payer,
+  stSolMint
 );
 
-await depositInstruction(payer, amount, recipient, accountInfo, transaction);
-
-// Partially sign the tx if signer is not null
-// i.e., a new stSOL account has been created for the user
-if (signer) {
-  transaction.partialSign(signer);
-}
+await depositInstruction(payer, amount, recipient, transaction, config);
 
 // Sign the transaction using the wallet
-const signed = wallet.signTransaction();
+const signed = wallet.signTransaction(transaction);
 
 // Send the serialized signed transaction to the network
 connection.sendRawTransaction(
