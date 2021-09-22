@@ -237,6 +237,33 @@ Note that the option to view deactivating stake accounts is visible only in Phan
 
 After your stake fully deactivates you can withdraw it using Phantom or Solflare. For users who desire instant liquidity, the preferred option is to exchange stSOL on the open market, e.g. on the supported AMM pools on Saber and Raydium.
 
+### Migrating from Solong to Solflare
+Right now the facility to see your deactivating stake accounts is available in Solflare and Phantom only. It is very easy and free of charge to migrate from Solong to Solflare. Below are the steps to do that.
+1. Go to Solong wallet extension, click on the dropdown and select `Settings` option.
+2. In the settings screen, click on `Export Mnemonic Words` 
+3. Enter your wallet password to reveal the mnemonic words. Copy the words or jot them down securely on a piece of paper.
+4. Visit the https://solflare.com/ and click on `Access` button
+5. Enter the mnemonic words in the field that says `Mnemonic phrase`
+6. It is optional to set the wallet password. You may skip it and click on `Next Step`
+7. Solflare shows you the default `Derivation Path`.
+8. Click on the dropdown to select the second option `m/44'/501'/0'/0' (sollet, phantom)`
+9. Click on `Access` button.
+10. You've successfully migrated to Solflare wallet now. You may follow the instructions [mentioned here](https://docs.solana.lido.fi/staking/solflare) to unstake/view your deactivating stake accounts.
+
+The above steps are captured in images below.
+![Step1](./images/solong/Step1.png)
+![Step2](./images/solong/Step2.png)
+![Step3-Step6](./images/solong/Step3.png)
+![Step7](./images/common/Step7.png)
+![Step8](./images/common/Step8.png)
+![Step9](./images/common/Step9.png)
+![Step10](./images/common/Step10.png)
+
+:::note
+Once you have migrated to Solflare you may visit the unstaking guide for Solflare to withdraw your SOL. The guide is present at https://docs.solana.lido.fi/staking/solflare
+
+:::
+
 ### Utilizing and exchanging stSOL
 The following AMM pools and markets exist for exchanging stSOL or adding liquidity to pools.
 
