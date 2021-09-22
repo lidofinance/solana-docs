@@ -15,6 +15,7 @@ import wallets from './images/solflare/wallet_list.png';
 import connect from './images/solflare/connect_dialog_2.png';
 import viewtx from './images/common/view_tx.png';
 import unstake from './images/common/unstake.png';
+import stakingtab from './images/solflare/stakingtab.png';
 
 
 # How to Stake Solana on Lido
@@ -181,14 +182,56 @@ To withdraw click on the **Unstake** tab and enter the amount of stSOL that you 
 ![unstake-amount](./images/common/unstake-amount.png)
 
 Then click unstake and head over to your wallet to approve the transaction.
+:::note
+Make sure to note down the transaction hash or the link provided on the screen. This allows for an easier debugging in case of a failed transaction.
+:::
 
 ![unstake-transaction](./images/common/unstake-transaction.png)
 
 The Solana blockchain waits for 32 confirmations (called MAX Confirmations) before making a transaction 'final'. Once the transaction gets the `MAX Confirmations` the Lido program splits off a stake account with the redeemed SOL amount and transfers it to you. 
 
+:::note
+Make sure to note down the stake account address by clicking on the blockexplorer link provided on the screen.
+:::
+
 ![unstake-successful](./images/common/unstake-successful.png)
 
-You then unstake those SOL and will receive liquid SOL after the deactivation period which lasts for approximately 2 epochs. For users that desire instant liquidity, the preferred option is to exchange stSOL on the open market, e.g. on the supported AMM pools on Saber and Raydium.
+
+After unstaking go back to your wallet and click on the `Staking` tab in the solflare wallet.
+
+![stakingtab](./images/solflare/stakingtab.png)
+
+You will see a number of deactivating stake accounts. `Click to expand` the staking account details.
+
+:::note
+Note that the option to view deactivating stake accounts is visible only in Phantom and Solflare wallets. On Sollet or Solong you will not be able to see these stake accounts. This is not a cause for concern as you can always migrate from Sollet/Solong to either Phantom or Solflare for free
+:::
+
+![stake-accounts](./images/solflare/stakeaccounts.png)
+
+You will then see your deactivating stake account where you can keep a track of your deactivating stake. If you issue the unstake instruction when epoch `N` is going on, the deactivation will start at epoch `N+1` and your stake will completely deactivate at epoch `N+2`.
+
+For example, for the stake account shown in the example above the `Unstake` was done at epoch `224`, the stake started deactivating at epoch `225` and the SOL became available for withdrawing at epoch `226`
+
+![epochN](./images/common/epochN.png)
+
+![epochN+2](./images/common/epochNplus2.png)
+
+After your stake gets completely deactivated, you will see that a `Withdraw` button appears below your stake account. 
+
+![Withdraw-Button](./images/solflare/withdraw-button.png)
+
+You can withdraw your SOL by clicking on `Withdraw`. The SOL tokens should immediately reflect in your account. This complete process from first `unstaking` to finally `withdrawing` your stakes takes between 3-5 days to complete. For users who desire instant liquidity, the preferred option is to exchange stSOL on the open market, e.g. on the supported AMM pools on Saber and Raydium.
+
+### Utilizing and exchanging stSOL
+The following AMM pools and markets exist for exchanging stSOL or adding liquidity to pools.
+
+| Provider | Type | Link |
+| :--- | :--- | :--- |
+| Saber | Swap stSOL for SOL | https://app.saber.so/#/swap |
+| Saber | Add Liquidity to Pool | https://app.saber.so/#/pools/stsol/deposit |
+| Saber | Farming | https://app.saber.so/#/quarries/stsol/stake |
+| Raydium | Swap stSOL for USDC | [Raydium Pool](https://raydium.io/swap/?ammId=6a1CsrpeZubDjEJE9s1CMVheB6HWM5d7m1cj2jkhyXhj) |
 
 
 ## Resources
