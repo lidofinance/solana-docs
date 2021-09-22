@@ -20,6 +20,8 @@ import unstake from './images/common/unstake.png';
 import solanatokens from './images/phantom/solanatokens.png'
 import stakeaccounts from './images/phantom/stakeaccounts.png'
 import deactivating from './images/phantom/deactivating.png'
+import inactive from './images/phantom/inactive.png'
+import withdrawphantom from './images/phantom/withdraw-phantom.png'
 
 # How to Stake Solana on Lido
 A quick guide on staking your Solana on the Lido widget
@@ -178,7 +180,7 @@ Zooming into the widget we can observe the new SOL balance and the updated stSOL
 </p>
 
 
-## Withdrawing Solana
+## Step 6: Unstaking and utlizing stSOL
 To withdraw click on the **Unstake** tab and enter the amount of stSOL that you would like to unstake in the field provided below.
 
 ![unstake-amount](./images/common/unstake-amount.png)
@@ -214,7 +216,13 @@ Note that the option to view deactivating stake accounts is visible only in Phan
     <img src={stakeaccounts} alt="Click on the stake accounts button" width="500"/>
 </p>
 
-You will then see your deactivating stake account where you can keep a track of your deactivating stake.If you issue the unstake instruction when epoch `N` is going on, the deactivation will start at epoch `N+1` and your stake will completely deactivate at epoch `N+2`.
+You will then see your deactivating stake account where you can keep a track of your deactivating stake.
+
+<p align="center">
+    <img src={deactivating} alt="Deactivating" width="500"/>
+</p>
+
+If you issue the unstake instruction when epoch `N` is going on, the deactivation will start at epoch `N+1` and your stake will completely deactivate at epoch `N+2`.
 
 For example, for the stake account shown in the example above the `Unstake` was done at epoch `224`, the stake started deactivating at epoch `225` and the SOL became available for withdrawing at epoch `226`
 
@@ -222,7 +230,18 @@ For example, for the stake account shown in the example above the `Unstake` was 
 
 ![epochN+2](./images/common/epochNplus2.png)
 
-After your stake gets completely deactivated you can then withdraw your SOL tokens by clicking on the three dots on the top right. For users who desire instant liquidity, the preferred option is to exchange stSOL on the open market, e.g. on the supported AMM pools on Saber and Raydium.
+After your stake gets completely deactivated you your stake accounts go from `deactivating` to `inactive`. You can then withdraw your SOL tokens by clicking on the three dots on the top right. 
+
+<p align="center">
+    <img src={inactive} alt="Deactivated stake" width="500"/>
+</p>
+
+<p align="center">
+    <img src={withdrawphantom} alt="Withdraw your SOL" width="500"/>
+</p>
+
+For users who desire instant liquidity, the preferred option is to exchange stSOL on the open market, e.g. on the supported AMM pools on Saber and Raydium.
+
 
 ### Utilizing and exchanging stSOL
 The following AMM pools and markets exist for exchanging stSOL or adding liquidity to pools.

@@ -176,7 +176,7 @@ You can now go back to the Lido widget and look at your updated stSOL balance. J
 
 > Note 2: This rent is a one-time fee that won’t reccur on the next staking transaction.
 
-## Withdrawing Solana
+## Step 6: Unstaking and utlizing stSOL
 To withdraw click on the **Unstake** tab and enter the amount of stSOL that you would like to unstake in the field provided below.
 
 ![unstake-amount](./images/common/unstake-amount.png)
