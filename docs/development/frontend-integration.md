@@ -542,7 +542,7 @@ connection.sendRawTransaction(
 
 ## Useful Nuggets
 
-1. **How to get the total number of `stSOL` holders?**
+- **How to get the total number of `stSOL` holders?**
 
   ```ts
   // Filter out stSOL token addresses
@@ -561,7 +561,7 @@ connection.sendRawTransaction(
   const totalStSolHolders = accounts.length;
   ```
 
-1. **How to calculate total amount of `SOL` and `stSOL` supply in the Lido Program?** 
+- **How to calculate total amount of `SOL` and `stSOL` supply in the Lido Program(for current epoch)?**
 
   ```ts
   const accountInfo = await getAccountInfo(connection, lidoAddress);
@@ -571,9 +571,20 @@ connection.sendRawTransaction(
     accountInfo.exchange_rate.st_sol_supply.toNumber();
   ```
 
-1. **How to get a tentative stSOL/SOL rate for the current epoch**
+- **How to get a tentative stSOL/SOL rate for the current epoch**
 
   ```ts
   // Calculate the stSOL/SOL exchange rate
   const exchangeRate = totalStSolSupplyInLamports/totalSolInLamports;
+  ```
+
+- **How to get total SOL staked(currently) in Lido Program?**
+
+  ```ts
+    const accountInfo = await getAccountInfo(connection, lidoAddress);
+
+    const totalStakedInLamports = accountInfo.validators.entries
+      .map((pubKeyAndEntry) => pubKeyAndEntry.entry)
+      .map((validator) => validator.stake_accounts_balance.toNumber())
+      .reduce((acc, current) => acc + current, 0);
   ```
