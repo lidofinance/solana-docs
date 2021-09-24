@@ -542,7 +542,7 @@ connection.sendRawTransaction(
 
 ## Useful Nuggets
 
-1. **How to get the total number of `stSOL` holders?**
+- **How to get the total number of `stSOL` holders?**
 
   ```ts
   // Filter out stSOL token addresses
@@ -561,19 +561,44 @@ connection.sendRawTransaction(
   const totalStSolHolders = accounts.length;
   ```
 
-1. **How to calculate total amount of `SOL` and `stSOL` supply in the Lido Program?** 
+- **How to get the stSOL/SOL exchange rate for the current epoch?**
 
   ```ts
-  const accountInfo = await getAccountInfo(connection, lidoAddress);
+    const accountInfo = await getAccountInfo(connection, lidoAddress);
 
-  const totalSolInLamports = accountInfo.exchange_rate.sol_balance.toNumber();
-  const stSolSupplyInLamports =
-    accountInfo.exchange_rate.st_sol_supply.toNumber();
-  ```
+    // Fetch SOL and stSOL balance
+    const totalSolInLamports = accountInfo.exchange_rate.sol_balance.toNumber();
+    const stSolSupplyInLamports =
+      accountInfo.exchange_rate.st_sol_supply.toNumber();
 
-1. **How to get a tentative stSOL/SOL rate for the current epoch**
-
-  ```ts
   // Calculate the stSOL/SOL exchange rate
   const exchangeRate = totalStSolSupplyInLamports/totalSolInLamports;
+  ```
+
+- **How to get the current amount of SOL staked with Lido?**
+
+  ```ts
+    const accountInfo = await getAccountInfo(connection, lidoAddress);
+
+    // Find reserve account pubkey
+    const bufferArray = [
+      lidoAddress.toBuffer(),
+      Buffer.from('reserve_account'),
+    ];
+    const [reserveAccount] = await PublicKey.findProgramAddress(bufferArray, programId);
+
+    // Fetch balance and rent for reserve account
+    const reserveAccountInfo = await connection.getAccountInfo(reserveAccount);
+    const reserveAccountRent = await connection.getMinimumBalanceForRentExemption(
+      reserveAccountInfo.data.byteLength,
+    );
+    const reserveAccountBalanceInLamports =
+      reserveAccountInfo.lamports - reserveAccountRent;
+
+    const validatorsStakeAccountsBalanceInLamports = accountInfo.validators.entries
+      .map((pubKeyAndEntry) => pubKeyAndEntry.entry)
+      .map((validator) => validator.stake_accounts_balance.toNumber())
+      .reduce((acc, current) => acc + current, 0);
+
+    const totalStakedInLamports = reserveAccountBalanceInLamports + validatorsStakeAccountsBalanceInLamports;
   ```
