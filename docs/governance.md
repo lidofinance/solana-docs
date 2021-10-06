@@ -24,9 +24,9 @@ expanding to different blockchain networks.
    Operator Subgovernance Group on behalf of the Lido DAO. Any validator can
    apply, see also [the validator admission docs][admission].
  * **Admininistration rights** [reside with a 4-out-of-7 multisig][admin] that
-   consists of established validators and ecosystem partners, including the
-   Solana Foundation. The role of this multisig is to execute decisions made by
-   the Lido DAO, not to make independent decisions.
+   consists of established validators and ecosystem partners. The role of this
+   multisig is to execute decisions made by the Lido DAO, not to make
+   independent decisions.
 
 [admission]: validator-onboarding.md#validator-admission
 [admin]: administration.md
