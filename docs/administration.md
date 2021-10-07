@@ -67,9 +67,9 @@ require approval from 4 out of 7 members. The members are:
  * [ChainLayer](https://chainlayer.io/)
  * [Chorus One](https://chorus.one)
  * [Figment](https://figment.io/)
+ * [Mercurial](https://mercurial.finance/)
  * [P2P](https://p2p.org/)
  * [Saber](https://saber.so/)
- * [Solana Foundation](https://solana.com/)
  * [Staking Facilities](https://stakingfacilities.com/)
 
 The addresses of the multisig members are listed on the [deployments
@@ -78,7 +78,9 @@ authority of the Solido program, and as the manager of the Solido instance.
 
 For initial testing on testnet, [Bonafida](http://bonfida.org/) participated as
 one of the seven multisig members. For the mainnet deployment, ChainLayer has
-taken their place.
+taken their place. During the initial mainnet deployment, [Solana
+Foundation](https://solana.com/) participated as one of the seven members. They
+were succeeded by Mercurial after the v1.0.0 launch.
 
 Aside from approving parameter changes to onboard validators, the multisig
 members also verify that the deployed Solido program can be

@@ -37,7 +37,7 @@ Related addresses:
 }
 ```
 
-Multisig owners:
+Multisig owners (including past owners):
 
 ```json
 {
@@ -47,6 +47,7 @@ Multisig owners:
   "F4VFp4tFTyrQWo9YVjCbPE5eQP27ice2zyGDp2tN2Rkm": "Saber",
   "AnoVUukL1fMAwEp4y2rrZV45BNHLes8ZwWsCRgEwhGH4": "ChainLayer",
   "6S21QCmpAadEhHj3pY2RMbPMGwgYNvS4Pd7zUXoRDMdK": "Chorus One",
+  "DHLXnJdACTY83yKwnUkeoDjqi4QBbsYGa1v8tJL76ViX": "Mercurial",
   "8Lep9addZWUWqBNj3igx4QoHe43GBfvLhGJy18jJgWQa": "Solana Foundation"
 }
 ```
