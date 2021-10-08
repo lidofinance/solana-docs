@@ -1,7 +1,7 @@
 ---
 id: Orca-pool-Wormhole-guide
 title: Wormhole Transfer and Orca Pool Guide
-description: Step by step description on how to transfer wstETH through wormhole and invest in stSOL-wstETH pool
+description: Step by step description on how to transfer wstETH through Wormhole V2 and invest in stSOL-wstETH pool
 keywords:
  - Orca
  - wstETH
@@ -17,7 +17,13 @@ import claimed from './images/saber/claimed-sbr.png';
 
 
 # Wormhole Transfer and Orca Pool Guide
-This is a step-by-step guide on investing your stSOL in the following Orca Pool - `stSOL-wstETH` to earn more rewards. `wstETH` is an ERC-20 token and therefore this guide also contains the instructions to transfer `wstETH` from Ethereum to Solana ecosystem using [Wormhole V2 bridge](https://wormholebridge.com/#/) 
+This is a step-by-step guide on providing liquidity to the following Orca Pool - `stSOL-wstETH` to earn more rewards. `wstETH` is an ERC-20 token and therefore this guide also contains the instructions to transfer `wstETH` from Ethereum to Solana ecosystem using [Wormhole V2 bridge](https://wormholebridge.com/#/) 
+
+:::info
+This first-of-its-kind liquidity pool is a very cool DeFi product! Not only is it composed of two staked assets earning staking rewards, but it also has one of these bridged over to Solana from Ethereum in a decentralized way, highlighting the power of cross-chain DeFi!
+:::
+
+You can learn more about [wstETH on the lido blog](https://help.lido.fi/en/articles/5231836-what-is-wrapped-steth-wsteth).
 
 Once `wstETH` is bridged over Wormhole to Solana you can easily use that to add liquidity to the `stSOL-wstETH` pool
 
@@ -57,8 +63,6 @@ If you enter a higher number to Wrap, than what you approved, you'll be shown th
 Phantom wallet shows the `wstETH` token as an NFT right now. It is a known issue in their codebase and they are actively fixing this. Do not be alarmed if you see `wstETH` as an NFT.
 :::
 
-You can learn more about [wstETH on the lido blog](https://help.lido.fi/en/articles/5231836-what-is-wrapped-steth-wsteth).
-
 ### Step 3: Connect Ethereum wallet to Wormhole V2 Bridge
 Now that you have `wstETH` it is time to bridge them over to the Solana ecosystem. The first step in that direction is to visit the [Wormhole Bridge](https://wormholebridge.com/#/transfer). Under `Source` select Ethereum as the chain and click on `Connect`
 
@@ -67,7 +71,7 @@ Now that you have `wstETH` it is time to bridge them over to the Solana ecosyste
 Your wallet screen will pop-up. Upon successful connection you should see your ERC-20 address on the Disconnect button.
 
 :::info
-This process of bridging your wstETH from Ethereum Blockchain to Solana, requires various transactions to be approved in your Ethereum wallet. Make sure you have enough Ethereum to pay for gas fee
+This process of bridging your wstETH from Ethereum Blockchain to Solana, requires various transactions to be approved in your Ethereum wallet. Make sure you have enough Ethereum to pay for gas fee. In total these transactions can potentially cost roughly between $50-200 in gas fees depending on the conditions on the Ethereum mainnet.
 ::: 
 
 ### Step 4: Select Token Account - wstETH
@@ -89,6 +93,10 @@ Under `Target`, select Solana and click on `Select Wallet` to connect to your So
 
 ![wormhole-solana-wallet](./images/wormhole-orca/wormhole-solana-wallet.png)
 
+:::note
+From this step onwards, certain transactions will happend on the Solana blockchain. You will need to hold some amount of SOL in your main account for fees (but of course much less than on Ethereum :))
+:::
+
 ### Step 7: Creating Associated Token Account
 Once the wallet is connected, your SOL address will start reflecting to the left of the `Disconnect` button. Every new token in the Solana ecosystem gets assigned an **Associated Token Account**. This account is automatically created for you once you click on the `Create Associated Token Account`
 
@@ -99,10 +107,10 @@ You will have to approve the creation of this account in your Solana wallet.
 ![wormhole-ata-approval](./images/wormhole-orca/wormhole-ata-approval.png)
 
 ### Step 8: Send Tokens
-You can now send the tokens through wormhole to the Solana blockchain. 
+You can now send the tokens through Wormhole to the Solana blockchain. 
 
 :::note
-It is generally not safe to approve unlimited tokens to be sent over wormhole but if you envision yourself repeating this process multiple times, it might make sense for you to approve unlimited tokens to be transferred.
+It is generally not safe to approve unlimited tokens to be sent over Wormhole but if you envision yourself repeating this process multiple times, it might make sense for you to approve unlimited tokens to be transferred.
 :::
 
 ![wormhole-approve-send](./images/wormhole-orca/wormhole-approve-send.png)
@@ -115,7 +123,7 @@ After successful approval, transfer the tokens.
 
 ![wormhole-transfer](./images/wormhole-orca/wormhole-transfer.png)
 
-Once this transaction is executed successfully the wormhole bridge waits for 15 Ethereum confirmations (3-5 minutes) to bridge your token to the Solana blockchain.
+Once this transaction is executed successfully the Wormhole V2 bridge waits for 15 Ethereum confirmations (3-5 minutes) to bridge your token to the Solana blockchain.
 
 ![wormhole-15-confirmations](./images/wormhole-orca/wormhole-15-confirmations.png)
 ![wormhole-4-confirmations](./images/wormhole-orca/wormhole-4-confirmations.png)
@@ -180,4 +188,21 @@ Approve the deposit transaction in the wallet and wait for the successfull compl
 You've now successfully deposited both the tokens.
 
 ![orca-deposit-complete](./images/wormhole-orca/orca-deposit-complete.png)
+
+### Step 12: Earn extra rewards from Orca Double-Dip
+Once you've deposited in the Orca Pool you will become eligible to earn further rewards through `Orca Double Dipping`. Go to the tab `Double Dip`, it should be right next to the `Your Liquidity` tab. 
+
+![orca-double-dip-tab](./images/wormhole-orca/orca-double-dip-tab.png)
+
+Search for the `stSOL-wstETH` pool and click on `Double-dip`. 
+
+![orca-double-dip](./images/wormhole-orca/orca-double-dip.png)
+![orca-double-dipping](./images/wormhole-orca/orca-double-dipping.png)
+
+After you approve the double dipping transaction, you will see that you immediately start earning wLDO tokens as well. Sit back, relax and enjoy the rewards!
+
+![orca-dip-success](./images/wormhole-orca/orca-dip-success.png)
+
+
+
 
