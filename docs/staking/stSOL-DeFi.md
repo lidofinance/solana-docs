@@ -1,14 +1,14 @@
 ---
-id: stSOL-Liquidity
-title: Utilizing stSOL in DeFi
-description: Using stSOL as a collateral in DeFi to earn secondary rewards
+id: stSOL-Saber-pool
+title: Utilizing stSOL in Saber
+description: Using stSOL as a collateral in Saber to earn secondary rewards 
 keywords:
  - Saber
  - Raydium
  - lido
  - Mercurial
  - Farming
-sidebar_label: Investing stSOL in DeFi
+sidebar_label: Investing stSOL in Saber
 sidebar_position: 7
 ---
 
@@ -23,7 +23,6 @@ import unwrap2 from './images/saber/unwrap2.png';
 # How to use stSOL to earn secondary rewards
 A quick guide on using stSOL in DeFi to earn more rewards. In this guide we will be talking about the following DeFi integrations.
 1. [Saber](https://saber.so/)
-2. Raydium
 
 
 ## How to earn SBR by providing stSOL/SOL liquidity
