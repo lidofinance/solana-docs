@@ -1,5 +1,5 @@
 ---
-id: stSOL-Wormhole-Orca-pool
+id: Orca-pool-Wormhole-guide
 title: Wormhole Transfer and Orca Pool Guide
 description: Step by step description on how to transfer wstETH through wormhole and invest in stSOL-wstETH pool
 keywords:
