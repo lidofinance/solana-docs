@@ -59,10 +59,6 @@ If you enter a higher number to Wrap, than what you approved, you'll be shown th
 
 ![wrap](./images/wormhole-orca/wrap.png)
 
-:::caution
-Phantom wallet shows the `wstETH` token as an NFT right now. It is a known issue in their codebase and they are actively fixing this. Do not be alarmed if you see `wstETH` as an NFT.
-:::
-
 ### Step 3: Connect Ethereum wallet to Wormhole V2 Bridge
 Now that you have `wstETH` it is time to bridge them over to the Solana ecosystem. The first step in that direction is to visit the [Wormhole Bridge](https://wormholebridge.com/#/transfer). Under `Source` select Ethereum as the chain and click on `Connect`
 
