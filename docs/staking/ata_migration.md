@@ -25,7 +25,7 @@ Solana Program Library (SPL) allows a user to hold multiple tokens accounts corr
 
 Such accounts are known as Aux Accounts. However, these accounts can be a source of considerable confusion for other users trying to transfer money to the holder of the Aux Accounts. It also becomes nuanced for Dapps to build solutions that list a user's Aux Accounts. 
 
-To overcome this problem Solana Program Library provides **Associated Token Accounts** (ATA) which are _deterministically_ derived from the user's main account address and a token mint address. This makes it easier for wallets to keep track of all the ATAs corresponding to one user (one main System account address).
+To overcome this problem Solana Program Library provides [**Associated Token Accounts**](https://spl.solana.com/associated-token-account) (ATA) which are _deterministically_ derived from the user's main account address and a token mint address. This makes it easier for wallets to keep track of all the ATAs corresponding to one user (one main System account address).
 
 ## Lido for Solana Aux Accounts
 Every time a user deposits into and subsequently withdraws from the Lido for Solana program they are provided with a **deactivating stake account**. In its early days these deactivating stake accounts were just Aux Accounts. Later on, the Lido program started creating Associated Token Accounts upon withdrawal. Users who performed withdrawals within the first few days of Lido for Solana launch were assigned the Aux accounts.
