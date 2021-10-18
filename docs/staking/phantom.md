@@ -222,11 +222,9 @@ You will then see your deactivating stake account where you can keep a track of 
     <img src={deactivating} alt="Deactivating" width="500"/>
 </p>
 
-If you issue the unstake instruction when epoch `N` is going on, the deactivation will start at epoch `N+1` and your stake will completely deactivate at epoch `N+2`.
+If you issue the unstake instruction when epoch `N` is going on, the deactivation will start immediately and your stake will completely deactivate at epoch `N+1`.
 
-For example, for the stake account shown in the example above the `Unstake` was done at epoch `224`, the stake started deactivating at epoch `225` and the SOL became available for withdrawing at epoch `226`
-
-![epochN](./images/common/epochN.png)
+For example, for the stake account shown in the example above the `Unstake` was done at epoch `225`, the stake started deactivating within the same epoch and the SOL became available for withdrawing at epoch `226`
 
 ![epochN+2](./images/common/epochNplus2.png)
 
