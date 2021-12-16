@@ -86,6 +86,11 @@ module.exports = {
     },
     {
       type: 'doc',
+      id: 'incentives',
+      label: 'Incentives',
+    },
+    {
+      type: 'doc',
       id: 'deployments',
       label: 'Deployments',
     },
