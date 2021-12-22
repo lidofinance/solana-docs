@@ -23,7 +23,7 @@ The Lido for Solana source code has been audited by the following parties:
 [neodyme]:        https://neodyme.io/
 [bramah]:         https://www.bramah.systems/
 [bramah-report]:  https://github.com/ChorusOne/solido/raw/b95fc4fe9435a1d5ccdaae60011ea59dd93afed8/audit/2021-07-05-bramah-systems.pdf
-[neodyme-report]: https://github.com/ChorusOne/solido/raw/d57347c41c68a7def1722f5aa2b052539c325ba2/audit/2021-08-03-neodyme.pdf
+[neodyme-report]: https://github.com/ChorusOne/solido/raw/cb3805689e042fe88abd9f9c17adb9c10e029e18/audit/2021-08-03-neodyme.pdf
 [v0.1.0]:         https://github.com/ChorusOne/solido/tree/v0.1.0
 [v0.5.0]:         https://github.com/ChorusOne/solido/tree/v0.5.0
 
