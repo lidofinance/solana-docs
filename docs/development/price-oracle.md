@@ -89,7 +89,7 @@ During normal operation, the first term is smaller than the second term, so the
 1 bSOL = 1 SOL peg is ensured. At the time of writing, there is no slashing on
 Solana, which means that the price of stSOL in SOL does not decrease, so Anker’s
 stSOL reserve more than covers all bSOL in existence, and the 1 bSOL = 1 SOL peg
-is maintained.  However, in the unlikely event that Solana were to introduce
+is maintained. However, in the unlikely event that Solana were to introduce
 slashing in the future, and Lido for Solana would experience a slashing event
 that it could not compensate for from its treasury, then the price of stSOL
 would go down, and Anker’s stSOL reserve may not contain sufficient stSOL to
