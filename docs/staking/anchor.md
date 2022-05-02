@@ -49,7 +49,7 @@ Enter the amount of `stSOL` tokens you want to convert.
 
 ![amount-bsol](./images/anchor/12_amount_convert.png)
 
-Upon clicking you will seeYou will first have to approve the transaction in your wallet. You will see a popup that tells your how much `bSOL` you will receive upon confirmation
+Upon clicking you will first have to approve the transaction in your wallet. You will see a popup that tells your how much `bSOL` you will receive upon confirmation
 
 ![waiting](./images/anchor/13_waiting_for_wallet.png)
 
