@@ -55,7 +55,8 @@ to `run-maintainer`. Beware that:
  * The public Solana RPC endpoints are rate-limited, and require trusting the
    server. If possible, point `--cluster` at the RPC endpoint of your own
    validator, instead of a public one like
-   `https://api.mainnet-beta.solana.com`.
+   `https://api.mainnet-beta.solana.com`. See also [the section about the RPC
+   node requirements](#rpc-node-requirements).
 
  * The key used to sign (configured with `--keypair-path`) needs to be listed as
    a maintainer in the Solido instance. You can view the list of maintainers
@@ -81,6 +82,31 @@ the daemon. The following metrics are useful for monitoring:
    are expected, especially when using a public RPC endpoint.
 
 [config]: operation/the-solido-utility.md#configuration
+
+## RPC node requirements
+
+The Solido maintenance daemon puts some demands on the RPC node that it connects
+to:
+
+ * The RPC must be enabled with `--full-rpc-api`.
+   Since [Solana 1.9.6](https://github.com/solana-labs/solana/releases/tag/v1.9.6)
+   by default only the minimal set of RPC methods is enabled, so the full set
+   must be enabled explicitly.
+
+ * Set `--max-multiple-accounts` to a sufficiently large value. (1000 should be
+   plenty for now.) Solido relies on `GetMultipleAccounts` to read atomic
+   snapshots of the chain state. For correctness, it must be able to read all
+   accounts in a single call. Solido needs to read multiple accounts per
+   validator (multiple stake accounts, the vote account, the config account for
+   metadata, etc.). Solido will log a warning to stdout when it can’t request
+   all accounts in a single call.
+
+ * Enable account indexing of the config program with `--account-index
+   program-id` and `--account-index-include-key Config1111111111111111111111111111111111111`.
+   Due to the way Solana implements validator metadata, one needs to list all
+   accounts owned by the config program to find the metadata for a particular
+   validator. For this query to be fast, account indexing is needed. Without
+   these flags, the `GetProgramAccounts` call will time out.
 
 ## Claiming validation fees
 
