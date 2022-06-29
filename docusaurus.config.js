@@ -4,8 +4,8 @@ const katex = require('rehype-katex');
 module.exports = {
   title: 'Lido for Solana',
   tagline: 'Awesome liquid staking on Solana, the high-performance, permissionless blockchain',
-  url: 'https://docs.solana.lido.fi/',
-  baseUrl: '/',
+  url: 'https://lidofinance.github.io',
+  baseUrl: '/solido/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   favicon: 'img/stSOL.svg',
@@ -39,7 +39,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/chorusone/solido',
+          href: 'https://github.com/lidofinance/solana-docs',
           label: 'GitHub',
           position: 'right',
         },
