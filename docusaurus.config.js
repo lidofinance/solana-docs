@@ -5,7 +5,7 @@ module.exports = {
   title: 'Lido for Solana',
   tagline: 'Awesome liquid staking on Solana, the high-performance, permissionless blockchain',
   url: 'https://lidofinance.github.io',
-  baseUrl: '/solido/',
+  baseUrl: '/solana-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   favicon: 'img/stSOL.svg',
