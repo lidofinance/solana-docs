@@ -158,7 +158,7 @@ _Prepares & returns unStake transaction_
 **Syntax:**
 
 ```ts
-const unStakeTransaction = await solidoSDK.getUnStakeTransaction({
+const { transaction: unStakeTransaction} = await solidoSDK.getUnStakeTransaction({
     amount: 20,
     payerAddress: new PublicKey(wallet.publicKey),
 });
@@ -171,7 +171,7 @@ const unStakeTransaction = await solidoSDK.getUnStakeTransaction({
 
 **Return value:**
 
-_type:_ `Promise<Transaction>`
+_type:_ `Promise<{transaction: Transaction, stakeAccountAddress: Publickey}>`
 
 _value definition:_ `Transaction` class from [@solana/web3.js](https://www.npmjs.com/package/@solana/web3.js)
 
