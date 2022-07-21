@@ -60,6 +60,32 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Frontend Integration',
+      items: [
+        {
+          type: 'doc',
+          id: 'frontend-integration/index',
+          label: 'Introduction',
+        },
+        {
+          type: 'doc',
+          id: 'frontend-integration/banner',
+          label: 'Integration with banner',
+        },
+        {
+          type: 'doc',
+          id: 'frontend-integration/sdk-methods',
+          label: 'List of all sdk methods',
+        },
+        {
+          type: 'doc',
+          id: 'frontend-integration/stake',
+          label: 'Staking & UnStaking',
+        }
+      ],
+    },
+    {
+      type: 'category',
       label: 'Internals',
       items: [
         {

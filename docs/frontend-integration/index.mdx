@@ -1,0 +1,76 @@
+# Introduction
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+This sdk helps you integrate with us, using three ways:
+1. Simplest way is using React banner.
+2. Support UI widget in your project. We provide js functions for staking, unstaking, statistics and transaction info.
+3. Use staking widget with UI.
+
+## Installation
+
+```mdx-code-block
+<Tabs>
+<TabItem value="npm">
+```
+
+```bash
+npm install @lidofinance/solido-sdk
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="Yarn">
+```
+
+```bash
+yarn add @lidofinance/solido-sdk
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+```
+
+## Using banner
+
+```ts
+import { LidoStakeBanner } from '@lidofinance/solido-sdk';
+
+<LidoStakeBanner referrerId="your_solana_referral_address" direction="horizontal" />
+```
+
+See [Banner Section](/frontend-integration/banner)
+
+## Using SDK
+
+```ts
+import { SolidoSDK } from '@lidofinance/solido-sdk';
+
+try {
+  const solidoSDK = new SolidoSDK('mainnet-beta', connection, 'your_solana_referral_address');
+
+  await solidoSDK.stake({
+    amount: 20, // The amount of SOL-s which need to stake
+    wallet: wallet, // Wallet instance
+    // Optional callback for getting information about transaction stage
+    setTxStage: setTxStageCallback,
+  });
+} catch (e) {
+  // Handle Errors
+}
+```
+
+See [SDK Staking for details](/frontend-integration/stake)
+
+## Using staking widget
+
+In progress, will be available soon.
+
+## Learn more
+- [Lido on Solana](https://solana.lido.fi/)
+- [Docs](https://docs.solana.lido.fi/)
+- [Lido Referral Program for Solana](https://help.lido.fi/en/articles/5847184-lido-referral-program-for-solana-integration-guide)
+- [Join on Discord](https://discord.gg/vgdPfhZ)
+- [Join on Telegram](https://t.me/lidofinance)
