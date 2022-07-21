@@ -6,7 +6,7 @@ module.exports = {
   tagline: 'Awesome liquid staking on Solana, the high-performance, permissionless blockchain',
   url: 'https://docs.solana.lido.fi/',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'throw',
   favicon: 'img/stSOL.svg',
   organizationName: 'chorusone',
