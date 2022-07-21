@@ -1,0 +1,422 @@
+# List of all methods
+
+## Staking
+
+---
+
+### stake()
+
+_First prepares stake transaction, then signs and confirm it_
+
+**Syntax:**
+
+```ts
+// With txStage
+const transactionHash = await solidoSDK.stake({
+    amount: 20,
+    wallet: walletInstance,
+    setTxStage: setTxStageCallback,
+});
+
+// Without txStage
+const transactionHash = await solidoSDK.stake({
+    amount: 20,
+    wallet: walletInstance,
+});
+```
+
+**Parameters:**
+
+- *`amount`* - The amount of SOL-s which need to stake
+- *`wallet`* - Wallet instance from [@solana/wallet-adapter-base](https://www.npmjs.com/package/@solana/wallet-adapter-base)
+- *`setTxStage?`* - Optional callback for getting information about transaction stage
+
+**Return value:**
+
+_type:_ `Promise<string>`
+
+_value definition:_ hash of transaction got from `connection.sendRawTransaction`
+
+### getStakeTransaction()
+
+_Prepares & returns stake transaction_
+
+**Syntax:**
+
+```ts
+const stakeTransaction = await solidoSDK.getStakeTransaction({
+    amount: 20,
+    payerAddress: new PublicKey(wallet.publicKey),
+});
+```
+
+**Parameters:**
+
+- *`amount`* - The amount of SOL-s which need to stake
+- *`payerAddress`* - address of user who is trying to make the transaction (`wallet.publicKey`)
+
+**Return value:**
+
+_type:_ `Promise<Transaction>`
+
+_value definition:_ `Transaction` class from [@solana/web3.js](https://www.npmjs.com/package/@solana/web3.js)
+
+
+### calculateMaxStakeAmount()
+
+_Returns maximum available SOL-s to stake for given address_
+
+**Syntax:**
+
+```ts
+const maxStakeAmountInLamports = await solidoSDK.calculateMaxStakeAmount(new PublicKey(wallet.publicKey));
+```
+
+**Parameters:**
+
+- *`address`* - address of user (`wallet.publicKey`)
+
+**Return value:**
+
+_type:_ `Promise<number>`
+
+_value definition:_ Value measurement is in lamports
+
+
+### signAndConfirmTransaction()
+
+_Signs and confirm given transaction_
+
+**Syntax:**
+
+```ts
+const transactionHash = await solidoSDK.signAndConfirmTransaction({
+    transaction: stakeTransaction,
+    wallet: walletInstance,
+    setTxStage: setTxStageCallback,
+});
+```
+
+**Parameters:**
+
+- *`transaction`* - (un)stake transaction, got from `getStakeTransaction`
+- *`wallet`* - Wallet instance
+- *`setTxStage?`* - Optional callback for getting information about transaction stage
+
+**Return value:**
+
+_type:_ `Promise<string>`
+
+:::tip
+Use `transactionHash` for generating links to solana explorers. For example to https://explorer.solana.com
+:::
+
+
+<br />
+
+## UnStaking
+
+---
+
+### unStake()
+
+_First prepares unStake transaction, then signs and confirm it_
+
+**Syntax:**
+
+```ts
+// With txStage
+const transactionHash = await solidoSDK.unStake({
+    amount: 20,
+    wallet: walletInstance,
+    setTxStage: setTxStageCallback,
+});
+
+// Without txStage
+const transactionHash = await solidoSDK.unStake({
+    amount: 20,
+    wallet: walletInstance,
+});
+```
+
+**Parameters:**
+
+- *`amount`* - The amount of stSOL-s which need to unStake
+- *`wallet`* - Wallet instance from [@solana/wallet-adapter-base](https://www.npmjs.com/package/@solana/wallet-adapter-base)
+- *`setTxStage?`* - Optional callback for getting information about transaction stage
+
+**Return value:**
+
+_type:_ `Promise<string>`
+
+_value definition:_ hash of transaction got from `connection.sendRawTransaction`
+
+### getUnStakeTransaction()
+
+_Prepares & returns unStake transaction_
+
+**Syntax:**
+
+```ts
+const { transaction: unStakeTransaction} = await solidoSDK.getUnStakeTransaction({
+    amount: 20,
+    payerAddress: new PublicKey(wallet.publicKey),
+});
+```
+
+**Parameters:**
+
+- *`amount`* - The amount of stSOL which need to unStake
+- *`payerAddress`* - address of user who is trying to make the transaction (`wallet.publicKey`)
+
+**Return value:**
+
+_type:_ `Promise<{transaction: Transaction, stakeAccountAddress: Publickey}>`
+
+_value definition:_ `Transaction` class from [@solana/web3.js](https://www.npmjs.com/package/@solana/web3.js)
+
+
+### calculateMaxUnStakeAmount()
+
+_Returns maximum available stSOL-s to unStake for given address_
+
+**Syntax:**
+
+```ts
+const maxUnStakeAmountInLamports = await solidoSDK.calculateMaxUnStakeAmount(new PublicKey(wallet.publicKey));
+```
+
+**Parameters:**
+
+- *`address`* - address of user (`wallet.publicKey`)
+
+**Return value:**
+
+_type:_ `Promise<number>`
+
+_value definition:_ Value measurement is in lamports
+
+<br />
+
+## Transaction info
+
+---
+
+### getExchangeRate()
+
+_Returns exchange rate for stSOL-SOL_
+
+**Syntax:**
+
+```ts
+const { SOLToStSOL, stSOLToSOL } = await solidoSDK.getExchangeRate();
+
+console.log(`1 stSOL = ~${stSOLToSOL} SOL`); // 1 stSOL = ~1.0485 SOL
+console.log(`1 SOL = ~${SOLToStSOL} stSOL`); // 1 SOL = ~0.9537 stSOL
+```
+
+**Parameters:**
+
+- *`precision?`* - the number of digits to appear after the decimal point (`default = 4`)
+
+**Return value:**
+
+_type:_ `Promise<{
+    SOLToStSOL: number,
+    stSOLToSOL: number,
+    description: string
+}>`
+
+
+### getTransactionCost()
+
+_Returns transaction cost for given instruction_
+
+**Syntax:**
+
+```ts
+const { costInUsd, costInSol } = await solidoSDK.getTransactionCost(INSTRUCTION.STAKE);
+
+console.log(`~ ${costInSol} SOL (${costInUsd})`); // ~ 0.000005 SOL ($0.00021)
+```
+
+**Parameters:**
+
+- *`instruction`* - INSTRUCTION code
+
+**Return value:**
+
+_type:_ `Promise<{
+    costInUsd: number,
+    costInSol: number,
+    costInLamports: number
+}>`
+
+### getStakingRewardsFee()
+
+_Returns staking rewards fee percent with it description_
+
+**Syntax:**
+
+```ts
+const { fee } = await solidoSDK.getStakingRewardsFee();
+
+console.log(`Staking rewards fee: (${fee})`);
+```
+
+**Return value:**
+
+_type:_ `Promise<{
+    fee: string,
+    description: string
+}>`
+
+### getTransactionInfo()
+
+_Returns the united response of the previous functions (`exchangeRate`, `transactionCost`, `stakingRewardsFee`)_
+
+**Syntax:**
+
+```ts
+const { exchangeRate, transactionCost, stakingRewardsFee } = await solidoSDK.getTransactionInfo(INSTRUCTION.STAKE);
+
+console.log(`Exchange rate: ${exchangeRate.value}`);
+console.log(`Transaction cost: $${transactionCost.costInUsd}`);
+console.log(`Staking rewards fee: (${stakingRewardsFee.fee})`);
+```
+
+**Parameters:**
+
+- *`instruction`* - INSTRUCTION code
+
+**Return value:**
+
+_type:_ `Promise<{
+    exchangeRate: {
+        value: number,
+        description: string
+    },
+    transactionCost: {
+        costInUsd: number,
+        costInSol: number,
+        costInLamports: number
+    },
+    stakingRewardsFee: {
+        fee: string,
+        description: string
+    }
+}>`
+
+<br />
+
+<img src={require('./assets/transactionInfo.png').default} alt="Transaction Info" />
+
+<br />
+
+## Lido statistics
+
+---
+
+### getTotalStaked()
+
+_Returns total staked SOL-s_
+
+**Syntax:**
+
+```ts
+const totalStaked = await solidoSDK.getTotalStaked();
+
+console.log(`${totalStaked} SOL`); // 2620337.84 SOL
+```
+
+**Parameters:**
+
+- *`precision?`* - the number of digits to appear after the decimal point (`default = 2`)
+
+**Return value:**
+
+_type:_ `Promise<number>`
+
+
+
+### getStakersCount()
+
+_Returns the number of non-empty stSOL accounts_
+
+**Syntax:**
+
+```ts
+const stakersCount = await solidoSDK.getStakersCount();
+
+console.log(`Stakers: ${stakersCount}`); // 14965
+```
+
+**Return value:**
+
+_type:_ `Promise<number>`
+
+
+### getMarketCap()
+
+_Returns stSOL market cap in $_
+
+**Syntax:**
+
+```ts
+const marketCap = await solidoSDK.getMarketCap();
+
+console.log(`stSOL market cap $${marketCap}`); // $113174513
+```
+
+**Parameters:**
+
+- *`totalStakedInSol?`* - total staked SOL-s
+
+**Return value:**
+
+_type:_ `Promise<number>`
+
+
+### getLidoStatistics()
+
+_Returns the united response of the previous functions (`totalStaked`, `stakersCount`, `marketCap`, also `apy`)_
+
+**Syntax:**
+
+```ts
+const { apy, totalStaked, stakers, marketCap } = await solidoSDK.getLidoStatistics();
+
+console.log(`Annual percentage yield: ${apy}%`);
+console.log(`Total staked with Lido: ${totalStaked.formatted}`);
+console.log(`Stakers: ${stakers.formatted}`);
+console.log(`stSOL market cap: $${marketCap}`);
+```
+
+**Return value:**
+
+_type:_ `Promise<{
+    apy: number,
+    totalStaked: {
+        value: number,
+        formatted: number,
+    },
+    stakers: {
+        value: string,
+        description: string,
+        formatted: fstring,
+    },
+    marketCap: number
+}>`
+
+<img src={require('./assets/lidostatistics.png').default} alt="Lido Statistics" />
+
+
+<br />
+<br />
+
+```ts
+enum INSTRUCTION {
+  STAKE = 1,
+  UNSTAKE = 2,
+}
+```
