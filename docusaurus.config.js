@@ -59,4 +59,17 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/frontend-integration/manual-instructions',
+            from: '/development/frontend-integration',
+          },
+        ],
+      },
+    ],
+  ],
 };
