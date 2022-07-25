@@ -1,4 +1,4 @@
-# Integrating with Lido
+# Manual instructions
 
 **Live integration on Mainnet** - [http://solana.lido.fi/](https://solana.lido.fi)
 
