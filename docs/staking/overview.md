@@ -1,5 +1,5 @@
 ---
-title: staking
+title: Staking
 description: Overview of user staking in LIDO for Solana
 keywords:
  - staking
