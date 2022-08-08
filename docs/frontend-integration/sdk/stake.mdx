@@ -27,9 +27,9 @@ const solidoSDK = new SolidoSDK('mainnet-beta', connection, 'your_solana_referra
 ```ts
 type setTxStage = (props: {
   txStage: TX_STAGE;
-  transactionHash?: TransactionSignature; // TX_STAGE.AWAITING_BLOCK
-  deactivatingSolAccountAddress?: PublicKey; // TX_STAGE.AWAITING_SIGNING unstake instructions
-  stSolAccountAddress?: PublicKey; // TX_STAGE.AWAITING_SIGNING stake instructions
+  transactionHash?: TransactionSignature; // for TX_STAGE.AWAITING_BLOCK stage
+  deactivatingSolAccountAddress?: PublicKey; // for TX_STAGE.AWAITING_SIGNING stage unstake instructions
+  stSolAccountAddress?: PublicKey; // for TX_STAGE.AWAITING_SIGNING stage stake instructions
 }) => void;
 
 try {

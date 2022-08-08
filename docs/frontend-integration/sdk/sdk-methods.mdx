@@ -13,8 +13,8 @@ _First prepares stake transaction, then signs and confirm it_
 ```ts
 type setTxStage = (props: {
   txStage: TX_STAGE;
-  transactionHash?: TransactionSignature; // TX_STAGE.AWAITING_BLOCK
-  stSolAccountAddress?: PublicKey; // TX_STAGE.AWAITING_SIGNING
+  transactionHash?: TransactionSignature; // for TX_STAGE.AWAITING_BLOCK stage
+  stSolAccountAddress?: PublicKey; // for TX_STAGE.AWAITING_SIGNING stage
 }) => void;
 
 // With txStage
@@ -135,8 +135,8 @@ _First prepares unStake transaction, then signs and confirm it_
 ```ts
 type setTxStage = (props: {
   txStage: TX_STAGE;
-  transactionHash?: TransactionSignature; // TX_STAGE.AWAITING_BLOCK
-  deactivatingSolAccountAddress?: PublicKey; // TX_STAGE.AWAITING_SIGNING instructions
+  transactionHash?: TransactionSignature; // for TX_STAGE.AWAITING_BLOCK stage
+  deactivatingSolAccountAddress?: PublicKey; // for TX_STAGE.AWAITING_SIGNING stage
 }) => void;
 
 // With txStage
