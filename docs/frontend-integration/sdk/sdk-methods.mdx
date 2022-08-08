@@ -11,15 +11,21 @@ _First prepares stake transaction, then signs and confirm it_
 **Syntax:**
 
 ```ts
+type setTxStage = (props: {
+  txStage: TX_STAGE;
+  transactionHash?: TransactionSignature; // TX_STAGE.AWAITING_BLOCK
+  stSolAccountAddress?: PublicKey; // TX_STAGE.AWAITING_SIGNING
+}) => void;
+
 // With txStage
-const transactionHash = await solidoSDK.stake({
+const { transactionHash, stSolAccountAddress } = await solidoSDK.stake({
     amount: 20,
     wallet: walletInstance,
     setTxStage: setTxStageCallback,
 });
 
 // Without txStage
-const transactionHash = await solidoSDK.stake({
+const { transactionHash, stSolAccountAddress } = await solidoSDK.stake({
     amount: 20,
     wallet: walletInstance,
 });
@@ -33,9 +39,10 @@ const transactionHash = await solidoSDK.stake({
 
 **Return value:**
 
-_type:_ `Promise<string>`
+_type:_ `Promise<{ transactionHash: string; stSolAccountAddress: PublicKey }>`
 
 _value definition:_ hash of transaction got from `connection.sendRawTransaction`
+_value definition:_ `PublicKey` class from [@solana/web3.js](https://www.npmjs.com/package/@solana/web3.js)
 
 ### getStakeTransaction()
 
@@ -44,7 +51,7 @@ _Prepares & returns stake transaction_
 **Syntax:**
 
 ```ts
-const stakeTransaction = await solidoSDK.getStakeTransaction({
+const { transaction, stSolAccountAddress } = await solidoSDK.getStakeTransaction({
     amount: 20,
     payerAddress: new PublicKey(wallet.publicKey),
 });
@@ -57,9 +64,10 @@ const stakeTransaction = await solidoSDK.getStakeTransaction({
 
 **Return value:**
 
-_type:_ `Promise<Transaction>`
+_type:_ `Promise<{ transaction: Transaction; stSolAccountAddress: PublicKey }>`
 
 _value definition:_ `Transaction` class from [@solana/web3.js](https://www.npmjs.com/package/@solana/web3.js)
+_value definition:_ `PublicKey` class from [@solana/web3.js](https://www.npmjs.com/package/@solana/web3.js)
 
 
 ### calculateMaxStakeAmount()
@@ -125,15 +133,21 @@ _First prepares unStake transaction, then signs and confirm it_
 **Syntax:**
 
 ```ts
+type setTxStage = (props: {
+  txStage: TX_STAGE;
+  transactionHash?: TransactionSignature; // TX_STAGE.AWAITING_BLOCK
+  deactivatingSolAccountAddress?: PublicKey; // TX_STAGE.AWAITING_SIGNING instructions
+}) => void;
+
 // With txStage
-const transactionHash = await solidoSDK.unStake({
+const { transactionHash, deactivatingSolAccountAddress } = await solidoSDK.unStake({
     amount: 20,
     wallet: walletInstance,
     setTxStage: setTxStageCallback,
 });
 
 // Without txStage
-const transactionHash = await solidoSDK.unStake({
+const { transactionHash, deactivatingSolAccountAddress } = await solidoSDK.unStake({
     amount: 20,
     wallet: walletInstance,
 });
@@ -147,9 +161,11 @@ const transactionHash = await solidoSDK.unStake({
 
 **Return value:**
 
-_type:_ `Promise<string>`
+_type:_ `Promise<{ transactionHash: string; deactivatingSolAccountAddress: PublicKey }>`
 
 _value definition:_ hash of transaction got from `connection.sendRawTransaction`
+_value definition:_ `PublicKey` class from [@solana/web3.js](https://www.npmjs.com/package/@solana/web3.js)
+
 
 ### getUnStakeTransaction()
 
@@ -158,7 +174,8 @@ _Prepares & returns unStake transaction_
 **Syntax:**
 
 ```ts
-const { transaction: unStakeTransaction} = await solidoSDK.getUnStakeTransaction({
+
+const { transaction, deactivatingSolAccountAddress } = await solidoSDK.getUnStakeTransaction({
     amount: 20,
     payerAddress: new PublicKey(wallet.publicKey),
 });
@@ -171,9 +188,10 @@ const { transaction: unStakeTransaction} = await solidoSDK.getUnStakeTransaction
 
 **Return value:**
 
-_type:_ `Promise<{transaction: Transaction, stakeAccountAddress: Publickey}>`
+_type:_ `Promise<{ transaction: Transaction, deactivatingSolAccountAddress: Publickey }>`
 
 _value definition:_ `Transaction` class from [@solana/web3.js](https://www.npmjs.com/package/@solana/web3.js)
+_value definition:_ `PublicKey` class from [@solana/web3.js](https://www.npmjs.com/package/@solana/web3.js)
 
 
 ### calculateMaxUnStakeAmount()

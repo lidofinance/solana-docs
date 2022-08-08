@@ -25,8 +25,15 @@ const solidoSDK = new SolidoSDK('mainnet-beta', connection, 'your_solana_referra
 ### 2. Call stake method
 
 ```ts
+type setTxStage = (props: {
+  txStage: TX_STAGE;
+  transactionHash?: TransactionSignature; // TX_STAGE.AWAITING_BLOCK
+  deactivatingSolAccountAddress?: PublicKey; // TX_STAGE.AWAITING_SIGNING unstake instructions
+  stSolAccountAddress?: PublicKey; // TX_STAGE.AWAITING_SIGNING stake instructions
+}) => void;
+
 try {
-  const transactionHash = await solidoSDK.stake({
+  const { transactionHash, stSolAccountAddress } = await solidoSDK.stake({
     amount: 20, // The amount of SOL-s which need to stake
     wallet: wallet, // Wallet instance
     setTxStage: setTxStageCallback, // Optional callback for getting information about transaction stage (see TX_STAGE)
@@ -45,7 +52,7 @@ try {
 
 ```ts
 try {
-  const stakeTransaction = await solidoSDK.getStakeTransaction({
+  const { transaction, stSolAccountAddress } = await solidoSDK.getStakeTransaction({
     amount: 20, // The amount of SOL-s which need to stake
     payerAddress: new PublicKey(wallet.publicKey),
   });
@@ -59,7 +66,7 @@ try {
 ```ts
 try {
   const transactionHash = await solidoSDK.signAndConfirmTransaction({
-    transaction: stakeTransaction,
+    transaction: transaction, // Previous step
     wallet: wallet, // Wallet instance
     setTxStage: setTxStageCallback, // Optional callback for getting information about transaction stage (see TX_STAGE)
   });
@@ -77,7 +84,7 @@ try {
 
 ```ts
 try {
-  const stakeTransaction = await solidoSDK.getStakeTransaction({
+  const { transaction, stSolAccountAddress } = await solidoSDK.getStakeTransaction({
     amount: 20, // The amount of SOL-s which need to stake
     payerAddress: new PublicKey(wallet.publicKey),
   });
