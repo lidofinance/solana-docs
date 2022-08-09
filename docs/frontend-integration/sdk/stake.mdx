@@ -32,6 +32,7 @@ type SetTxStageCallback = (props: {
   stSolAccountAddress?: PublicKey; // for TX_STAGE.AWAITING_SIGNING stage stake instructions
 }) => void;
 
+
 try {
   const { transactionHash, stSolAccountAddress } = await solidoSDK.stake({
     amount: 20, // The amount of SOL-s which need to stake

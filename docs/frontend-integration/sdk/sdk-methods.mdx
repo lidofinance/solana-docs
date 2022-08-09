@@ -17,6 +17,7 @@ type SetTxStageCallback = (props: {
   stSolAccountAddress?: PublicKey; // for TX_STAGE.AWAITING_SIGNING stage
 }) => void;
 
+
 // With txStage
 const { transactionHash, stSolAccountAddress } = await solidoSDK.stake({
     amount: 20,
@@ -138,6 +139,7 @@ type SetTxStageCallback = (props: {
   transactionHash?: TransactionSignature; // for TX_STAGE.AWAITING_BLOCK stage
   deactivatingSolAccountAddress?: PublicKey; // for TX_STAGE.AWAITING_SIGNING stage
 }) => void;
+
 
 // With txStage
 const { transactionHash, deactivatingSolAccountAddress } = await solidoSDK.unStake({
