@@ -11,7 +11,7 @@ _First prepares stake transaction, then signs and confirm it_
 **Syntax:**
 
 ```ts
-type setTxStage = (props: {
+type SetTxStageCallback = (props: {
   txStage: TX_STAGE;
   transactionHash?: TransactionSignature; // for TX_STAGE.AWAITING_BLOCK stage
   stSolAccountAddress?: PublicKey; // for TX_STAGE.AWAITING_SIGNING stage
@@ -133,7 +133,7 @@ _First prepares unStake transaction, then signs and confirm it_
 **Syntax:**
 
 ```ts
-type setTxStage = (props: {
+type SetTxStageCallback = (props: {
   txStage: TX_STAGE;
   transactionHash?: TransactionSignature; // for TX_STAGE.AWAITING_BLOCK stage
   deactivatingSolAccountAddress?: PublicKey; // for TX_STAGE.AWAITING_SIGNING stage
