@@ -25,7 +25,7 @@ const solidoSDK = new SolidoSDK('mainnet-beta', connection, 'your_solana_referra
 ### 2. Call stake method
 
 ```ts
-type setTxStage = (props: {
+type SetTxStageCallback = (props: {
   txStage: TX_STAGE;
   transactionHash?: TransactionSignature; // for TX_STAGE.AWAITING_BLOCK stage
   deactivatingSolAccountAddress?: PublicKey; // for TX_STAGE.AWAITING_SIGNING stage unstake instructions
