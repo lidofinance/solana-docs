@@ -34,12 +34,12 @@ module.exports = {
       },
       items: [
         {
-          href: 'https://medium.com/chorus-one/introducing-lido-for-solana-8aa02db8503',
+          href: 'https://blog.lido.fi/category/stsol',
           label: 'Blog',
           position: 'right',
         },
         {
-          href: 'https://github.com/chorusone/solido',
+          href: 'https://github.com/lidofinance/solido',
           label: 'GitHub',
           position: 'right',
         },
