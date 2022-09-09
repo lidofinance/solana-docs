@@ -1,14 +1,14 @@
-# Manual instructions
+# Stake
 
 **Live integration on Mainnet** - [http://solana.lido.fi/](https://solana.lido.fi)
 
-In this document, we walkthrough the steps to integrate a web application with the Lido deposit function.
+In this document, we walk through the steps to integrate a web application with the Lido deposit function.
 
 
 This guide assumes the web application is written in JavaScript / Typescript and has ready access to the [@solana/web3.js](https://www.npmjs.com/package/@solana/web3.js) and [@solana/spl-token](https://github.com/solana-labs/solana-program-library)  library.
 
 :::note
-The code snippets present in this doc might not be up to date with the current codebase. Please verify once before using.
+The code snippets present in this doc might not be up-to-date with the current codebase. Please verify once before using.
 :::
 
 ## Step 1 : Connecting to a Solana wallet
@@ -21,21 +21,18 @@ Solana wallets that are known to work well with the Lido program are Phantom, So
     - `signTransaction` function to send the transaction
     - `disconnect` function to trigger a disconnection request
     - Optional -  throws "connect" & "disconnect" events
-- Add the wallet's `{ displayName, url & icon }` to the wallets array in [SolanaConnectWalletModal.jsx](https://github.com/ChorusOne/staking-widget-solana-lido/blob/develop/components/SolanaConnectWalletModal.jsx#L103)
-- Add [activate](https://github.com/ChorusOne/staking-widget-solana-lido/blob/develop/contexts/wallet.jsx#L27) and [deactivate](https://github.com/ChorusOne/staking-widget-solana-lido/blob/develop/contexts/wallet.jsx#L119) handlers for the new wallet in the `wallet.jsx` file
-- You can now access the wallet using the `useWallet` hook
 
 The next step assumes:
 
 - a wallet is loaded in the interface
-- and you have access to the variable `LIDO_ADDRESS`  which is the address of the account that stores the state of the deployed Lido Program.
+- and you have access to the variable `LIDO_ADDRESS` which is the address of the account that stores the state of the deployed Lido Program.
 
 ## Step 2 : Fetching Lido program state to retrieve relevant data
 
 Install and require [@solana/web3.js](https://www.npmjs.com/package/@solana/web3.js) library in your program
 
 ```bash
-yarn add @solana/web3.js`
+yarn add @solana/web3.js
 ```
 Use `getAccountInfo(LIDO_ADDRESS)` [function](https://solana-labs.github.io/solana-web3.js/classes/Connection.html#getAccountInfo) from this library to fetch the Lido program data (in the form of a buffer)
 
