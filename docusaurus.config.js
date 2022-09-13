@@ -65,7 +65,7 @@ module.exports = {
       {
         redirects: [
           {
-            to: '/solana-docs-preview/frontend-integration/manual-instructions',
+            to: '/frontend-integration/manual-instructions/',
             from: '/development/frontend-integration',
           },
         ],
