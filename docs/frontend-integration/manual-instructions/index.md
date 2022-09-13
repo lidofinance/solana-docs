@@ -1,5 +1,5 @@
 ---
-sidebar_label: Stake
+sidebar_position: 0
 ---
 
 # Stake
