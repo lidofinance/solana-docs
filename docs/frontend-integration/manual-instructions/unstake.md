@@ -4,6 +4,11 @@ sidebar_position: 1
 
 # UnStake
 
+:::caution
+We highly recommend use our [SDK](/frontend-integration/sdk), so we could support you better in case of some problems.
+Also, integration with SDK is much easier & more simple than manually.
+:::
+
 ## Step 1: Fetching Lido program state to retrieve relevant data
 
 ```ts

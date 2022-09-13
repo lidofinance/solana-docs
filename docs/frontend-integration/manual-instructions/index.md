@@ -4,6 +4,11 @@ sidebar_position: 0
 
 # Stake
 
+:::caution
+We highly recommend use our [SDK](/frontend-integration/sdk), so we could support you better in case of some problems.
+Also, integration with SDK is much easier & more simple than manually.
+:::
+
 **Live integration on Mainnet** - [http://solana.lido.fi/](https://solana.lido.fi)
 
 In this document, we walk through the steps to integrate a web application with the Lido deposit function.

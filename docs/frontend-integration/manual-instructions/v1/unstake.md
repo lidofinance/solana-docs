@@ -1,5 +1,15 @@
 # UnStake
 
+:::danger
+We are migrating to second version of procotol (solido), so this instructions will stop work, please see [migration guide](/frontend-integration/manual-instructions//migration-guide-2x) for being ready to version 2.
+Or see [new version](/frontend-integration/manual-instructions/unstake) if you are new.
+:::
+
+:::caution
+We highly recommend use our [SDK](/frontend-integration/sdk), so we could support you better in case of some problems.
+Also, integration with SDK is much easier & more simple than manually.
+:::
+
 ## Step 1: Fetching Lido program state to retrieve relevant data
 
 ```ts
