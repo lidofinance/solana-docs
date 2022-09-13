@@ -126,7 +126,7 @@ try {
 ```
 
 :::caution
-You may get exception if amount exceed maximum available SOL-s in balance. In order to prevent this exception, you can call
+You may get an exception if amount exceed maximum available SOL-s in balance. In order to prevent this exception, you can call
 ```ts
 const maxStakeAmount = await solidoSDK.calculateMaxStakeAmount(new PublicKey(wallet.publicKey));
 ```

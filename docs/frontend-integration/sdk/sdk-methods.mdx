@@ -341,6 +341,24 @@ _type:_ `Promise<{
 
 ---
 
+### getStakeApy()
+
+_Returns the annual percentage yield for Lido on Solana_
+
+**Syntax:**
+
+```ts
+import { getStakeApy as getSolidoStakeApy } from '@lidofinance/solido-sdk';
+
+const solidoStakeApy = await getSolidoStakeApy();
+
+console.log(`Annual percentage yield: ${solidoStakeApy}%`);
+```
+
+**Return value:**
+
+_type:_ `Promise<number>`
+
 ### getTotalStaked()
 
 _Returns total staked SOL-s_
@@ -372,12 +390,17 @@ _Returns the number of non-empty stSOL accounts_
 ```ts
 const stakersCount = await solidoSDK.getStakersCount();
 
-console.log(`Stakers: ${stakersCount}`); // 14965
+console.log(`Stakers: ${stakersCount.value}`); // 14965
 ```
 
 **Return value:**
 
-_type:_ `Promise<number>`
+_type:_ `Promise<{
+    value: string,
+    description: string,
+    accountsTotal: number,
+    accountsEmpty: number,
+}>`
 
 
 ### getMarketCap()
@@ -401,6 +424,28 @@ console.log(`stSOL market cap $${marketCap}`); // $113174513
 _type:_ `Promise<number>`
 
 
+
+### getTotalRewards()
+
+_Returns total rewards that benefited stSOL holders, in total, since we started tracking in SOL_
+
+**Syntax:**
+
+```ts
+const totalRewards = await solidoSDK.getTotalRewards();
+
+console.log(`Total Rewards $${totalRewards} SOL`);
+```
+
+**Parameters:**
+
+- *`precision?`* - the number of digits to appear after the decimal point (`default = 2`)
+
+**Return value:**
+
+_type:_ `Promise<number>`
+
+
 ### getLidoStatistics()
 
 _Returns the united response of the previous functions (`totalStaked`, `stakersCount`, `marketCap`, also `apy`)_
@@ -408,12 +453,13 @@ _Returns the united response of the previous functions (`totalStaked`, `stakersC
 **Syntax:**
 
 ```ts
-const { apy, totalStaked, stakers, marketCap } = await solidoSDK.getLidoStatistics();
+const { apy, totalStaked, stakers, marketCap, totalRewards } = await solidoSDK.getLidoStatistics();
 
 console.log(`Annual percentage yield: ${apy}%`);
 console.log(`Total staked with Lido: ${totalStaked.formatted}`);
 console.log(`Stakers: ${stakers.formatted}`);
 console.log(`stSOL market cap: $${marketCap}`);
+console.log(`Total Rewards $${totalRewards} SOL`);
 ```
 
 **Return value:**
@@ -427,9 +473,15 @@ _type:_ `Promise<{
     stakers: {
         value: string,
         description: string,
-        formatted: fstring,
+        accountsTotal: number,
+        accountsEmpty: number,
+        formatted: string,
     },
-    marketCap: number
+    marketCap: number,
+    totalRewards: {
+        value: number,
+        formatted: string,
+    },
 }>`
 
 <img src={require('../assets/lidostatistics.png').default} alt="Lido Statistics" />
