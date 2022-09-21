@@ -42,7 +42,6 @@ Solido has a couple of additional modules for specific behaviour or domain funct
 
 The solido specification documents will go into detail for each of these modules to describe the structure and intent of the affiliated code.
 
-- [account_map](./account_map)
 - [balance](./balance)
 - [entrypoint](./entrypoint)
 - [error](./error)
