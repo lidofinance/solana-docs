@@ -74,7 +74,7 @@ At the top you can see your account’s information — your current stSOL b
 You can go to the top-right corner of the screen and click on your connected account. This lets you take a look at your address and disconnect at any point during the process.
 
 To view the transaction history of your address on Solana's blockexplorer you can add your address to the end of the following URL
-> https://explorer.solana.com/address/**your-address-goes-here**
+> https://solana.fm/address/**your-address-goes-here**
 
 ![Account Info](./images/ledger/account_info_bl.png)
 ![Connect Dialog](./images/ledger/connect_dialog.png)
