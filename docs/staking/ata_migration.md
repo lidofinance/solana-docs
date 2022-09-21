@@ -58,7 +58,7 @@ You have 1 Token Accounts in your wallet that need to be migrated to associated 
 </p>
 
 ### 2. Migrating the Aux Account to ATA
-If you do have tokens in your Aux Account head over to [https://raydium.io/migrate/](https://raydium.io/migrate/). You will see the Aux Account Address, the balance and the token that needs to be migrated - `stSOL` in this case. 
+If you do have tokens in your Aux Account head over to [https://v1.raydium.io/migrate/](https://v1.raydium.io/migrate/). You will see the Aux Account Address, the balance and the token that needs to be migrated - `stSOL` in this case. 
 
 <p align="center">
     <img src={raymigrate} alt="Raydium Migrate" width="500"/>
