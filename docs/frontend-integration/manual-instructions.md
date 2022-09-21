@@ -21,9 +21,6 @@ Solana wallets that are known to work well with the Lido program are Phantom, So
     - `signTransaction` function to send the transaction
     - `disconnect` function to trigger a disconnection request
     - Optional -  throws "connect" & "disconnect" events
-- Add the wallet's `{ displayName, url & icon }` to the wallets array in [SolanaConnectWalletModal.jsx](https://github.com/ChorusOne/staking-widget-solana-lido/blob/develop/components/SolanaConnectWalletModal.jsx#L103)
-- Add [activate](https://github.com/ChorusOne/staking-widget-solana-lido/blob/develop/contexts/wallet.jsx#L27) and [deactivate](https://github.com/ChorusOne/staking-widget-solana-lido/blob/develop/contexts/wallet.jsx#L119) handlers for the new wallet in the `wallet.jsx` file
-- You can now access the wallet using the `useWallet` hook
 
 The next step assumes:
 
