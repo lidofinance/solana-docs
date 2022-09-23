@@ -97,9 +97,9 @@ You can go to the top-right corner of the screen and click on your connected acc
 The address for the demo account is
 > Address - `yBfu1AzbyRcfoJRU5TcUf59QwntqoFeDDTF9efh6XjL`
 
-> Blockexplorer URL - https://explorer.solana.com/address/yBfu1AzbyRcfoJRU5TcUf59QwntqoFeDDTF9efh6XjL?cluster=testnet
+> Blockexplorer URL - https://solana.fm/address/yBfu1AzbyRcfoJRU5TcUf59QwntqoFeDDTF9efh6XjL?cluster=testnet-qn1
 
-Its transaction history can be viewed on the blockexplorer [here](https://explorer.solana.com/address/yBfu1AzbyRcfoJRU5TcUf59QwntqoFeDDTF9efh6XjL?cluster=testnet).
+Its transaction history can be viewed on the blockexplorer [here](https://solana.fm/address/yBfu1AzbyRcfoJRU5TcUf59QwntqoFeDDTF9efh6XjL?cluster=testnet-qn1).
 
 ![Account Info](./images/phantom/account_info.png)
 
@@ -151,9 +151,9 @@ Once you hit approve on your wallet, you can come back to the lido widget and cl
 </p>
 
 
-This is useful as it tells you the [current status](https://explorer.solana.com/tx/3jDcSYVRVUEyNfTVZ6T6WaddAKq24wyp5PapndbrzUQj2xbk3LAuSaTp4B2UAfseobQsTNaBsWaW5hzEqPwkyQKB?cluster=testnet) of your transaction.
+This is useful as it tells you the [current status](https://solana.fm/tx/3jDcSYVRVUEyNfTVZ6T6WaddAKq24wyp5PapndbrzUQj2xbk3LAuSaTp4B2UAfseobQsTNaBsWaW5hzEqPwkyQKB?cluster=testnet-qn1) of your transaction.
 
-> Link for the above transaction - https://explorer.solana.com/tx/3jDcSYVRVUEyNfTVZ6T6WaddAKq24wyp5PapndbrzUQj2xbk3LAuSaTp4B2UAfseobQsTNaBsWaW5hzEqPwkyQKB?cluster=testnet
+> Link for the above transaction - https://solana.fm/tx/3jDcSYVRVUEyNfTVZ6T6WaddAKq24wyp5PapndbrzUQj2xbk3LAuSaTp4B2UAfseobQsTNaBsWaW5hzEqPwkyQKB?cluster=testnet-qn1
 
 If you look at the Confirmations field you can slowly see it increasing from 0 to 32. Once it reaches the MAX number of confirmations your transaction gets added to the blockchain
 

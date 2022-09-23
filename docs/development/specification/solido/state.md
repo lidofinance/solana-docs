@@ -59,7 +59,7 @@ This should be equivalent to the following:
 
 ### Validators
 
-The validators type uses the [AccountMap](./account_map.md#AccountMap) struct and the [Validator](./state.md#Validator) struct to create a helper type to assist in dealing with the collection of validators needed for the Soldio state.
+The validators type uses the AccountMap struct and the [Validator](./state.md#Validator) struct to create a helper type to assist in dealing with the collection of validators needed for the Soldio state.
 
 ```rust
 pub type Validators = AccountMap<Validator>;
@@ -67,7 +67,7 @@ pub type Validators = AccountMap<Validator>;
 
 ### Maintainers
 
-The Maintainers type leverages a type alias, [AccountSet](./account_map.md#AccountSet), for an [AccountMap](./account_map.md#AccountMap) with a unit type.
+The Maintainers type leverages a type alias, AccountSet, for an AccountMap with a unit type.
 
 ```rust
 pub type Maintainers = AccountSet;
