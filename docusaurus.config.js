@@ -65,7 +65,7 @@ module.exports = {
       {
         redirects: [
           {
-            to: '/frontend-integration/manual-instructions/',
+            to: '/frontend-integration/manual-instructions/v1/stake',
             from: '/development/frontend-integration',
           },
         ],

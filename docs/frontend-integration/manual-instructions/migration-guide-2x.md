@@ -4,7 +4,13 @@ sidebar_position: 2
 
 # Migration Guide (v1 → v2)
 
-There are two key points:
+:::caution
+Our smart-contract (solido) upgrade is coming soon. It will bring **breaking changes** to frontend integration, that's why it's critical
+important to be ready for this upgrade, v1 instructions **will stop work**. We recommend follow [our example](https://github.com/lidofinance/solido-sdk/blob/b1ab2a4f5e58e7f08e1d0965d9d83f867f9ce958/src/unstake/getAccountInfo.ts#L469-L516),
+support both version by using `try/catch`. But the best is to start using [SDK]((/frontend-integration/sdk)).
+:::
+
+There are two key points of changes:
 
 ### 1. Validators field now is stored in a separate account
 ```diff
@@ -33,7 +39,9 @@ const deserializedValidators = deserializeUnchecked(
 console.log('validators', deserializedValidators.entries);
 ```
 
-Also changed structure of validator. **V1**:
+Also changed structure of validator. 
+
+**V1**:
 ```javascript
 // accountInfoScheme
 [
