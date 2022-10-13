@@ -5,7 +5,7 @@ We are migrating to second version of procotol (solido), so this instructions wi
 Or see [new version](/frontend-integration/manual-instructions/unstake) if you are new.
 :::
 
-:::caution
+:::info
 We highly recommend use our [SDK](/frontend-integration/sdk), so we could support you better in case of some problems.
 Also, integration with SDK is much easier & more simple than manually.
 :::
