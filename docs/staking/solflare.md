@@ -99,7 +99,7 @@ You can go to the top-right corner of the screen and click on your connected acc
 The address for the demo account is
 > `GMXFs1SpNhwVW7m9sHTZks5oEEtAVqmySX2zkJ5ffUT`
 
-Its transaction history can be viewed on the blockexplorer [here](https://explorer.solana.com/address/GMXFs1SpNhwVW7m9sHTZks5oEEtAVqmySX2zkJ5ffUT?cluster=testnet).
+Its transaction history can be viewed on the blockexplorer [here](https://solana.fm/address/GMXFs1SpNhwVW7m9sHTZks5oEEtAVqmySX2zkJ5ffUT?cluster=testnet-qn1).
 
 ![Transaction Parameters](./images/solflare/account_info.png)
 
@@ -153,9 +153,9 @@ Once you hit approve on your wallet, you can come back to the lido widget and cl
 </p>
 
 
-This is useful as it tells you the [current status](https://explorer.solana.com/tx/3sLpWNJrhY7nUWKuLJx6nTGjxaJNUGTYVsFT8Uh9UNa5nQ2rRMZZcnb66ELEMSME5cmUycP4V4CUoBSvhAjLiwdw?cluster=testnet) of your transaction.
+This is useful as it tells you the [current status](https://solana.fm/tx/3sLpWNJrhY7nUWKuLJx6nTGjxaJNUGTYVsFT8Uh9UNa5nQ2rRMZZcnb66ELEMSME5cmUycP4V4CUoBSvhAjLiwdw?cluster=testnet-qn1) of your transaction.
 
-> Link for the above transaction - https://explorer.solana.com/tx/3sLpWNJrhY7nUWKuLJx6nTGjxaJNUGTYVsFT8Uh9UNa5nQ2rRMZZcnb66ELEMSME5cmUycP4V4CUoBSvhAjLiwdw?cluster=testnet
+> Link for the above transaction - https://solana.fm/tx/3sLpWNJrhY7nUWKuLJx6nTGjxaJNUGTYVsFT8Uh9UNa5nQ2rRMZZcnb66ELEMSME5cmUycP4V4CUoBSvhAjLiwdw?cluster=testnet-qn1
 
 If you look at the Confirmations field you can slowly see it increasing from 0 to 32. Once it reaches the MAX number of confirmations your transaction gets added to the blockchain
 

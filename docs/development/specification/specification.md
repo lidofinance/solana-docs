@@ -16,8 +16,8 @@ sidebar_position: 1
 The Solido repo can be generally split into three logical components:
 
 - [solido](./Solido/solido) (the on-chain program)
-- [multisig](./Multisig/multisig) (the on-chain multisig governance program)
-- [cli](./Cli/cli) ( the command line interface into the solido and multisig programs)
+- _multisig_ (the on-chain multisig governance program)
+- _cli_ (the command line interface into the solido and multisig programs)
 
 > Caveat: The initial iterations of Solido used the Solana program library stake-pool program, whilst this is no longer used as a main component, there exists references to data structures within the stake pool program.
 
