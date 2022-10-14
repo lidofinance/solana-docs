@@ -10,9 +10,18 @@ important to be ready for this upgrade, v1 instructions **will stop work**. We r
 support both version by using `try/catch`. But the best is to start using [SDK]((/frontend-integration/sdk)).
 :::
 
-There are two key points of changes:
+## Solido Changes:
+- Validators and Maintainers list now is stored in a separate account, you need to fetch them separately, in first version they were stored inside protocol state.
+- Validator structure was changed:
+  - `pubkey` now is stored in `vote_account_address`
+  - was removed `fee_credit`, `fee_address` fields
+- Withdraw instruction fields:
+  - Changed buffer layout, had been added `validator_index`
+  - Instruction code was **2**, now is **23** due to technical peculiarity
+  - `validator_list` had been added to instructions keys
 
-### 1. Validators field now is stored in a separate account
+
+### 1. Validators list now is stored in a separate account
 ```diff
 - ['validators', Validators] // Validator scheme
 + ['validator_list', [32]] // PublicKey
