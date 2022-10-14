@@ -1,5 +1,3 @@
-
-
 # Smart-contract upgrade
 
 Our smart-contract (solido) upgrade is coming soon. It will bring **breaking changes** to frontend integration, that's why it's critical
@@ -17,4 +15,8 @@ After migration v1 instructions **will stop work**, it means versions fewer than
 ```bash
 npm i @lidofinance/solido-sdk@latest
 ```
+
+Learn more:
+- [Smart-contract upgrade](https://research.lido.fi/t/lido-on-solana-protocol-upgrade-proposal/2959/3).
+- [Solido changes](/frontend-integration/manual-instructions/#solido-changes)
 
