@@ -16,6 +16,7 @@ know anyway.
 #### Configuration for v2:
 
 Solido version: [v2.0.0](https://github.com/lidofinance/solido/releases/tag/v2.0.0).
+Anker version: [v1.3.0](https://github.com/lidofinance/solido/releases/tag/v1.3.0).
 
 ```json
 {
@@ -29,7 +30,10 @@ Solido version: [v2.0.0](https://github.com/lidofinance/solido/releases/tag/v2.0
 
   "validator_list_address": "GL9kqRNUTUosW3RsDoXHCuXUZn73SgQQmBvtp1ng2co4",
   "maintainer_list_address": "5dvtr16i34hwXuCtTNHXXJ5ojeidVPXbceN9pXxrE8bn",
-  "developer_fee_address": "5Y5LVTXbtMYsibjp9uQMmCyZbtSru8zktuxGPV9eHu3m"
+  "developer_fee_address": "5Y5LVTXbtMYsibjp9uQMmCyZbtSru8zktuxGPV9eHu3m",
+
+  "anker_program_id": "BNVB8pd4coHpY7MVcrtiHLCLst7fyDGzMtPmfJqFAhwj",
+  "anker_address": "2kDSwqbzm2zJ2GzeS1uRXpRZFR8H9A9XhNFVcnG9sEUY"
 }
 ```
 
