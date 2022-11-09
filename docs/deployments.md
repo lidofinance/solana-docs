@@ -35,8 +35,8 @@ Solido version: [v2.0.0](https://github.com/lidofinance/solido/releases/tag/v2.0
 
 #### Configuration for v1:
 
-Solido version: [v1.0.1](https://github.com/ChorusOne/solido/releases/tag/v1.0.1).
-Anker version: [v1.3.0](https://github.com/ChorusOne/solido/releases/tag/v1.3.0).
+Solido version: [v1.0.1](https://github.com/lidofinance/solido/releases/tag/v1.0.1).
+Anker version: [v1.3.0](https://github.com/lidofinance/solido/releases/tag/v1.3.0).
 
 ```json
 {
