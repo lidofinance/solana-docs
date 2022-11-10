@@ -82,7 +82,7 @@ Now connect your Terra wallet with wormhole portal by selecting your preferred w
 Review the info in the next step and click on `Next`. The actual transfer starts when you hit the `Transfer` button in the next step. Note that you will need to approve the transaction in the Solana wallet first.
 ![solana-send](./images/anchor/25_send_bsol_to_terra.png)
 
-Once the transfer transaction is successful on the Solana blockchain, headover to the final step where you redeem the transferred tokens on Terra blockchain. 
+Once the transfer transaction is successful on the Solana blockchain, head over to the final step where you redeem the transferred tokens on Terra blockchain. 
 ![29_redeem_terra](./images/anchor/29_redeem_terra.png)
 
 After approving the transaction in your wallet you will start seeing the newly transferred `bSOL` on the [Anchor Protocol page under bAssets tab](https://app.anchorprotocol.com/basset).
@@ -127,6 +127,6 @@ Click on `Borrow` and enter the amount of `UST` you want to borrow out of the to
 
 Once you approve the transaction your `Position Management` section will get updated with the borrowed value and now you are a proud owner of borrowed UST!
 
-You have now succesfully acquired bSOL, bridged it over to Terra and used it to borrow UST!
+You have now successfully acquired bSOL, bridged it over to Terra and used it to borrow UST!
 
 
