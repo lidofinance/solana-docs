@@ -13,10 +13,30 @@ know anyway.
 
 ## Mainnet-beta
 
-Solido version: [v1.0.1](https://github.com/ChorusOne/solido/releases/tag/v1.0.1).
-Anker version: [v1.3.0](https://github.com/ChorusOne/solido/releases/tag/v1.3.0).
+#### Configuration for v2:
 
-Configuration:
+Solido version: [v2.0.0](https://github.com/lidofinance/solido/releases/tag/v2.0.0)(coming soon).
+
+```json
+{
+  "cluster": "https://api.mainnet-beta.solana.com",
+
+  "multisig_program_id": "AAHT26ecV3FEeFmL2gDZW6FfEqjPkghHbAkNZGqwT8Ww",
+  "multisig_address": "3cXyJbjoAUNLpQsFrFJTTTp8GD3uPeabYbsCVobkQpD1",
+
+  "solido_program_id": "CrX7kMhLC3cSsXJdT7JDgqrRVWGnUpX3gfEfxxU2NVLi",
+  "solido_address": "49Yi1TKkNyYjPAFdR9LBvoHcUjuPX4Df5T5yv39w2XTn",
+
+  "validator_list_address": "GL9kqRNUTUosW3RsDoXHCuXUZn73SgQQmBvtp1ng2co4",
+  "maintainer_list_address": "5dvtr16i34hwXuCtTNHXXJ5ojeidVPXbceN9pXxrE8bn",
+  "developer_fee_address": "5Y5LVTXbtMYsibjp9uQMmCyZbtSru8zktuxGPV9eHu3m",
+}
+```
+
+#### Configuration for v1:
+
+Solido version: [v1.0.1](https://github.com/lidofinance/solido/releases/tag/v1.0.1).
+Anker version: [v1.3.0](https://github.com/lidofinance/solido/releases/tag/v1.3.0).
 
 ```json
 {
@@ -33,7 +53,7 @@ Configuration:
 }
 ```
 
-Related addresses:
+#### Related addresses:
 
 | Account | Address | Description |
 |---------|---------|-------------|
@@ -47,7 +67,7 @@ Related addresses:
 | Anker UST Reserve | `BBuh4WDeS6GJTGdZvi2SYzZnmVJ1kZXRcudEcyuAXfUE` | Holds Anker's proceeds until they are sent to Terra. |
 
 
-Multisig owners (including past owners):
+#### Multisig owners (including past owners):
 
 ```json
 {
@@ -62,7 +82,7 @@ Multisig owners (including past owners):
 }
 ```
 
-Maintainers:
+#### Maintainers:
 
 ```json
 {
