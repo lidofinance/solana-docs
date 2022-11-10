@@ -26,6 +26,7 @@ Solido version: [v2.0.0](https://github.com/lidofinance/solido/releases/tag/v2.0
 
   "solido_program_id": "CrX7kMhLC3cSsXJdT7JDgqrRVWGnUpX3gfEfxxU2NVLi",
   "solido_address": "49Yi1TKkNyYjPAFdR9LBvoHcUjuPX4Df5T5yv39w2XTn",
+  "st_sol_mint": "7dHbWXmci3dT8UFYWYZweBLXgycu7Y3iL6trKn1Y7ARj",
 
   "validator_list_address": "GL9kqRNUTUosW3RsDoXHCuXUZn73SgQQmBvtp1ng2co4",
   "maintainer_list_address": "5dvtr16i34hwXuCtTNHXXJ5ojeidVPXbceN9pXxrE8bn",
