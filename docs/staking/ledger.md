@@ -103,7 +103,7 @@ You can see the FAQ section right below the Lido statistics. It is prudent to fa
 
 ![Stake](./images/common/stake.png)
 
-To stake your SOL with lido enter the amount you wanter to stake. On the lido widget will see a pop-up showing the state of your transaction. The Lido widget waits for you to approve this transaction through your Ledger device.
+To stake your SOL with lido enter the amount you want to stake. On the lido widget will see a pop-up showing the state of your transaction. The Lido widget waits for you to approve this transaction through your Ledger device.
 
 >Note **This transaction will only go through if you go back to Ledger and approve it.**
 
@@ -135,7 +135,7 @@ Zooming into the widget we can observe the new SOL balance and the updated stSOL
 
 > Note 1: We had 2 SOL in the beginning and we staked 1 SOL. We should be left with 1 SOL but we had to pay an additional 0.0021 SOL as the rent for the new stSOL account that got created for us.
 
-> Note 2: This rent is a one-time fee that won’t reccur on the next staking transaction.
+> Note 2: This rent is a one-time fee that won’t recur on the next staking transaction.
 
 
 <p align="center">
