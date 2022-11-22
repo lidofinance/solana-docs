@@ -12,7 +12,40 @@ This [SDK](https://github.com/lidofinance/solido-sdk) helps you integrate with L
 2. Supporting a UI widget in your project (We provide js functions for staking, unstaking, statistics and transaction info).
 3. Use the staking widget with UI (coming soon).
 
-## Installation
+## Using banner
+
+```mdx-code-block
+<Tabs>
+<TabItem value="npm">
+```
+
+```bash
+npm install @lidofinance/solido-sdk-banner
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="Yarn">
+```
+
+```bash
+yarn add @lidofinance/solido-sdk-banner
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+```
+
+```ts
+import LidoStakeBanner from '@lidofinance/solido-sdk-banner';
+
+<LidoStakeBanner referrerId="your_solana_referral_address" direction="horizontal" />
+```
+
+See [Banner Section](/frontend-integration/sdk/banner)
+
+## Using SDK
 
 ```mdx-code-block
 <Tabs>
@@ -36,18 +69,6 @@ yarn add @lidofinance/solido-sdk
 </TabItem>
 </Tabs>
 ```
-
-## Using banner
-
-```ts
-import { LidoStakeBanner } from '@lidofinance/solido-sdk';
-
-<LidoStakeBanner referrerId="your_solana_referral_address" direction="horizontal" />
-```
-
-See [Banner Section](/frontend-integration/sdk/banner)
-
-## Using SDK
 
 ```ts
 import { SolidoSDK } from '@lidofinance/solido-sdk';
