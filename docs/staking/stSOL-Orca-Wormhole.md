@@ -12,8 +12,6 @@ sidebar_label: Wormhole Guide (Orca Pool)
 sidebar_position: 8
 ---
 
-import claimed from './images/saber/claimed-sbr.png';
-
 
 
 # Wormhole Transfer and Orca Pool Guide
