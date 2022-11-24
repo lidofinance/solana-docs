@@ -367,11 +367,34 @@ import { getStakeApy as getSolidoStakeApy } from '@lidofinance/solido-sdk';
 const solidoStakeApy = await getSolidoStakeApy();
 
 console.log(`Annual percentage yield: ${solidoStakeApy}%`);
+console.log(`Max APY: ${solidoStakeApy.max.apy}%`);
 ```
 
-**Return value:**
+**Return value type:**
 
-_type:_ `Promise<number>`
+```ts
+type ApyData = {
+  apy: number;
+  apr: number;
+  intervalPrices: {
+    beginEpoch: number;
+    endEpoch: number;
+  };
+};
+
+Promise<{
+  max: ApyData; // max apy data
+  lastEpoch: ApyData;
+  twoWeeks: ApyData;
+  oneMonth: ApyData;
+  threeMonth: ApyData;
+  sinceLaunch: ApyData;
+}>;
+```
+
+**Example:**
+
+<img src={require('../assets/apy-example.png').default} alt="Apy Example" />
 
 ### getTotalStaked()
 
@@ -467,19 +490,31 @@ _Returns the united response of the previous functions (`totalStaked`, `stakersC
 **Syntax:**
 
 ```ts
-const { apy, totalStaked, stakers, marketCap, totalRewards } = await solidoSDK.getLidoStatistics();
+const { stakeApy, totalStaked, stakers, marketCap, totalRewards } = await solidoSDK.getLidoStatistics();
 
-console.log(`Annual percentage yield: ${apy}%`);
+console.log(`Annual percentage yield: ${stakeApy.apy}%`);
 console.log(`Total staked with Lido: ${totalStaked.formatted}`);
 console.log(`Stakers: ${stakers.formatted}`);
 console.log(`stSOL market cap: $${marketCap}`);
 console.log(`Total Rewards $${totalRewards} SOL`);
 ```
 
-**Return value:**
+**Return value type:**
 
-_type:_ `Promise<{
-    apy: number,
+_Note: here will be max APY, if you want all periods, use [getStakeApy](#getstakeapy)_
+
+```ts
+type ApyData = {
+  apy: number;
+  apr: number;
+  intervalPrices: {
+    beginEpoch: number;
+    endEpoch: number;
+  };
+};
+
+Promise<{
+    apy: ApyData,
     totalStaked: {
         value: number,
         formatted: number,
@@ -496,7 +531,8 @@ _type:_ `Promise<{
         value: number,
         formatted: string,
     },
-}>`
+}>
+```
 
 <img src={require('../assets/lidostatistics.png').default} alt="Lido Statistics" />
 
