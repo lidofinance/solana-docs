@@ -23,6 +23,7 @@ This table lists the error code information returned by the SolidoSDK when it is
 | 301        | UNSTAKE_UNAVAILABLE        | Sorry, unStake is not available right now. Please contact lido developers for details.                                                                                                                                       |
 | 302        | NO_PUBLIC_KEY              | SolidoSDK: publicKey is null in wallet                                                                                                                                                                                       |
 | 303        | NO_ACCOUNT_INFO            | Couldn't fetch getAccountInfo                                                                                                                                                                                                |
+| 304        | NO_APY_DATA                | Couldn't fetch apy data                                                                                                                                                                                                      |
 | 400        | EXCEED_MAX                 | Amount must not exceed MAX(..)                                                                                                                                                                                               |
 
 #### Example

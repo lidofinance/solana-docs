@@ -367,11 +367,34 @@ import { getStakeApy as getSolidoStakeApy } from '@lidofinance/solido-sdk';
 const solidoStakeApy = await getSolidoStakeApy();
 
 console.log(`Annual percentage yield: ${solidoStakeApy}%`);
+console.log(`Max APY: ${solidoStakeApy.max.apy}%`);
 ```
 
-**Return value:**
+**Return value type:**
 
-_type:_ `Promise<number>`
+```ts
+type ApyData = {
+  apy: number;
+  apr: number;
+  intervalPrices: {
+    beginEpoch: number;
+    endEpoch: number;
+  };
+};
+
+Promise<{
+  max: ApyData; // max apy data
+  lastEpoch: ApyData;
+  twoWeeks: ApyData;
+  oneMonth: ApyData;
+  threeMonth: ApyData;
+  sinceLaunch: ApyData;
+}>;
+```
+
+**Example:**
+
+<img src={require('../assets/apy-example.png').default} alt="Apy Example" />
 
 ### getTotalStaked()
 
@@ -476,9 +499,12 @@ console.log(`stSOL market cap: $${marketCap}`);
 console.log(`Total Rewards $${totalRewards} SOL`);
 ```
 
-**Return value:**
+**Return value type:**
 
-_type:_ `Promise<{
+_Note: here will be max APY, if you want all periods, use [getStakeApy](#getstakeapy)_
+
+```ts
+Promise<{
     apy: number,
     totalStaked: {
         value: number,
@@ -496,7 +522,8 @@ _type:_ `Promise<{
         value: number,
         formatted: string,
     },
-}>`
+}>
+```
 
 <img src={require('../assets/lidostatistics.png').default} alt="Lido Statistics" />
 
