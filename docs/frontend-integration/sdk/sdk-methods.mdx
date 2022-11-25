@@ -490,9 +490,9 @@ _Returns the united response of the previous functions (`totalStaked`, `stakersC
 **Syntax:**
 
 ```ts
-const { stakeApy, totalStaked, stakers, marketCap, totalRewards } = await solidoSDK.getLidoStatistics();
+const { apy, totalStaked, stakers, marketCap, totalRewards } = await solidoSDK.getLidoStatistics();
 
-console.log(`Annual percentage yield: ${stakeApy.apy}%`);
+console.log(`Annual percentage yield: ${apy}%`);
 console.log(`Total staked with Lido: ${totalStaked.formatted}`);
 console.log(`Stakers: ${stakers.formatted}`);
 console.log(`stSOL market cap: $${marketCap}`);
@@ -504,17 +504,8 @@ console.log(`Total Rewards $${totalRewards} SOL`);
 _Note: here will be max APY, if you want all periods, use [getStakeApy](#getstakeapy)_
 
 ```ts
-type ApyData = {
-  apy: number;
-  apr: number;
-  intervalPrices: {
-    beginEpoch: number;
-    endEpoch: number;
-  };
-};
-
 Promise<{
-    apy: ApyData,
+    apy: number,
     totalStaked: {
         value: number,
         formatted: number,
