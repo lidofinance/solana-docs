@@ -1,6 +1,6 @@
 # Fees
 
-Validation rewards that Lido for Solana receives are split into four parts:
+Validation rewards that Lido on Solana receives are split into four parts:
 
  * **90%** goes to stSOL holders in the form of stSOL value appreciation: stSOL
    holders now own a share of a larger pool of SOL. This is how users benefit.

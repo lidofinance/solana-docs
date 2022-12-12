@@ -1,6 +1,6 @@
 # The Solido utility
 
-Lido for Solana consists of an on-chain program, a web-based frontend for users
+Lido on Solana consists of an on-chain program, a web-based frontend for users
 to interact with it, and a command-line client for administration and
 maintenance interact with it. This command-line client is called `solido`. It
 is used for:

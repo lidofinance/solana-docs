@@ -1,6 +1,6 @@
 # Withdrawals
 
-This page describes how withdrawals in Lido for Solana work, and why we went
+This page describes how withdrawals in Lido on Solana work, and why we went
 with this approach. If you haven’t done so yet, now is a good time to review
 [how stake accounts work on Solana](solana-staking.md#stake-accounts).
 
@@ -70,7 +70,7 @@ an inflation schedule that reduces the reward slightly with every epoch.
 
 ## Withdrawal approach
 
-This section describes how withdrawals work in Lido for Solana. In the next
+This section describes how withdrawals work in Lido on Solana. In the next
 section, we can then investigate possible concerns to see if they are a problem
 for this withdrawal method.
 

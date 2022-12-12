@@ -1,6 +1,6 @@
 # Price oracle
 
-At its core, Lido for Solana (“Solido” for short) enables converting SOL into
+At its core, Lido on Solana (“Solido” for short) enables converting SOL into
 stSOL and back. This conversion involves an exchange rate. The exchange rate
 used by Solido is stored on-chain in the Solido instance itself. This page
 explains how to access it. To understand how the exchange rate is set, see [the

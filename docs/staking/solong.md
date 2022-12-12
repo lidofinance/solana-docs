@@ -1,6 +1,6 @@
 ---
 title: Solong
-description: Overview of user staking in LIDO for Solana with Solong
+description: Overview of user staking in Lido on Solana with Solong
 keywords:
  - staking
  - end-user
@@ -27,11 +27,11 @@ import unstake from './images/common/unstake.png';
 A quick guide on staking your Solana on the Lido widget
 
 ## Introduction
-‘Lido for Solana’ is a Lido-DAO governed liquid staking protocol for the Solana blockchain. Anyone who stakes their SOL tokens with Lido will be issued an on-chain representation of SOL staking position with Lido validators, called stSOL. This will allow Solana token holders to get liquidity on their staked assets which can then be traded, or further utilized as collateral in DeFi products.
+‘Lido on Solana’ is a Lido-DAO governed liquid staking protocol for the Solana blockchain. Anyone who stakes their SOL tokens with Lido will be issued an on-chain representation of SOL staking position with Lido validators, called stSOL. This will allow Solana token holders to get liquidity on their staked assets which can then be traded, or further utilized as collateral in DeFi products.
 
 ![Widget](./images/common/widget.png)
 
-## Lido for Solana staking guide
+## Lido on Solana staking guide
 
 In this step-by-step guide, we will learn how to stake your Solana via the Lido staking widget. This guide shows the testnet for demonstration purposes. However, the process remains the same for mainnet. You can use one of the following wallets to connect to Lido. The facility to use the hardware wallet Ledger is also provided. This guarantees an extra layer of security for the user.
 1. Phantom
@@ -45,7 +45,7 @@ In this step-by-step guide, we will learn how to stake your Solana via the Lido 
 ---
 
 ## Step 1: Create or Restore Solong Wallet
-Navigate to https://solongwallet.com/ to create/restore your solana wallet. You will need to install the [browser extension](https://chrome.google.com/webstore/detail/solong/memijejgibaodndkimcclfapfladdchj) offered by Solong to use this wallet.
+Navigate to https://solongwallet.io to create/restore your solana wallet. You will need to install the [browser extension](https://chrome.google.com/webstore/detail/solong/memijejgibaodndkimcclfapfladdchj) offered by Solong to use this wallet.
 
 ![Browser Extension](./images/solong/extension.png)
 
@@ -148,7 +148,7 @@ Just below the transaction parameters you also see global Lido statistics. This 
 ![Lido Parameters](./images/common/lido_params.png)
 
 ### FAQs
-You can see the FAQ section right below the Lido statistics. It is prudent to familiarize yourself with some of the basic features of liquid staking and the risks involved. The FAQ section also gives more information about the stSOL and its value. In case, you have even more questions you can always reach out to the Lido team for any clarifications. The contact information is given at the end of this article.
+You can see the FAQ section right below the Lido statistics. It is prudent to familiarize yourself with some of the basic features of liquid staking and the risks involved. The FAQ section also gives more information about the stSOL and its value. In case, you have even more questions you can always reach out to the Lido on Solana team for any clarifications. The contact information is given at the end of this article.
 
 ![Faqs](./images/common/faqs.png)
 

@@ -1,6 +1,6 @@
 ---
 title: development
-description: Overview of development in LIDO for Solana
+description: Overview of development in Lido on Solana
 keywords:
  - development
  - developers
@@ -21,7 +21,7 @@ The [building the docker image](./building-docker-image.md) document gives detai
 
 ### Building locally
 
-In order to build Lido for Solana locally, one will need a number of prerequisites:
+In order to build Lido on Solana locally, one will need a number of prerequisites:
 
 - [Rust toolchain](https://www.rust-lang.org/learn/get-started)
 - [Solana toolchain](https://docs.solana.com/cli/install-solana-cli-tools)
@@ -50,5 +50,5 @@ cargo test-bpf
 
 ## Specification
 
-The [Specification](specification/specification.md) document is a deeper dive into the code of Lido for Solana to tour the intent and implementation of the on-chain program and the cli.
+The [Specification](specification/specification.md) document is a deeper dive into the code of Lido on Solana to tour the intent and implementation of the on-chain program and the cli.
 

@@ -1,6 +1,6 @@
 # Validator onboarding
 
-This page is aimed at validators who want to join Lido for Solana.
+This page is aimed at validators who want to join Lido on Solana.
 
 :::note Note for validators
 If you have already been admitted by the LNOSG, please continue to [Setting up
@@ -9,7 +9,7 @@ a vote account](#setting-up-a-vote-account) below.
 
 ## Validator admission
 
-The set of validators who participate in Lido for Solana (“Solido”) is managed
+The set of validators who participate in Lido on Solana (“Solido”) is managed
 by the [**Lido Node Operator Subgovernance Group (LNOSG)**][lnosg], which is
 part of the Lido DAO. The [Lido Node Operators Notion page][notion] contains
 further information about the current operators, and how to apply.
@@ -113,7 +113,7 @@ address, which we need for the final step.
 As a validator, you now have two or more vote accounts:
 
  * A public one that anybody can delegate to.
- * One for Lido for Solana with 100% commission, that only the Solido program is
+ * One for Lido on Solana with 100% commission, that only the Solido program is
    expected to delegate to.
    
 To distinguish these two in validator lists such as
@@ -127,7 +127,7 @@ $ solana validator-info publish \
   --keypair ~/.config/solana/id.json \
   --website https://p2p.org \
   --keybase p2pinc \
-  --details "P2P validator for Lido for Solana" \
+  --details "P2P validator for Lido on Solana" \
   "Lido / P2P"
 ```
 
