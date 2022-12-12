@@ -38,7 +38,7 @@ ecosystem. The DAO decides on fees, the validator set, etc. It is in the DAO’s
 charter to make the system run smoothly and it does so through the process of
 voting.  Holders of the **LDO** governance token can vote on proposals, either
 on-chain through [Aragon][aragon], or off-chain through [Snapshot][snapshot].
-For example, the proposal by Chorus One to build Lido for Solana was [accepted
+For example, the proposal to build Lido for Solana was [accepted
 through a unanimous Snapshot vote][solido-vote] in favor of the proposal. Before
 proposals are put up for voting, they are discussed on the [Lido forum][forum].
 

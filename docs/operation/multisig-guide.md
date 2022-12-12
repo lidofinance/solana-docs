@@ -163,7 +163,7 @@ Solana transaction id of execution: 5N9vgWmBec6BFmgnJqFe7zvB5TrS22vDcmPxSw2PoZj7
 
 :::note
 The multisig’s program derived address (PDA) needs to have sufficient
-funds to execute transactions. Chorus One should have funded it during setup.
+funds to execute transactions. Lido team should have funded it during setup.
 :::
 
 You can confirm that the transaction was executed:

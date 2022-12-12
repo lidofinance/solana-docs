@@ -221,7 +221,7 @@ pub fn find_stake_account_address(
 
 ### FeeDistribution
 
-The FeeDistribution struct simply maintains the ratios of distribution between the treasury, developer (Chorus One), and the validators.
+The FeeDistribution struct simply maintains the ratios of distribution between the treasury, developer (Lido team), and the validators.
 
 ```rust
 pub struct FeeDistribution {
@@ -233,7 +233,7 @@ pub struct FeeDistribution {
 
 ### FeeRecipients
 
-The FeeRecipients struct is another simple struct that holds the Pubkey addresses of the treasury and developer (Chorus One) accounts that will receive fees.
+The FeeRecipients struct is another simple struct that holds the Pubkey addresses of the treasury and developer (Lido team) accounts that will receive fees.
 
 ```rust
 pub struct FeeRecipients {
