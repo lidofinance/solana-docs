@@ -1,6 +1,6 @@
 # Incentives
 
-Lido for Solana rewards liquidity providers with Lido’s LDO token, bridged
+Lido on Solana rewards liquidity providers with Lido’s LDO token, bridged
 from Ethereum to Solana through [Wormhole](https://wormholebridge.com) as
 [wLDO][wLDO]. For transparency, and also for our own bookkeeping, this page
 lists all past [multisig](administration) transactions that funded these

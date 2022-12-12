@@ -1,6 +1,6 @@
 # Deployments
 
-This page lists official addresses at which Lido for Solana is deployed, in the
+This page lists official addresses at which Lido on Solana is deployed, in the
 form of [a `solido` config file][config].
 
 Aside from the config keys, we list a few additional addresses that do not need
@@ -87,10 +87,10 @@ Anker version: [v1.3.0](https://github.com/lidofinance/solido/releases/tag/v1.3.
 
 ```json
 {
-  "AR7FaVeVvUQwnLtojZNUc42H987KiHqfc4AN1qEwPUJw": "Chorus One",
+  "p2pokvNcNc1SFCMoUrp1UBQ6SBET7H5EdLqahz4g55k":  "P2P",
   "2rqLzNZCBWykEs8bFMbmgqCz4eosaEfU3aRL4RJWdZgQ": "Figment",
   "DqCZaFR6cTMvFMuz43HS77Zcz1quR93n11kT1yY6aVf4": "Staking Facilities",
-  "p2pokvNcNc1SFCMoUrp1UBQ6SBET7H5EdLqahz4g55k":  "P2P"
+  "AR7FaVeVvUQwnLtojZNUc42H987KiHqfc4AN1qEwPUJw": "Chorus One"
 }
 ```
 

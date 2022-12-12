@@ -2,7 +2,7 @@
 const math = require('remark-math');
 const katex = require('rehype-katex');
 module.exports = {
-  title: 'Lido for Solana',
+  title: 'Lido on Solana',
   tagline: 'Awesome liquid staking on Solana, the high-performance, permissionless blockchain',
   url: 'https://docs.solana.lido.fi/',
   baseUrl: '/',
@@ -26,9 +26,9 @@ module.exports = {
   ],
   themeConfig: {
     navbar: {
-      title: 'Lido for Solana',
+      title: 'Lido on Solana',
       logo: {
-        alt: 'Lido for Solana Logo',
+        alt: 'Lido on Solana Logo',
         src: 'img/stSOL.svg',
         srcDark: 'img/stSOL.svg',
       },

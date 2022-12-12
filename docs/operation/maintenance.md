@@ -25,9 +25,9 @@ automates this. The bot will also execute maintenance tasks that are restricted
 to the set of trusted maintainers. For v1 the set of trusted maintainers who run
 the bot consists of validators who are also part of the multisig:
 
- * Chorus One
- * Figment
  * P2P
+ * Figment
+ * Chorus One
  * Staking Facilities
 
 Uptime of the maintenance bot is not critical. As long as *somebody* at least

@@ -1,6 +1,6 @@
 # The Solido utility
 
-Lido for Solana consists of an on-chain program, a web-based frontend for users
+Lido on Solana consists of an on-chain program, a web-based frontend for users
 to interact with it, and a command-line client for administration and
 maintenance interact with it. This command-line client is called `solido`. It
 is used for:
@@ -24,7 +24,7 @@ prebuilt version. The utility is developed and tested on Linux, and it should
 run on Mac as well. When building from source, make sure to clone the repository
 with `--recurse-submodules`.
 
-[source]: https://github.com/ChorusOne/solido
+[source]: https://github.com/lidofinance/solido
 [dockerhub]: https://hub.docker.com/r/chorusone/solido-maintainer
 
 ## Configuration

@@ -1,6 +1,6 @@
 ---
 title: Staking
-description: Overview of user staking in LIDO for Solana
+description: Overview of user staking in Lido on Solana
 keywords:
  - staking
  - end-user
@@ -13,7 +13,7 @@ sidebar_position: 1
 
 
 ## Solana Liquid Staking
-Solana is an extremely fast, and censorship-resistant blockchain that has witnessed tremendous growth and adoption in the last year. Solana serves transactions at an order of magnitude higher rate when compared to base layer Ethereum. Additionally, there is a flourishing ecosystem emerging around [Serum](https://solana.com/ecosystem/serum) and other DeFi protocols such as [Raydium](https://solana.com/ecosystem/raydium), [Oxygen](https://solana.com/ecosystem/oxygen), [Pyth Network](https://www.theblockcrypto.com/linked/100875/jump-trading-defi-oracle-solana), and others that are being built on Solana. With over [$14bn staked](https://www.stakingrewards.com/earn/solana), Solana is now also in the Top 5 of Proof-of-Stake networks by staked value.
+Solana is an extremely fast, and censorship-resistant blockchain that has witnessed tremendous growth and adoption in the last year. Solana serves transactions at an order of magnitude higher rate when compared to base layer Ethereum. Additionally, there is a flourishing ecosystem emerging around [Raydium](https://solana.com/ecosystem/raydium) and other DeFi protocols such as [Oxygen](https://solana.com/ecosystem/oxygen), [Pyth Network](https://www.theblockcrypto.com/linked/100875/jump-trading-defi-oracle-solana), and others that are being built on Solana. With over [$14bn staked](https://www.stakingrewards.com/earn/solana), Solana is now also in the top of Proof-of-Stake networks by staked value.
 Liquid staking takes the utility of Solana a step further by:
 - Improving the user experience
 - Diversifying risks across multiple node and operators
@@ -38,13 +38,13 @@ Staking SOL through Lido will come with a variety of benefits:
 
 Interestingly, there is no waiting time for receiving **stSOL** tokens. When a user delegates their SOL tokens they do not need to perform or wait for the completion of any delegation or activation steps, as is the norm in traditional staking. The user can instantly exchange **stSOL** for SOL at any time in the open market.
 
-In Lido for ETH, withdrawals from the Lido program are blocked until the ETH2 chain is live. In Lido for Solana, staggered withdrawals will be enabled. These direct withdrawals will take a couple of epochs to process, and will be beneficial for large withdrawals (e.g. because there will be no slippage from trading on the open market). However, for small withdrawals exchanging **stSOL** on a DEX (e.g. to SOL) will likely prove to be the go-to solution in order to exit a staking position with Lido for most of the users.
+In Lido for ETH, withdrawals from the Lido program are blocked until the ETH2 chain is live. In Lido on Solana, staggered withdrawals will be enabled. These direct withdrawals will take a couple of epochs to process, and will be beneficial for large withdrawals (e.g. because there will be no slippage from trading on the open market). However, for small withdrawals exchanging **stSOL** on a DEX (e.g. to SOL) will likely prove to be the go-to solution in order to exit a staking position with Lido for most of the users.
 
 
 ## Rewards
-Reward distribution in 'Lido for Solana' is an interesting deviation from how rewards are distributed in Lido for Ethereum, which pegs ```ETH2 to stETH in a 1:1 ratio.```
+Reward distribution in 'Lido on Solana' is an interesting deviation from how rewards are distributed in Lido for Ethereum, which pegs ```ETH2 to stETH in a 1:1 ratio.```
 
-To understand how rewards work for 'Lido for Solana' let's look at a hypothetical scenario. Let's assume that the pool contains ```2000 SOL``` and while we are at it let us also assume that a total of ```1800 stSOL``` are held by the token holders. This puts an exchange rate of ```0.9 stSOL per SOL.```
+To understand how rewards work for 'Lido on Solana' let's look at a hypothetical scenario. Let's assume that the pool contains ```2000 SOL``` and while we are at it let us also assume that a total of ```1800 stSOL``` are held by the token holders. This puts an exchange rate of ```0.9 stSOL per SOL.```
 
 $$
 \frac{1800}{2000}=0.9\textnormal{ stSOL }\textbf{per}\textnormal{ SOL}
@@ -71,6 +71,6 @@ The accrued rewards here are after a fee cut for Lido maintainers. To incentiviz
 
 ![Staking Rewards](./stakingrewards.png)
 
-Lido for Solana doesn’t follow the pegging approach, followed by ETH and stETH, as of now. However, this might be considered for revision when Solana launches native support for rebasing in SPL tokens.
+Lido on Solana doesn’t follow the pegging approach, followed by ETH and stETH, as of now. However, this might be considered for revision when Solana launches native support for rebasing in SPL tokens.
 Utilizing Liquidity
 The stSOLs that one gets can be used to reap secondary rewards through DeFi protocols. There will also be liquidity pools on AMM protocols and other DEXes where one will be able to immediately exchange stSOL for SOL. For the **ETH<->stETH** pair a popular AMM in terms of liquidity and volume is the Curve pool.

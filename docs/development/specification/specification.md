@@ -1,6 +1,6 @@
 ---
 title: specification
-description: Overview of the intent of specification of the LIDO for Solana repo
+description: Overview of the intent of specification of the Lido on Solana repo
 keywords:
  - development
  - developers

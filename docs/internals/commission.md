@@ -1,12 +1,12 @@
 # Commission
 
-This page explains how Lido for Solana (“Solido”) handles validation rewards.
+This page explains how Lido on Solana (“Solido”) handles validation rewards.
 If you haven’t done so yet, now is a good time to review [how vote accounts
 work on Solana](solana-staking.md#vote-accounts).
 
 ## Challenge
 
-Lido for Solana faced the following challenge:
+Lido on Solana faced the following challenge:
 
  * We want many validators to be able to join.
  * These validators may have different validation fees (commissions) for their

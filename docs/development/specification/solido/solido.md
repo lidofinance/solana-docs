@@ -1,6 +1,6 @@
 ---
 title: solido
-description: Overview of the specification of the solido program of the LIDO for Solana repo
+description: Overview of the specification of the solido program of the Lido on Solana repo
 keywords:
  - development
  - developers
@@ -15,7 +15,7 @@ sidebar_position: 2
 
 # Solido
 
-Solido is the core on-chain program (aside from the multisig governance program) for LIDO for Solana.
+Solido is the core on-chain program (aside from the multisig governance program) for Lido on Solana.
 
 ## Program Structure
 
