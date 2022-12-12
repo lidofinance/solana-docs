@@ -120,15 +120,15 @@ To distinguish these two in validator lists such as
 <https://solanabeach.io/validators>, we ask you to use a separate validator
 identity account for the Solido vote account. Set the name of your validator to
 “Lido / «your-name»” with [`solana validator-info`][validator-info], and link
-your Keybase account. For example, for Chorus One, we would run
+your Keybase account. For example, for P2P, we would run
 
 ```console
 $ solana validator-info publish \
   --keypair ~/.config/solana/id.json \
-  --website https://chorus.one \
-  --keybase chorusoneinc \
-  --details "Chorus One validator for Lido for Solana" \
-  "Lido / Chorus One"
+  --website https://p2p.org \
+  --keybase p2pinc \
+  --details "P2P validator for Lido for Solana" \
+  "Lido / P2P"
 ```
 
 Then upload the public key of your identity account to Keybase, as described in
@@ -193,7 +193,7 @@ example, we’ll use account `F5HwubK4v7VKazPXzRhdvHqA3MmJR5yXDoC8mXeMpdDw`.
 
 Please share the vote account, stSOL account, and if applicable, your maintainer
 account, with the multisig members [by filling out this
-form][validator-addr-form]. Chorus One will then prepare a multisig transaction
+form][validator-addr-form]. Lido team will then prepare a multisig transaction
 to add your vote account to the Solido instance, and the multisig members will
 batch-approve these transactions periodically.
 

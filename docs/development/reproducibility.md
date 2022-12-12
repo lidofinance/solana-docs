@@ -13,7 +13,7 @@ programs in a Docker container, and copies them out of the container into the
  * `serum_multisig.so`: the multisig governance program that runs on-chain.
  * `solido`: the command-line management client that runs locally.
 
-[buildimage]: https://github.com/ChorusOne/solido/blob/main/buildimage.sh
+[buildimage]: https://github.com/lidofinance/solido/blob/main/buildimage.sh
 
 ## Verification
 

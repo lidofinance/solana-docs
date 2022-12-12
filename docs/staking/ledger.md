@@ -94,7 +94,7 @@ Just below the transaction parameters you also see global Lido statistics. This 
 ![Lido Params](./images/common/lido_params.png)
 
 ### FAQs
-You can see the FAQ section right below the Lido statistics. It is prudent to familiarize yourself with some of the basic features of liquid staking and the risks involved. The FAQ section also gives more information about the stSOL and its value. In case, you have even more questions you can always reach out to the Lido team or Chorus One for any clarifications. The contact information is given at the end of this article.
+You can see the FAQ section right below the Lido statistics. It is prudent to familiarize yourself with some of the basic features of liquid staking and the risks involved. The FAQ section also gives more information about the stSOL and its value. In case, you have even more questions you can always reach out to the Lido team for any clarifications. The contact information is given at the end of this article.
 
 ![Faqs](./images/common/faqs.png)
 
@@ -157,9 +157,6 @@ The Solana blockchain waits for 32 confirmations (called MAX Confirmations) befo
 ![unstake-successful](./images/common/unstake-successful.png)
 
 You then unstake those SOL and will receive liquid SOL after the deactivation period which lasts for approximately 2 epochs. For users that desire instant liquidity, the preferred option is to exchange stSOL on the open market, e.g. on the supported AMM pools on Saber and Raydium.
-
-## Resources
-[Introducing Lido for Solana](https://medium.com/chorus-one/introducing-lido-for-solana-8aa02db8503) - Explaining the SOL liquid staking solution by Chorus One
 
 
 

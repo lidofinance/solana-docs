@@ -122,7 +122,7 @@ Just below the transaction parameters you also see global Lido statistics. This 
 ![Lido Params](./images/phantom/lido_params.png)
 
 ### FAQs
-You can see the FAQ section right below the Lido statistics. It is prudent to familiarize yourself with some of the basic features of liquid staking and the risks involved. The FAQ section also gives more information about the stSOL and its value. In case, you have even more questions you can always reach out to the Lido team or Chorus One for any clarifications. The contact information is given at the end of this article.
+You can see the FAQ section right below the Lido statistics. It is prudent to familiarize yourself with some of the basic features of liquid staking and the risks involved. The FAQ section also gives more information about the stSOL and its value. In case, you have even more questions you can always reach out to the Lido team for any clarifications. The contact information is given at the end of this article.
 
 ![Faqs](./images/common/faqs.png)
 
@@ -244,16 +244,10 @@ For users who desire instant liquidity, the preferred option is to exchange stSO
 ### Utilizing and exchanging stSOL
 The following AMM pools and markets exist for exchanging stSOL or adding liquidity to pools.
 
-| Provider | Type | Link |
-| :--- | :--- | :--- |
-| Saber | Swap stSOL for SOL | https://app.saber.so/#/swap |
-| Saber | Add Liquidity to Pool | https://app.saber.so/#/pools/stsol/deposit |
-| Saber | Farming | https://app.saber.so/#/quarries/stsol/stake |
-| Raydium | Swap stSOL for USDC | [Raydium Pool](https://raydium.io/swap/?ammId=6a1CsrpeZubDjEJE9s1CMVheB6HWM5d7m1cj2jkhyXhj) |
-
-
-## Resources
-[Introducing Lido for Solana](https://medium.com/chorus-one/introducing-lido-for-solana-8aa02db8503) - Explaining the SOL liquid staking solution by Chorus One
+| Provider | Type                           | Link |
+|:---------|:-------------------------------| :--- |
+| Orca     | Swap stSOL for SOL, USDC, USDT | https://www.orca.so/pools |
+| Raydium  | Swap stSOL for USDC            | [Raydium Pool](https://raydium.io/swap/?ammId=6a1CsrpeZubDjEJE9s1CMVheB6HWM5d7m1cj2jkhyXhj) |
 
 
 

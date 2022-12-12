@@ -13,7 +13,7 @@ sidebar_position: 1
 
 
 ## Solana Liquid Staking
-Solana is an extremely fast, and censorship-resistant blockchain that has witnessed tremendous growth and adoption in the last year. Solana serves transactions at an order of magnitude higher rate when compared to base layer Ethereum. Additionally, there is a flourishing ecosystem emerging around [Serum](https://solana.com/ecosystem/serum) and other DeFi protocols such as [Raydium](https://solana.com/ecosystem/raydium), [Oxygen](https://solana.com/ecosystem/oxygen), [Pyth Network](https://www.theblockcrypto.com/linked/100875/jump-trading-defi-oracle-solana), and others that are being built on Solana. With over [$14bn staked](https://www.stakingrewards.com/earn/solana), Solana is now also in the Top 5 of Proof-of-Stake networks by staked value.
+Solana is an extremely fast, and censorship-resistant blockchain that has witnessed tremendous growth and adoption in the last year. Solana serves transactions at an order of magnitude higher rate when compared to base layer Ethereum. Additionally, there is a flourishing ecosystem emerging around [Raydium](https://solana.com/ecosystem/raydium) and other DeFi protocols such as [Oxygen](https://solana.com/ecosystem/oxygen), [Pyth Network](https://www.theblockcrypto.com/linked/100875/jump-trading-defi-oracle-solana), and others that are being built on Solana. With over [$14bn staked](https://www.stakingrewards.com/earn/solana), Solana is now also in the top of Proof-of-Stake networks by staked value.
 Liquid staking takes the utility of Solana a step further by:
 - Improving the user experience
 - Diversifying risks across multiple node and operators

@@ -114,7 +114,7 @@ matter.
 Because withdrawals are subject to some constraints, and because they require
 multiple advanced steps from the user (deactivate and withdraw from the stake
 account), we don’t expect regular users to withdraw from Solido. Those users can
-withdraw on the open market (e.g. Saber or Serum) instead. We mainly expect
+withdraw on the open market (e.g. Orca or Aldrin) instead. We mainly expect
 power users such as market makers to withdraw directly from Solido.
 
 Consequences of this approach:

@@ -39,7 +39,7 @@ program deployed on-chain was really built from the source code we publish.
 See the [reproducibility page](development/reproducibility) for the technical
 details of how to reproduce the programs.
 
-[src]: https://github.com/ChorusOne/solido
+[src]: https://github.com/lidofinance/solido
 
 ## Upgrade authority
 

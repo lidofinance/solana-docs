@@ -24,7 +24,7 @@ prebuilt version. The utility is developed and tested on Linux, and it should
 run on Mac as well. When building from source, make sure to clone the repository
 with `--recurse-submodules`.
 
-[source]: https://github.com/ChorusOne/solido
+[source]: https://github.com/lidofinance/solido
 [dockerhub]: https://hub.docker.com/r/chorusone/solido-maintainer
 
 ## Configuration
