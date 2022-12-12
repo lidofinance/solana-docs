@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.solana.lido.fi/blog</id>
-    <title>Lido for Solana Blog</title>
+    <title>Lido on Solana Blog</title>
     <updated>2021-05-20T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.solana.lido.fi/blog"/>
-    <subtitle>Lido for Solana Blog</subtitle>
+    <subtitle>Lido on Solana Blog</subtitle>
     <icon>https://docs.solana.lido.fi/img/stSOL.svg</icon>
     <entry>
         <title type="html"><![CDATA[test blog post]]></title>
