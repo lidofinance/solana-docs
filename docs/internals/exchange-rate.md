@@ -1,6 +1,6 @@
 # Exchange rate
 
-At its core, Lido for Solana (“Solido” for short) enables converting SOL into
+At its core, Lido on Solana (“Solido” for short) enables converting SOL into
 stSOL and back. This conversion involves an exchange rate. This page describes
 how Solido sets that exchange rate, and the rationale behind that.
 

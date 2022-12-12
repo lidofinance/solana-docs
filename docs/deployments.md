@@ -1,6 +1,6 @@
 # Deployments
 
-This page lists official addresses at which Lido for Solana is deployed, in the
+This page lists official addresses at which Lido on Solana is deployed, in the
 form of [a `solido` config file][config].
 
 Aside from the config keys, we list a few additional addresses that do not need

@@ -1,6 +1,6 @@
 # Administration
 
-Lido for Solana [is governed](governance.md) by the **Lido Decentralized
+Lido on Solana [is governed](governance.md) by the **Lido Decentralized
 Autonomous Organization** (**Lido DAO**). Members of the DAO — holders of
 the LDO governance token — can vote on high-level proposals, such as whether to
 expand to a new chain. For day to day tasks, we have a much more narrowly scoped
@@ -10,7 +10,7 @@ established validators and ecosystem partners.
 
 ## Administrator responsibilities
 
-Lido for Solana is implemented as a program called _Solido_, that runs on the
+Lido on Solana is implemented as a program called _Solido_, that runs on the
 Solana blockchain. Programs on Solana have an **upgrade authority**: an address
 that can replace the program with a newer version. This upgrade authority has a
 lot of power, especially for a program like Solido that manages user’s funds.
@@ -61,7 +61,7 @@ something done, not with a majority of LDO holders.
 
 ## Multisig details
 
-For Lido for Solana, we use the [Serum Multisig program][serum-multisig], and we
+For Lido on Solana, we use the [Serum Multisig program][serum-multisig], and we
 require approval from 4 out of 7 members. The members are:
 
  * [ChainLayer](https://chainlayer.io/)
@@ -94,10 +94,10 @@ publicly available source code, and contains no back doors.
 
 The 4-out-of-7 multisig was established as follows:
 
- * Chorus One reached out to all participants, and verified their identities
+ * Lido on Solana team reached out to all participants, and verified their identities
    on Telegram and GitHub.
  * Participants shared their public keys on GitHub.
- * Chorus one deployed the Serum Multisig program, and created an instance that
+ * Lido on Solana team deployed the Serum Multisig program, and created an instance that
    has the 7 public keys as owners. The upgrade authority of the multisig
    program was set to the multisig instance itself.
  * Participants verified that they could [reproduce][reproduce] the program, and

@@ -1,19 +1,19 @@
 # Security
 
-If you find any vulnerabilities in Lido for Solana, please report them through
+If you find any vulnerabilities in Lido on Solana, please report them through
 [Immunefi’s platform][immunefi]. Immunefi will handle bug bounty communications.
 
 [immunefi]: https://immunefi.com/bounty/lidoforsolana
 
 ## Bug bounty
 
-Lido for Solana runs a bug bounty program with [Immunefi][immunefi] with
+Lido on Solana runs a bug bounty program with [Immunefi][immunefi] with
 bounties up to $2,000,000. Please see the page over at Immunfi for the details
 about what is in scope.
 
 ## Audits
 
-The Lido for Solana source code has been audited by the following parties:
+The Lido on Solana source code has been audited by the following parties:
 
 | Date                      | Version          | Program | Auditor                  | Report                          |
 |---------------------------|------------------|---------|--------------------------|---------------------------------|

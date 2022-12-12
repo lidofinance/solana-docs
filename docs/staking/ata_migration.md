@@ -27,8 +27,8 @@ Such accounts are known as Aux Accounts. However, these accounts can be a source
 
 To overcome this problem Solana Program Library provides [**Associated Token Accounts**](https://spl.solana.com/associated-token-account) (ATA) which are _deterministically_ derived from the user's main account address and a token mint address. This makes it easier for wallets to keep track of all the ATAs corresponding to one user (one main System account address).
 
-## Lido for Solana Aux Accounts
-Every time a user deposits into and subsequently withdraws from the Lido for Solana program they are provided with a **deactivating stake account**. In its early days these deactivating stake accounts were just Aux Accounts. Later on, the Lido program started creating Associated Token Accounts upon withdrawal. Users who performed withdrawals within the first few days of Lido for Solana launch were assigned the Aux accounts.
+## Lido on Solana Aux Accounts
+Every time a user deposits into and subsequently withdraws from the Lido on Solana program they are provided with a **deactivating stake account**. In its early days these deactivating stake accounts were just Aux Accounts. Later on, the Lido program started creating Associated Token Accounts upon withdrawal. Users who performed withdrawals within the first few days of Lido on Solana launch were assigned the Aux accounts.
 
 :::note
 For more details about the withdrawal process and deactivating stake accounts please visit https://docs.solana.lido.fi/staking/phantom#step-6-unstaking-and-utlizing-stsol
