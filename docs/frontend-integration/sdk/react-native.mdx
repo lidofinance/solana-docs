@@ -1,0 +1,91 @@
+# How to run sdk in react-native
+
+import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs';
+
+As we know `react-native` is frontend-based technology that helps create
+native UI apps by Javascript. Respectively this sdk could be also simply run as any
+other npm module (spoiler: not every module) inside `react-native` application.
+
+Here will be instruction "How to integrate sdk to react-native?"
+
+### Install
+
+```mdx-code-block
+<Tabs>
+<TabItem value="npm">
+```
+
+```bash
+npm i @lidofinance/solido-sdk@latest
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="yarn">
+```
+
+```bash
+yarn add @lidofinance/solido-sdk@latest
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+```
+
+### Polyfills
+
+There are some polyfills that are required for `react-native` engine, but we don't require them
+directly in our code, they are required by our dependency `@solana/web3.js`, which most likely
+you are already using. If not, please see [How to use @solana/web3.js in a React Native app](https://solanacookbook.com/integrations/react-native.html).
+In short, you need to add two main polyfills:
+
+- `react-native-url-polyfill`
+
+URL.protocol is not implemented:
+```bash
+ERROR Error: URL.protocol is not implemented
+ERROR Invariant Violation: Module AppRegistry is not a registered callable module
+```
+
+- `react-native-get-random-values`
+
+`crypto.getRandomValues()` not supported:
+```
+Error: crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported
+```
+
+Finally, after installing them, you code will be something like this:
+```js
+import 'react-native-get-random-values';
+import 'react-native-url-polyfill/auto';
+```
+
+
+Also, you may get error [Can‘t find variable:Buffer](https://github.com/facebook/react-native/issues/14796).
+It should be enough to install [buffer](https://www.npmjs.com/package/buffer) and import it:
+
+```js
+import {Buffer} from 'buffer';
+global.Buffer = global.Buffer || Buffer;
+```
+
+### Example
+
+An [example React Native app](https://github.com/lidofinance/solido-sdk/tree/react-native/examples/react-native) that
+demonstrates how to use the `solido-sdk` on `react-native` with interaction of a mobile wallet:
+
+<video width="295" height="640" controls>
+    <source src={require('../assets/example-demo.mp4').default} type="video/mp4" />
+</video>
+
+[Download app-release.apk](../assets/app-release.apk)
+
+
+Feel free to ask any questions if you get stuck: [Discord Support Channel.](https://discord.com/channels/761182643269795850/1008674036508790784)
+
+:::note
+Please use `@lidofinance/solido-sdk@`[0.8.0](https://github.com/lidofinance/solido-sdk/releases/tag/core%400.8.0) or above, because we made some specific optimizations & refactoring
+that will be useful also for `react-native` applications.
+:::
