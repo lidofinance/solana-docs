@@ -69,7 +69,7 @@ Effectively, her SOL balance potentially went up by 5% from ```1 SOL``` to ```1.
 > **Note**
 The accrued rewards here are after a fee cut for Lido maintainers. To incentivize sustainable management of the Lido ecosystem, a portion of the rewards is split between the node operators and DAO treasury. The remaining larger chunk (on Ethereum, these amount to 90%) of rewards accrue to Lido users and get reflected in the increased value of stSOL as explained above.
 
-![Staking Rewards](./stakingrewards.png)
+![Staking Rewards](./staking-rewards.png)
 
 Lido on Solana doesn’t follow the pegging approach, followed by ETH and stETH, as of now. However, this might be considered for revision when Solana launches native support for rebasing in SPL tokens.
 Utilizing Liquidity
