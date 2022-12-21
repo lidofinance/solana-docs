@@ -71,5 +71,19 @@ module.exports = {
         ],
       },
     ],
+    async function customPlugin(context, options) {
+      return {
+        name: 'custom-plugin',
+        configureWebpack(config) {
+          config.module.rules.push({
+            test: /\.apk$/,
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+            },
+          });
+        }
+      };
+    }
   ],
 };
