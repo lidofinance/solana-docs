@@ -2,6 +2,9 @@
 
 import TabItem from '@theme/TabItem';
 import Tabs from '@theme/Tabs';
+import { ThemeProvider } from 'styled-components';
+import { themeLight, ButtonIcon } from '@lidofinance/lido-ui';
+import DownloadIcon from './download-icon';
 
 As we know `react-native` is frontend-based technology that helps create
 native UI apps by Javascript. Respectively this sdk could be also simply run as any
@@ -56,7 +59,7 @@ ERROR Invariant Violation: Module AppRegistry is not a registered callable modul
 Error: crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported
 ```
 
-Finally, after installing them, you code will be something like this:
+Finally, after installing them, your code will be something like this:
 ```js
 import 'react-native-get-random-values';
 import 'react-native-url-polyfill/auto';
@@ -80,12 +83,18 @@ demonstrates how to use the `solido-sdk` on `react-native` with interaction of a
     <source src={require('../assets/example-demo.mp4').default} type="video/mp4" />
 </video>
 
-[Download app-release.apk](../assets/app-release.apk)
+<ThemeProvider theme={themeLight}>
+    <div style={{marginTop: 20, marginBottom: 20, width: 295}}>
+        <ButtonIcon fullwidth icon={<DownloadIcon />} color="secondary" size="lg">
+            Download .apk
+        </ButtonIcon>
+    </div>
+</ThemeProvider>
 
-
-Feel free to ask any questions if you get stuck: [Discord Support Channel.](https://discord.com/channels/761182643269795850/1008674036508790784)
+Feel free to ask any questions if you get stuck: [Discord: solana-dev-support.](https://discord.com/channels/761182643269795850/1008674036508790784)
 
 :::note
-Please use `@lidofinance/solido-sdk@`[0.8.0](https://github.com/lidofinance/solido-sdk/releases/tag/core%400.8.0) or above, because we made some specific optimizations & refactoring
+- The example is working only on Android, because [Solana Mobile Wallet Adapter](https://github.com/solana-mobile/mobile-wallet-adapter) doesn't support IOS yet.
+- Please use `@lidofinance/solido-sdk@`[0.8.0](https://github.com/lidofinance/solido-sdk/releases/tag/core%400.8.0) or above, because we made some specific optimizations & refactoring
 that will be useful also for `react-native` applications.
 :::
