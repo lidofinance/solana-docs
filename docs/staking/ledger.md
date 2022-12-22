@@ -29,8 +29,7 @@ In this step-by-step guide, we will learn how to stake your Solana via the Lido 
 1. Phantom
 2. Solflare
 3. Ledger
-4. Sollet
-5. Solong
+4. Solong
 
 
 ---
@@ -156,7 +155,7 @@ The Solana blockchain waits for 32 confirmations (called MAX Confirmations) befo
 
 ![unstake-successful](./images/common/unstake-successful.png)
 
-You then unstake those SOL and will receive liquid SOL after the deactivation period which lasts for approximately 2 epochs. For users that desire instant liquidity, the preferred option is to exchange stSOL on the open market, e.g. on the supported AMM pools on Saber and Raydium.
+You then unstake those SOL and will receive liquid SOL after the deactivation period which lasts for approximately 2 epochs. For users that desire instant liquidity, the preferred option is to exchange stSOL on the open market, e.g. on the supported AMM pools on Raydium.
 
 
 

@@ -37,8 +37,7 @@ In this step-by-step guide, we will learn how to stake your Solana via the Lido 
 1. Phantom
 2. Solflare
 3. Ledger
-4. Sollet
-5. Solong
+4. Solong
 
 
 
@@ -230,10 +229,10 @@ For example, for the stake account shown in the example above the `Unstake` was 
 ![epochN+2](./images/common/epochNplus2.png)
 
 :::note
-Note that the option to view deactivating stake accounts is visible only in Phantom and Solflare wallets. On Sollet or Solong you will not be able to see these stake accounts. This is not a cause for concern as you can always migrate from Sollet/Solong to either Phantom or Solflare for free
+Note that the option to view deactivating stake accounts is visible only in Phantom and Solflare wallets. On Solong you will not be able to see these stake accounts. This is not a cause for concern as you can always migrate from Solong to either Phantom or Solflare for free
 :::
 
-After your stake fully deactivates you can withdraw it using Phantom or Solflare. For users who desire instant liquidity, the preferred option is to exchange stSOL on the open market, e.g. on the supported AMM pools on Saber and Raydium.
+After your stake fully deactivates you can withdraw it using Phantom or Solflare. For users who desire instant liquidity, the preferred option is to exchange stSOL on the open market, e.g. on the supported AMM pools on Raydium.
 
 ### Migrating from Solong to Solflare
 Right now the facility to see your deactivating stake accounts is available in Solflare and Phantom only. It is very easy and free of charge to migrate from Solong to Solflare. Below are the steps to do that.
@@ -244,7 +243,7 @@ Right now the facility to see your deactivating stake accounts is available in S
 5. Enter the mnemonic words in the field that says `Mnemonic phrase`
 6. It is optional to set the wallet password. You may skip it and click on `Next Step`
 7. Solflare shows you the default `Derivation Path`.
-8. Click on the dropdown to select the second option `m/44'/501'/0'/0' (sollet, phantom)`
+8. Click on the dropdown to select the second option `m/44'/501'/0'/0' (phantom)`
 9. Click on `Access` button.
 10. You've successfully migrated to Solflare wallet now. You may follow the instructions [mentioned here](https://docs.solana.lido.fi/staking/solflare) to unstake/view your deactivating stake accounts.
 
@@ -267,9 +266,6 @@ The following AMM pools and markets exist for exchanging stSOL or adding liquidi
 
 | Provider | Type | Link |
 | :--- | :--- | :--- |
-| Saber | Swap stSOL for SOL | https://app.saber.so/#/swap |
-| Saber | Add Liquidity to Pool | https://app.saber.so/#/pools/stsol/deposit |
-| Saber | Farming | https://app.saber.so/#/quarries/stsol/stake |
 | Raydium | Swap stSOL for USDC | [Raydium Pool](https://raydium.io/swap/?ammId=6a1CsrpeZubDjEJE9s1CMVheB6HWM5d7m1cj2jkhyXhj) |
 
 
