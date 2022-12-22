@@ -69,7 +69,6 @@ require approval from 4 out of 7 members. The members are:
  * [Figment](https://figment.io/)
  * [Mercurial](https://mercurial.finance/)
  * [P2P](https://p2p.org/)
- * [Saber](https://saber.so/)
  * [Staking Facilities](https://stakingfacilities.com/)
 
 The addresses of the multisig members are listed on the [deployments

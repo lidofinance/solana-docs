@@ -37,8 +37,7 @@ In this step-by-step guide, we will learn how to stake your Solana via the Lido 
 1. Phantom
 2. Solflare
 3. Ledger
-4. Sollet
-5. Solong
+4. Solong
 
 
 ---
@@ -209,7 +208,7 @@ After unstaking go back to your wallet and click on the Solana token balance but
 You will see the number of deactivating stake accounts. Click on the stake accounts button.
 
 :::note
-Note that the option to view deactivating stake accounts is visible only in Phantom and Solflare wallets. On Sollet or Solong you will not be able to see these stake accounts. This is not a cause for concern as you can always migrate from Sollet/Solong to either Phantom or Solflare for free
+Note that the option to view deactivating stake accounts is visible only in Phantom and Solflare wallets. On Solong you will not be able to see these stake accounts. This is not a cause for concern as you can always migrate from Solong to either Phantom or Solflare for free
 :::
 
 <p align="center">
@@ -238,7 +237,7 @@ After your stake gets completely deactivated you your stake accounts go from `de
     <img src={withdrawphantom} alt="Withdraw your SOL" width="500"/>
 </p>
 
-For users who desire instant liquidity, the preferred option is to exchange stSOL on the open market, e.g. on the supported AMM pools on Saber and Raydium.
+For users who desire instant liquidity, the preferred option is to exchange stSOL on the open market, e.g. on the supported AMM pools Raydium.
 
 
 ### Utilizing and exchanging stSOL

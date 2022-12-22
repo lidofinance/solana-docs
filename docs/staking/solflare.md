@@ -32,8 +32,7 @@ In this step-by-step guide, we will learn how to stake your Solana via the Lido 
 1. Phantom
 2. Solflare
 3. Ledger
-4. Sollet
-5. Solong
+4. Solong
 
 ---
 
@@ -204,7 +203,7 @@ After unstaking go back to your wallet and click on the `Staking` tab in the sol
 You will see a number of deactivating stake accounts. `Click to expand` the staking account details.
 
 :::note
-Note that the option to view deactivating stake accounts is visible only in Phantom and Solflare wallets. On Sollet or Solong you will not be able to see these stake accounts. This is not a cause for concern as you can always migrate from Sollet/Solong to either Phantom or Solflare for free
+Note that the option to view deactivating stake accounts is visible only in Phantom and Solflare wallets. On Solong you will not be able to see these stake accounts. This is not a cause for concern as you can always migrate from Solong to either Phantom or Solflare for free
 :::
 
 ![stake-accounts](./images/solflare/stakeaccounts.png)
@@ -219,16 +218,13 @@ After your stake gets completely deactivated, you will see that a `Withdraw` but
 
 ![Withdraw-Button](./images/solflare/withdraw-button.png)
 
-You can withdraw your SOL by clicking on `Withdraw`. The SOL tokens should immediately reflect in your account. This complete process from first `unstaking` to finally `withdrawing` your stakes takes between 3-5 days to complete. For users who desire instant liquidity, the preferred option is to exchange stSOL on the open market, e.g. on the supported AMM pools on Saber and Raydium.
+You can withdraw your SOL by clicking on `Withdraw`. The SOL tokens should immediately reflect in your account. This complete process from first `unstaking` to finally `withdrawing` your stakes takes between 3-5 days to complete. For users who desire instant liquidity, the preferred option is to exchange stSOL on the open market, e.g. on the supported AMM pools on Raydium.
 
 ### Utilizing and exchanging stSOL
 The following AMM pools and markets exist for exchanging stSOL or adding liquidity to pools.
 
 | Provider | Type | Link |
 | :--- | :--- | :--- |
-| Saber | Swap stSOL for SOL | https://app.saber.so/#/swap |
-| Saber | Add Liquidity to Pool | https://app.saber.so/#/pools/stsol/deposit |
-| Saber | Farming | https://app.saber.so/#/quarries/stsol/stake |
 | Raydium | Swap stSOL for USDC | [Raydium Pool](https://raydium.io/swap/?ammId=6a1CsrpeZubDjEJE9s1CMVheB6HWM5d7m1cj2jkhyXhj) |
 
 

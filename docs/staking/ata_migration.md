@@ -5,7 +5,6 @@ description: Guide to help users migrate to Associated Token Accounts
 keywords:
  - Solana
  - ATA
- - Saber
  - Mercurial
  - Raydium
 sidebar_label: ATA Migration Guide
@@ -15,7 +14,6 @@ sidebar_position: 9
 import mercurialerror from './images/ata-migration/mercurial_error.png';
 import raywarn from './images/ata-migration/raydium_warning.png';
 import raymigrate from './images/ata-migration/raydium_migrate.png';
-import sabermigrate from './images/ata-migration/saber_migrate.png';
 
 ## Associated Token Accounts v/s Aux Accounts
 Solana Program Library (SPL) allows a user to hold multiple tokens accounts corresponding to the same mint. These accounts 
@@ -64,10 +62,4 @@ If you do have tokens in your Aux Account head over to [https://v1.raydium.io/mi
     <img src={raymigrate} alt="Raydium Migrate" width="500"/>
 </p>
 
-Click `Migrate Token Accounts`. Upon successful migration you will be able to deposit your stSOL easily into pools like Mercurial, Orca and Saber.
-
-**Alternatively**, you may also use Saber App to migrate your stSOL to ATA. Head over to [Saber ATA URL](https://app.saber.so/#/tools/ata) and click on Migrate.
-
-<p align="center">
-    <img src={sabermigrate} alt="Saber Migrate" width="500"/>
-</p>
+Click `Migrate Token Accounts`. Upon successful migration you will be able to deposit your stSOL easily into pools like Mercurial and Orca.

@@ -23,7 +23,7 @@ The code snippets present in this doc might not be up-to-date with the current c
 
 ## Step 1 : Connecting to a Solana wallet
 
-Solana wallets that are known to work well with the Lido program are Phantom, Solflare, Ledger, Sollet and Solong.
+Solana wallets that are known to work well with the Lido program are Phantom, Solflare, Ledger and Solong.
 
 - The wallet should expose the following spec
     - `connect` function that triggers a connection request to the wallet
