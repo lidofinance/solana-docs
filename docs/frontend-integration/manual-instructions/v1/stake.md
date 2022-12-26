@@ -49,7 +49,7 @@ Use `getAccountInfo(LIDO_ADDRESS)` [function](https://solana-labs.github.io/sola
 ```ts
 const accountInfo = await connection.getAccountInfo(LIDO_ADDRESS);
 ```
-The data structure storing the Lido [state(v1.0.0)](https://github.com/ChorusOne/solido/blob/v1.0.0/program/src/state.rs#L188) has the form
+The data structure storing the Lido [state(v1.0.0)](https://github.com/lidofinance/solido/blob/v1.0.0/program/src/state.rs#L188) has the form
 ```rust
 pub struct Lido {
     /// Version number for the Lido
@@ -410,7 +410,7 @@ return associatedStSolAccount;
     data,
   );
   ```
-- Set all [keys](https://github.com/ChorusOne/solido/blob/v1.0.0/program/src/instruction.rs#L167) for the deposit instruction using the program data we fetch earlier
+- Set all [keys](https://github.com/lidofinance/solido/blob/v1.0.0/program/src/instruction.rs#L167) for the deposit instruction using the program data we fetch earlier
   ```ts
   const keys = [
     {

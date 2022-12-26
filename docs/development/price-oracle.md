@@ -15,7 +15,7 @@ source code is always the source of truth. For v1.0.0, the relevant field
 is [`Lido::exchange_rate`][src-v1.0.0].
 :::
 
-[src-v1.0.0]: https://github.com/ChorusOne/solido/blob/v1.0.0/program/src/state.rs#L201
+[src-v1.0.0]: https://github.com/lidofinance/solido/blob/v1.0.0/program/src/state.rs#L201
 
 Solido stores two values that together determine the exchange rate:
 
@@ -39,9 +39,9 @@ To extract the on-chain data, you can use the following libraries:
  * If you are interested in other ways to extract the on-chain data, feel free
    to [open an issue][new-issue] and we might be able to help you out.
 
-[solido-v1]: https://github.com/ChorusOne/solido/tree/v1.0.0/program
-[ts-sdk]:    https://github.com/ChorusOne/solido/issues/467
-[new-issue]: https://github.com/ChorusOne/solido/issues/new
+[solido-v1]: https://github.com/lidofinance/solido/tree/v1.0.0/program
+[ts-sdk]:    https://github.com/lidofinance/solido/issues/467
+[new-issue]: https://github.com/lidofinance/solido/issues/new
 
 ## HTTP API
 

@@ -23,12 +23,12 @@ The Lido on Solana source code has been audited by the following parties:
 
 [neodyme]:        https://neodyme.io/
 [bramah]:         https://www.bramah.systems/
-[bramah-report]:  https://github.com/ChorusOne/solido/raw/b95fc4fe9435a1d5ccdaae60011ea59dd93afed8/audit/2021-07-05-bramah-systems.pdf
-[neodyme-report]: https://github.com/ChorusOne/solido/raw/cb3805689e042fe88abd9f9c17adb9c10e029e18/audit/2021-08-03-neodyme.pdf
-[neodyme-report2]: https://github.com/ChorusOne/solido/raw/163b26aee08958fbdc0f3909ccb6ef606a1ea0f2/audit/2022-04-06-neodyme.pdf
-[v0.1.0]:         https://github.com/ChorusOne/solido/tree/v0.1.0
-[v0.5.0]:         https://github.com/ChorusOne/solido/tree/v0.5.0
-[v1.2.0]:         https://github.com/ChorusOne/solido/tree/v1.2.0
+[bramah-report]:  https://github.com/lidofinance/solido/raw/b95fc4fe9435a1d5ccdaae60011ea59dd93afed8/audit/2021-07-05-bramah-systems.pdf
+[neodyme-report]: https://github.com/lidofinance/solido/raw/cb3805689e042fe88abd9f9c17adb9c10e029e18/audit/2021-08-03-neodyme.pdf
+[neodyme-report2]: https://github.com/lidofinance/solido/raw/163b26aee08958fbdc0f3909ccb6ef606a1ea0f2/audit/2022-04-06-neodyme.pdf
+[v0.1.0]:         https://github.com/lidofinance/solido/tree/v0.1.0
+[v0.5.0]:         https://github.com/lidofinance/solido/tree/v0.5.0
+[v1.2.0]:         https://github.com/lidofinance/solido/tree/v1.2.0
 
 ## Open source and reproducible
 
