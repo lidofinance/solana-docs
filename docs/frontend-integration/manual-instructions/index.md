@@ -1,9 +1,9 @@
 # Migration Guide (v1 → v2)
 
 :::caution
-Our smart-contract (solido) upgrade is coming soon. It will bring **breaking changes** to frontend integration, that's why it's critical
-important to be ready for this upgrade, v1 instructions **will stop work**. We recommend follow [our example](https://github.com/lidofinance/solido-sdk/blob/b1ab2a4f5e58e7f08e1d0965d9d83f867f9ce958/src/unstake/getAccountInfo.ts#L469-L516),
-support both version by using `try/catch`. But the best is to start using [SDK](/frontend-integration/sdk).
+Our smart-contract (solido) upgrade is done. It brought **breaking changes** to frontend integration, that's why it's critical
+important to update instructions, because v1 instructions **are not working anymore**. But the best is to start using [SDK](/frontend-integration/sdk),
+where is already supported v2.
 :::
 
 ## Solido Changes:

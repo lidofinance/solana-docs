@@ -1,8 +1,8 @@
 # UnStake
 
 :::danger
-We are migrating to second version of procotol (solido), so this instructions will stop work, please see [migration guide](/frontend-integration/manual-instructions//migration-guide-2x) for being ready to version 2.
-Or see [new version](/frontend-integration/manual-instructions/unstake) if you are new.
+We have already migrated to second version of procotol (solido), so these instructions aren't working anymore, please see [migration guide](/frontend-integration/manual-instructions) for migrating to version 2.
+Or see [new version](/frontend-integration/manual-instructions/v2/unstake) if you are new.
 :::
 
 :::info
