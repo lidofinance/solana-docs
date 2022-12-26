@@ -9,7 +9,7 @@ module.exports = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'throw',
   favicon: 'img/stSOL.svg',
-  organizationName: 'chorusone',
+  organizationName: 'lidofinance',
   projectName: 'solido',
   i18n: {
     defaultLocale: 'en',
