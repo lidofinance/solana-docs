@@ -15,7 +15,6 @@
             <pubDate>Thu, 20 May 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Blog features are powered by the blog plugin. Simply add files to the blog directory. It supports tags as well!]]></description>
             <content:encoded><![CDATA[<p>Blog features are powered by the blog plugin. Simply add files to the <code>blog</code> directory. It supports tags as well!</p><p>Delete the whole directory if you don't want the blog features. As simple as that!</p>]]></content:encoded>
-            <category>chorusone</category>
             <category>lido</category>
             <category>solana</category>
         </item>

@@ -15,10 +15,9 @@
         <summary type="html"><![CDATA[Blog features are powered by the blog plugin. Simply add files to the blog directory. It supports tags as well!]]></summary>
         <content type="html"><![CDATA[<p>Blog features are powered by the blog plugin. Simply add files to the <code>blog</code> directory. It supports tags as well!</p><p>Delete the whole directory if you don't want the blog features. As simple as that!</p>]]></content>
         <author>
-            <name>ChorusOne</name>
-            <uri>https://github.com/chorusone</uri>
+            <name>LidoFinance</name>
+            <uri>https://github.com/lidofinance</uri>
         </author>
-        <category label="chorusone" term="chorusone"/>
         <category label="lido" term="lido"/>
         <category label="solana" term="solana"/>
     </entry>
