@@ -4,12 +4,6 @@ sidebar_position: 0
 
 # Stake
 
-:::caution
-We didn't switch protocol to second version on **mainnet** yet. So, this code will work only after migration.
-Please see [first version](/frontend-integration/manual-instructions/v1) if you are going to deploy integration before **breaking [upgrade](https://research.lido.fi/t/lido-on-solana-protocol-upgrade-proposal/2959)**.
-Anyway, you should be ready for migration, so we recommend follow [our example](https://github.com/lidofinance/solido-sdk/blob/b1ab2a4f5e58e7f08e1d0965d9d83f867f9ce958/src/unstake/getAccountInfo.ts#L469-L516).
-:::
-
 :::info
 We highly recommend use our [SDK](/frontend-integration/sdk), so we could support you better in case of some problems.
 Also, integration with SDK is much easier & more simple than manually.

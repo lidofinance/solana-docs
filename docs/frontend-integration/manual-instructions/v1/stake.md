@@ -1,8 +1,8 @@
 # Stake
 
 :::danger
-We are migrating to second version of procotol (solido), so this instructions will stop work, please see [migration guide](/frontend-integration/manual-instructions//migration-guide-2x) for being ready to version 2.
-Or see [new version](/frontend-integration/manual-instructions/unstake) if you are new.
+We have already migrated to second version of procotol (solido), so these instructions aren't working anymore, please see [migration guide](/frontend-integration/manual-instructions) for migrating to version 2.
+Or see [new version](/frontend-integration/manual-instructions/v2/stake) if you are new.
 :::
 
 :::info
@@ -49,7 +49,7 @@ Use `getAccountInfo(LIDO_ADDRESS)` [function](https://solana-labs.github.io/sola
 ```ts
 const accountInfo = await connection.getAccountInfo(LIDO_ADDRESS);
 ```
-The data structure storing the Lido [state(v1.0.0)](https://github.com/ChorusOne/solido/blob/v1.0.0/program/src/state.rs#L188) has the form
+The data structure storing the Lido [state(v1.0.0)](https://github.com/lidofinance/solido/blob/v1.0.0/program/src/state.rs#L188) has the form
 ```rust
 pub struct Lido {
     /// Version number for the Lido
@@ -410,7 +410,7 @@ return associatedStSolAccount;
     data,
   );
   ```
-- Set all [keys](https://github.com/ChorusOne/solido/blob/v1.0.0/program/src/instruction.rs#L167) for the deposit instruction using the program data we fetch earlier
+- Set all [keys](https://github.com/lidofinance/solido/blob/v1.0.0/program/src/instruction.rs#L167) for the deposit instruction using the program data we fetch earlier
   ```ts
   const keys = [
     {
