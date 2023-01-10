@@ -35,7 +35,7 @@ const { transactionHash, stSolAccountAddress } = await solidoSDK.stake({
     wallet: walletInstance,
 });
 
-// For PDA accounts
+// For PDA (Program Derived Address)
 const { transactionHash, stSolAccountAddress } = await solidoSDK.stake({
     amount: 20,
     wallet: walletInstance,
@@ -48,7 +48,7 @@ const { transactionHash, stSolAccountAddress } = await solidoSDK.stake({
 - *`amount`* - The amount of SOL-s which need to stake
 - *`wallet`* - Wallet instance from [@solana/wallet-adapter-base](https://www.npmjs.com/package/@solana/wallet-adapter-base)
 - *`setTxStage?`* - Optional callback for getting information about transaction stage
-- *`allowOwnerOffCurve?` - Allow the owner account to be a PDA (Program Derived Address), when we are creating ATA (Associated Token Account)
+- *`allowOwnerOffCurve?` - Allow the owner account to be a [PDA (Program Derived Address)](https://solanacookbook.com/core-concepts/pdas.html#program-derived-addresses-pdas), when we are creating ATA (Associated Token Account)
 
 **Return value:**
 
@@ -74,7 +74,7 @@ const { transaction, stSolAccountAddress } = await solidoSDK.getStakeTransaction
 
 - *`amount`* - The amount of SOL-s which need to stake
 - *`payerAddress`* - Address of user who is trying to make the transaction (`wallet.publicKey`)
-- *`allowOwnerOffCurve?` - Allow the owner account to be a PDA (Program Derived Address), when we are creating ATA (Associated Token Account)
+- *`allowOwnerOffCurve?` - Allow the owner account to be a [PDA (Program Derived Address)](https://solanacookbook.com/core-concepts/pdas.html#program-derived-addresses-pdas), when we are creating ATA (Associated Token Account)
 
 **Return value:**
 
