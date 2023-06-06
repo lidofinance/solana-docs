@@ -26,6 +26,7 @@ This table lists the error code information returned by the SolidoSDK when it is
 | 304        | NO_APY_DATA                 | Couldn't fetch apy data                                                                                                                                                                                                      |
 | 400        | EXCEED_MAX                  | Amount must not exceed MAX(..)                                                                                                                                                                                               |
 | 401        | PUBLIC_KEY_IS_PDA           | Your publicKey is PDA type. Please use allowOwnerOffCurve=true flag.                                                                                                                                                         |
+| 402        | EXCEED_MIN                  | Amount must be greater than rent-exempt fee(..)                                                                                                                                                                                               |
 
 #### Example
 
