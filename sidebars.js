@@ -3,8 +3,8 @@ module.exports = {
   solidoSidebar: [
     {
       type: "doc",
-      id: "overview",
-      label: "Overview",
+      id: "sunset",
+      label: "Sunset",
     },
     {
       type: "category",
@@ -15,6 +15,11 @@ module.exports = {
       type: "category",
       label: "Outdated",
       items: [
+        {
+          type: "doc",
+          id: "overview",
+          label: "Overview",
+        },
         {
           type: "category",
           label: "Staking",

@@ -1,3 +1,7 @@
+---
+title: with CLI
+---
+
 # Manual withdraw with CLI
 
 ## 1. Environment Setup
