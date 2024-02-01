@@ -2,6 +2,12 @@
 id: sunset
 title: Lido on Solana has been sunset
 description: Lido on Solana has been sunset
+keywords:
+ - lido
+ - solido
+ - solana
+slug: /
+sidebar_position: 1
 ---
 
 # Lido on Solana has been sunset!
