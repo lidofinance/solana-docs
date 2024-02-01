@@ -1,15 +1,3 @@
----
-id: overview
-title: Overview
-description: Overview of Lido on Solana
-keywords:
- - lido
- - solido
- - solana
-slug: /
-sidebar_position: 1
----
-
 # Overview
 
 ## Lido on Solana
