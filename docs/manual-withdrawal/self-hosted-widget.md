@@ -14,7 +14,7 @@ title: with self-hosted widget
 This project requires an `.env` file which is distributed via private communication channels.
 A sample can be found in `sample.env`
 
-## Development
+### Development
 
 Step 1. Clone github repository [stsol-unstake-widget](https://github.com/exromany/stsol-unstake-widget)
 
