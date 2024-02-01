@@ -30,7 +30,10 @@ module.exports = {
     announcementBar: {
       id: "closing_solana",
       content:
-        "⚠ Lido on Solana has been sunset on the 4th of February and not supported by Lido DAO anymore",
+        "⚠ Due to the termination of development and technical support of Lido on" +
+        " Solana, from 16th of October, 2023, staking function is not available anymore." +
+        "<br/>Please, unstake your funds via UI before 4th of February, 2024. For more" +
+        ' information, please visit <a target="_blank" rel="noopener noreferrer" href="https://blog.lido.fi/sunset-lido-on-solana/">our blog</a>.',
       isCloseable: false,
     },
     navbar: {
