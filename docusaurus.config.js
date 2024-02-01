@@ -30,7 +30,7 @@ module.exports = {
     announcementBar: {
       id: "closing_solana",
       content:
-        "⚠ Lido on Solana has been sunset on the 4th of February and not supported by Lido DAO anymore",
+        "⚠ Lido on Solana was sunset on February 4th and is no longer supported by Lido DAO",
       isCloseable: false,
     },
     navbar: {
