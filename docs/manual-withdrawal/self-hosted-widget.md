@@ -16,10 +16,10 @@ A sample can be found in `sample.env`
 
 ### Development
 
-Step 1. Clone github repository [stsol-unstake-widget](https://github.com/exromany/stsol-unstake-widget)
+Step 1. Clone github repository [stsol-unstake-widget](https://github.com/lidofinance/stsol-unstake-widget)
 
 ```bash
-git clone https://github.com/exromany/stsol-unstake-widget.git
+git clone https://github.com/lidofinance/stsol-unstake-widget.git
 ```
 
 Step 2. Copy the contents of `sample.env` to `.env.local`
@@ -52,6 +52,6 @@ Step 6. Optional. Now you can build and [deploy](https://vitejs.dev/guide/static
 
 ## 2. Hosted version
 
-You can use hosted version of this widget on https://exromany.github.io/stsol-unstake-widget
+You can use hosted version of this widget on https://lidofinance.github.io/stsol-unstake-widget
 
 This version of widget rate-limited RPC endpoint - so it may be very slow
