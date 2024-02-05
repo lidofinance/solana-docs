@@ -1,14 +1,21 @@
 ---
 id: sunset
-title: Lido on Solana has been sunset
-description: Lido on Solana has been sunset
+title: Lido on Solana was sunset
+description: Lido on Solana was sunset
+keywords:
+ - lido
+ - solido
+ - solana
+slug: /
+sidebar_position: 1
 ---
 
-# Lido on Solana has been sunset!
-
-Since 4th of February, 2024 **Lido on Solana** is not supported by Lido DAO anymore.
+4th of February, 2024 **Lido on Solana** was sunset and is no longer supported by Lido DAO.
 
 If you haven't unstaked your funds, please check these manuals:
 
 - [Manual withdrawal with CLI](/manual-withdrawal/cli)
 - [Manual withdrawal with self-hosted widget](/manual-withdrawal/self-hosted-widget)
+
+If you need support with unstake and withdraw your funds contact our partner
+[letsgo@p2p.org](mailto:letsgo@p2p.org)
