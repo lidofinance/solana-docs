@@ -42,7 +42,7 @@ module.exports = {
       },
       items: [
         {
-          href: "https://blog.lido.fi/category/stsol",
+          href: "https://blog.lido.fi/sunset-lido-on-solana",
           label: "Blog",
           position: "right",
         },
