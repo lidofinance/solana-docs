@@ -49,9 +49,3 @@ yarn dev
 Step 5. Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
 
 Step 6. Optional. Now you can build and [deploy](https://vitejs.dev/guide/static-deploy) your own version of widget.
-
-## 2. Hosted version
-
-You can use hosted version of this widget on https://lidofinance.github.io/stsol-unstake-widget
-
-This version of widget rate-limited RPC endpoint - so it may be very slow
