@@ -75,7 +75,7 @@ Record the **`STAKE_ACCOUNT_PUBKEY`** for further steps.
 2. **Deactivate the stake account**:
 
 ```bash
-solana deactivate-stake STAKE_ACCOUNT_PUBKEY --fee-payer KEYPAIR_FILE
+solana deactivate-stake STAKE_ACCOUNT_PUBKEY --keypair KEYPAIR_FILE
 ```
 
 ⚠️ Wait for the epoch to end (~1-2 days) for the stake account to become inactive. Check the epoch status on [Solana Explorer](https://explorer.solana.com/).
@@ -87,5 +87,5 @@ After the epoch ends, withdraw SOL from **`STAKE_ACCOUNT_PUBKEY`** to your main 
 ```bash
 solana withdraw-stake **STAKE_ACCOUNT_PUBKEY** \
 **MAIN_ACCOUNT_PUBKEY** SOL_AMOUNT \
---fee-payer **KEYPAIR_FILE**
+--keypair **KEYPAIR_FILE**
 ```
