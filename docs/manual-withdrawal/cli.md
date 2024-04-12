@@ -15,11 +15,11 @@ Follow the instructions at [Rust Installation](https://www.rust-lang.org/tools/i
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh source "$HOME/.cargo/env"rustup override set 1.60.0
 ```
 
-2. **Install Solana CLI v1.13.4**:
+2. **Install Solana CLI v1.13.7**:
 Visit [Solana CLI Installation](https://docs.solana.com/cli/install-solana-cli-tools).
 
 ```bash
-sh -c "$(curl -sSfL https://release.solana.com/v1.13.4/install)"
+sh -c "$(curl -sSfL https://release.solana.com/v1.13.7/install)"
 ```
 
 3. **Install Solido CLI v2.0.0** from the official GitHub repository:
