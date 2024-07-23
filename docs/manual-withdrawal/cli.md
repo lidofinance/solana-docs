@@ -70,9 +70,25 @@ solana balance SOL_ACCOUNT_PUBKEY
 ./target/release/solido --config ./solido_config.json --keypair-path KEYPAIR_FILE withdraw --amount-st-sol STSOL_AMOUNT
 ```
 
-Record the **`STAKE_ACCOUNT_PUBKEY`** for further steps.
+⚠️ **Note**: if you're seeing the following error:
 
-2. **Deactivate the stake account**:
+```bash
+Program log: The exchange rate is outdated, it was last computed in epoch 644, but now it is epoch 646.
+```
+
+Execute the following command to update the exchange rate
+
+```bash
+./target/release/solido --config solido_config.json --keypair-path KEYPAIR_FILE perform-maintenance
+```
+
+If you get an RPC response error, such as -32002, simply re-run the command.
+
+Once the exhange rate is updated, you should get a message "Updated exchange rate", and you can proceed to re-run the withdrawal command.
+
+2. Record the **`STAKE_ACCOUNT_PUBKEY`** for further steps.
+
+3. **Deactivate the stake account**:
 
 ```bash
 solana deactivate-stake STAKE_ACCOUNT_PUBKEY --keypair KEYPAIR_FILE
