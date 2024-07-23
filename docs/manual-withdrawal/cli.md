@@ -82,7 +82,9 @@ Execute the following command to update the exchange rate
 ./target/release/solido --config solido_config.json --keypair-path KEYPAIR_FILE perform-maintenance
 ```
 
-Once the exhange rate is updated, re-run the withdrawal command.
+If you get an RPC response error, such as -32002, simply re-run the command.
+
+Once the exhange rate is updated, you should get a message "Updated exchange rate", and you can proceed to re-run the withdrawal command.
 
 2. Record the **`STAKE_ACCOUNT_PUBKEY`** for further steps.
 
